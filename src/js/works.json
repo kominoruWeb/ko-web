@@ -1,0 +1,332 @@
+[
+  {
+    "id": "1",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": {
+      "ja": "大屋根の住宅大屋根の住宅大屋根の住宅大屋根の住宅大屋根の住宅大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": {
+      "ja": "大屋根の住宅",
+      "en": "Large roof house"
+    },
+    "description": {
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+    },
+    "pickup": true,
+    "order": 0,
+    "thumbnail": {
+      "filename": "image01.jpg",
+      "width": 1189,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "image01.jpg",
+        "width": 1189,
+        "height": 800
+      },
+      {
+        "filename": "image02.jpg",
+        "width": 1303,
+        "height": 800
+      }
+    ]
+  }
+]

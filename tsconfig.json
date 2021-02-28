@@ -4,6 +4,7 @@
     "lib": ["ES2019", "DOM"],
     "module": "ESNext",
     "moduleResolution": "Node",
+    "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
