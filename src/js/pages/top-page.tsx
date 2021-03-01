@@ -14,7 +14,7 @@ const WorksOuter = styled.div`
 
 export const TopPage: FunctionComponent = () => {
   return <Outer>
-    <TopFullscreenScroll />
+    <TopFullscreenScroll works={works.filter(work => work.pickup)}/>
     <WorksOuter>
       <Works works={works}/>
     </WorksOuter>

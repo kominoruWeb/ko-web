@@ -3,7 +3,7 @@ import React, { createContext, FunctionComponent, useContext, useState } from 'r
 export const languages = [
   'ja',
   'en',
-  'ch'
+  'zh'
 ] as const
 
 export type Language = (typeof languages)[number]

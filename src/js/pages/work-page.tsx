@@ -1,6 +1,7 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+import { LabelledArrow } from '../components/labelled-arrow'
 import { Work } from '../components/work';
 import { Works } from '../components/works';
 import SvgArrow from '../generated/svg/arrow';
@@ -10,6 +11,7 @@ import { ErrorPage } from './error-page';
 
 const Outer = styled.div`
   margin-top: var(--header-height);
+  background-color: var(--brown);
 `
 
 const ArrowOuter = styled.div`
@@ -17,6 +19,7 @@ const ArrowOuter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--inverted-text-color);
 `
 
 type WorkPageProps = {
@@ -30,7 +33,7 @@ export const WorkPage: FunctionComponent<WorkPageProps> = ({workId}) => {
   return <Outer>
     <Work work={work} />
     <ArrowOuter>
-      <SvgDownwardArrow />
+      <LabelledArrow ja="MORE WORKS" en="MORE WORKS" />
     </ArrowOuter>
     <Works works={works} />
   </Outer>

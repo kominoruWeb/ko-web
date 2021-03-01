@@ -8,6 +8,7 @@ import { Text } from './text';
 const Outer = styled.div`
   display: flex;
   flex-direction: column;
+  color: var(--inverted-text-color);
 `
 
 const ImageSliderOuter = styled.div`
@@ -20,6 +21,7 @@ const DetailOuter = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
   padding: 0 1rem;
 `
 
@@ -32,7 +34,7 @@ const Name = styled.div`
     height: calc(1rem / 8);
     width: 100%;
     margin: 1.5rem 0;
-    background-color: var(--text-color);
+    background-color: currentcolor;
   }
 `
 

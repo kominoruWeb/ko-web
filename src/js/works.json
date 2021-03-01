@@ -1,330 +1,1888 @@
 [
   {
-    "id": "1",
+    "id": "part04_project04",
     "name": {
       "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "en": "Of large roof houses",
+      "zh": "大型屋顶的房子"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
+      "en": "This site whole area farmers and the field of landscape spread on one side of the thatched roof was seen here and there,\nThe nostalgic landscape, was reproduced in large roof thick.\nCreating a large roof and eaves continuous volume of, be to set back the window, representing the mass of depth.\nAnd parents households living under the large roof, Sumuko households to large roof.\nWhile under one roof, it made a moderately independent top and bottom of the space.\nBy changing the lower part of the surplus spaces oblique roof to the high side, it illuminated brightly 1F in indirect light.\nTo form an external appearance with a sense of unity by which follow the arrangement of windows in a pattern of wood chips.",
+      "zh": "本网站全区农民和景观蔓延的茅草屋顶的一侧领域在这里看到，有，\n怀旧景观，大型屋顶转载厚。\n创建大型屋顶檐和的，是设置回的窗口中，表示深度的质量连续体积。\n和父母户居住的大屋檐下，Sumuko户大型屋顶。\n虽然一个屋檐下，它使该空间的适度独立顶部和底部。\n通过改变剩余空间斜屋顶的高侧的下部，它在间接光明亮1F照亮。\n为了形成外观与统一感由下面的窗口的布置中的木片的图案。"
     },
-    "pickup": true,
+    "pickup": false,
     "order": 0,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part04_project04_1st_floor_plan.jpg",
+      "width": 3613,
+      "height": 5067
+    },
+    "images": [
+      {
+        "filename": "part04_project04_1st_floor_plan.jpg",
+        "width": 3613,
+        "height": 5067
+      },
+      {
+        "filename": "part04_project04_2nd_floor_plan.jpg",
+        "width": 3613,
+        "height": 5067
+      },
+      {
+        "filename": "part04_project04_elevation.jpg",
+        "width": 3613,
+        "height": 5067
+      },
+      {
+        "filename": "part04_project04_photo01.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo02.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo03.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo04.jpg",
+        "width": 599,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo05.jpg",
+        "width": 599,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo06.jpg",
+        "width": 599,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo07.jpg",
+        "width": 602,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo08.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_photo09.jpg",
+        "width": 608,
+        "height": 800
+      },
+      {
+        "filename": "part04_project04_section.jpg",
+        "width": 3613,
+        "height": 5067
+      }
+    ]
+  },
+  {
+    "id": "part04_project03",
+    "name": {
+      "ja": "行灯バー",
+      "en": "Andon bar",
+      "zh": "安灯条"
+    },
+    "description": {
+      "ja": "東京　神楽坂　-2020年夏\n施工：株式会社SG\n写真：白井洋平写真事務所\n神楽坂に立呑バーを計画した。\n賑わいとハイソさが両立するまち、神楽坂\n神楽坂にあるこのバーは、そんなまちに溶け込むよう、\n賑わいを演出する行灯を、シャープな金属素材で制作した。\n行灯はメニュー看板にもなり、\n金属板に磁石付きメニュー文字を自由にレイアウトできるようにした。",
+      "en": "Summer 2020 - Tokyo Kagurazaka\nConstruction: Corporation SG\nPhoto: Yohei Shirai photo office\nIt was planned Tatsu呑 bar in Kagurazaka.\nTown bustle and Hiso of are compatible, Kagurazaka\nThe bar at the Kagurazaka, like to blend in such a town,\nThe Andon to produce a bustling, was produced in sharp metal material.\nAndon is also made to the menu sign,\nIt was as a magnet with a menu character can be freely laid out on a metal plate.",
+      "zh": "夏季2020  - 东京神乐坂\n结构：公司SG\n图文：白井洋平的办公室照片\n它计划达呑神乐坂吧。\n镇喧嚣和Hiso是兼容的，神乐坂\n在神乐坂酒吧，喜欢在这样的小镇融为一体，\n该安灯以产生繁华，在尖锐的金属材料制作。\n九安也到菜单标志制作，\n这是与一个菜单字符的磁铁可以在金属板上自由地布置。"
+    },
+    "pickup": false,
+    "order": 1,
+    "thumbnail": {
+      "filename": "part04_project03_photo01.jpg",
+      "width": 615,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part04_project03_photo01.jpg",
+        "width": 615,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part04_project03_photo02.jpg",
+        "width": 603,
+        "height": 800
+      },
+      {
+        "filename": "part04_project03_photo03.jpg",
+        "width": 1880,
+        "height": 800
+      },
+      {
+        "filename": "part04_project03_photo04.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part04_project03_photo05.jpg",
+        "width": 1067,
         "height": 800
       }
     ]
   },
   {
-    "id": "2",
+    "id": "part04_project02",
     "name": {
-      "ja": "大屋根の住宅大屋根の住宅大屋根の住宅大屋根の住宅大屋根の住宅大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "連なるドームの保育園",
+      "en": "Dome of the nursery school continuing",
+      "zh": "托儿所的圆顶继续"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "西安　中国　-2020年春\n保育園の計画\n球を嵌合させ、\nカラフルなドームが連続する、\n童話の世界に迷い込んだような空間を作った。\n中国では保育園はまだ始まったばかりのサービスであり\n保育園が市民権を獲得するためにも、\n子供が行きたくなるような保育園を、\n先ずは建築の観点から目指した。",
+      "en": "Xian China - 2020 Spring\nPlan of nursery school\nSphere Mate,\nColorful dome is continuous,\nI made a space, such as wandered into the world of fairy tales.\nThere is a service of just nursery school was begun in China\nIn order to nursery school to acquire citizenship,\nThe nursery such that want to go the child,\nFirst is aimed at from the point of view of architecture.",
+      "zh": "中国西安 -  2020年春\n幼儿园计划\n球伴侣，\n五颜六色的圆顶是连续的，\n我做了一个空间，比如流浪到童话的世界。\n只是有托儿所的服务已开始在中国\n为了幼儿园为了获得公民身份，\n想要去孩子的幼儿园等，\n首先是从视图结构的角度瞄准。"
     },
-    "pickup": true,
-    "order": 0,
+    "pickup": false,
+    "order": 2,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part04_project02_photo01.jpg",
+      "width": 1200,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part04_project02_photo01.jpg",
+        "width": 1200,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part04_project02_photo02.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part04_project02_photo03.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part04_project02_photo04.jpg",
+        "width": 1422,
+        "height": 800
+      },
+      {
+        "filename": "part04_project02_photo05.jpg",
+        "width": 1422,
+        "height": 800
+      },
+      {
+        "filename": "part04_project02_photo06.jpg",
+        "width": 1422,
         "height": 800
       }
     ]
   },
   {
-    "id": "3",
+    "id": "part04_project01",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "林道の保育園",
+      "en": "Forest nursery",
+      "zh": "苗圃"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "岡山県　-2020年春\nクリニックに付属する企業主導型保育園の計画。\n既存のクリニック及びイベントホールの周りの豊かな緑を延伸して一本の林道を形成し、\n保育園が、その林道を中心に、展開するようにします。\n林道の幅が変化し、中庭や、縁側のような様々なスペースを作り、\n保育園が木漏れ日やそよ風に満ちた空間となります。\n林のファサードが、構造材としての機能を満たしつつ、\n自然の枝のような有機的に広がります。\n枝のような形状は、くぐったり、腰掛けたり、のぼったりと、子供にとって恰好なの遊び場を提供するとともに、\n直射日光を和らげて、柔らかい木漏れ日に変え、保育室がまるで森のなかのような空間となります。\n林のファサードは、程よい目隠しとしての機能も果たし、子供たちにとって居心地のいい空間を作り出します。",
+      "en": "Okayama Prefecture - 2020 Spring\nPlan of company-driven nursery school that comes to the clinic.\nBy stretching a rich green around the existing clinics and events hole is formed in a single forest,\nNursery school, about its forest roads, so that we deploy.\nThe width of the road is changed, making the courtyard and a variety of space, such as a veranda,\nNursery school is the space filled with sunlight through trees and breeze.\nFacade of Lin, while satisfying the function as a structural material,\nSpread to organic, such as the branches of the natural.\nShape, such as branches, or passed under, or sitting, and climb, while providing dressed a playground for children,\nSoften direct sunlight, instead of the soft sunlight through trees, nursery room is like become a space, such as within the forest.\nFacade of Lin, also serve as a reasonable blindfolded, creating a cozy space for children.",
+      "zh": "冈山县 -  2020年春\n公司为驱动幼儿园的计划，该计划涉及到诊所。\n通过拉伸围绕现有诊所和事件孔丰富的绿色形成一个单一的森林，\n托儿所，关于它的森林道路，让我们部署。\n道路的宽度被改变，使得庭院和各种空间，如阳台，\n托儿所是通过树木，微风充满阳光的空间。\n林的门面，在满足功能作为结构材料，\n扩散到有机的，如天然的分支。\n形状，如树枝，或下穿过，或坐，爬，同时提供穿着儿童游乐场，\n软化阳光直射，而不是通过树柔和的阳光，育苗室就像是成为一个空间，如林内。\n林的门面，也可以作为一个合理蒙住眼睛，为儿童创造一个舒适的空间。"
     },
-    "pickup": true,
-    "order": 0,
+    "pickup": false,
+    "order": 3,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part04_project01_photo01.jpg",
+      "width": 1422,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part04_project01_photo01.jpg",
+        "width": 1422,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part04_project01_photo02.jpg",
+        "width": 1422,
+        "height": 800
+      },
+      {
+        "filename": "part04_project01_photo03.jpg",
+        "width": 1422,
         "height": 800
       }
     ]
   },
   {
-    "id": "4",
+    "id": "part03_project14",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "Tsumiki house",
+      "en": "Tsumiki house",
+      "zh": "Tsumiki房子"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "東京都 2018年\n築40年の木造住宅を、スケルトン（躯体）のみ残し、住みやすく作り変える。\nもとの建物は、傾斜地の基壇に木造住宅が立ち、そこにさらにとんがり帽子の屋根が増築されていた。\nそのような積層構造を、新しいファサードでも継承した。\nコンクリート、モルタル、木張りのボリュームが重なり、積木のような外観とした。\n内部は古い建材を一部露わしにすることで、新旧の対比が生まれ、新築にはない味わいを追求した。",
+      "en": "Tokyo 2018\nThe Built 40 years of wooden houses, leaving only the skeleton (building frame), change to make livable.\nThe original building, Standing is a wooden house on the slopes of the foundation, further pointed roof of the hat had been enlarged in there.\nSuch a laminated structure, inherited in the new facade.\nConcrete, mortar, the volume of wood floors overlap, was the appearance, such as building blocks.\nInside than be part dew eagle the old building materials, new and old of contrast is born, the pursuit of taste not to new construction.",
+      "zh": "东京2018\n内置40年的木制房屋，只剩下骨架（建筑框架），变化，使宜居。\n原建筑，常委，是基础的山坡上的木房子，帽子的进一步尖屋顶已扩大在那里。\n这样的层叠结构，在新的门面继承。\n混凝土，砂浆，木地板的体积重叠，是外观，诸如积木。\n里面不是被部分露鹰旧建材，新老对比出生，追求品味不是新的建设。"
     },
     "pickup": true,
-    "order": 0,
+    "order": 4,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project14_photo01.jpg",
+      "width": 800,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part03_project14_photo01.jpg",
+        "width": 800,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part03_project14_photo02.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo03.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo04.jpg",
+        "width": 532,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo05.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo06.jpg",
+        "width": 1208,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo07.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo08.jpg",
+        "width": 586,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo09.jpg",
+        "width": 540,
+        "height": 800
+      },
+      {
+        "filename": "part03_project14_photo10.jpg",
+        "width": 963,
         "height": 800
       }
     ]
   },
   {
-    "id": "5",
+    "id": "part03_project13",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "Pillow Counter",
+      "en": "Pillow Counter",
+      "zh": "枕头计数器"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "東京都新宿区　2018年\n既存のマンションをホテルに用途変更するプロジェクトである。\n立地条件から考えて、短期宿泊の外国人旅行客が多いエリアである。\n癒やしを感じさせるエントランスにするため、\nふっくらとした枕を彷彿させる、ムクリのあるエントランスカウンターを設計した。",
+      "en": "Shinjuku-ku, Tokyo, 2018\nIt is a project to use change an existing apartment hotel.\nConsidering the location conditions, foreign tourists of short-term accommodation is a large area.\nTo the entrance to feel the healing and teeth,\nReminiscent of plump pillows were designed entrance counter with Mukuri.",
+      "zh": "新宿区，东京，2018\n它是利用改变现有的公寓式酒店项目。\n考虑到区位条件，短期住宿的外国游客是大面积的。\n到门口去感受愈合和牙齿，\n让人联想到饱满的枕头的设计入射计数器与Mukuri。"
     },
-    "pickup": true,
-    "order": 0,
+    "pickup": false,
+    "order": 5,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project13_photo01.jpg",
+      "width": 1200,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part03_project13_photo01.jpg",
+        "width": 1200,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part03_project13_photo02.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project13_photo03.jpg",
+        "width": 1200,
         "height": 800
       }
     ]
   },
   {
-    "id": "6",
+    "id": "part03_project12",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "スタンドバー/neobar",
+      "en": "Stand bar / neobar",
+      "zh": "支架杆/ neobar"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "東京都世田谷区　2018年\n昨年手がけた物産展を、夜はバーとして使えるようにリノベーションしたものである。\nメタリックでマッシブなスタンドをいくつか配置し、光で浮遊させた。\nまちの人々が光に誘われるように、光のスタンドに集った。\nシンプルな立呑みが、ミニマムな店内で展開され、自然とお客さんどおしの会話が増えた。",
+      "en": "Setagaya-ku, Tokyo, 2018\nThe product exhibition that worked last year, one in which was renovated so that it can be used as a bar at night.\nSome place a massive stand in the metallic and suspended in the light.\nAs people of the city are invited to light, it gathered to stand in the light.\nSimple standing fleas, are deployed in minimum in-store, it has increased conversation of nature and the audience throat press.",
+      "zh": "世田谷区，东京，2018\n该产品展览去年的工作，在其中进行了翻修，以便它可以被用来在夜间酒吧。\n有的地方一个巨大的展台在金属和悬浮在光。\n作为城市的人都邀请到光，它聚集在光站。\n简单的站立跳蚤，被部署在最小的店内，它增加了自然和观众喉咙新闻界的谈话。"
     },
-    "pickup": true,
-    "order": 0,
+    "pickup": false,
+    "order": 6,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project12_photo01.jpg",
+      "width": 1199,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part03_project12_photo01.jpg",
+        "width": 1199,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part03_project12_photo02.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part03_project12_photo03.jpg",
+        "width": 1199,
         "height": 800
       }
     ]
   },
   {
-    "id": "7",
+    "id": "part03_project11",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "丘の上の家",
+      "en": "House on the hill",
+      "zh": "房子在山上"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "東京都　2018年\n丹沢連山を望む高台に立地する住宅。\n木工アーティストである施主の作品からヒントを得て、\n削り出したような木の塊のようなボリュームとした。\nボリュームから穿った凹凸がハイサイドライトなどの開口となり、\n刻々と変わる光を室内に差し込む。\n一階リビング、二階風呂、屋上テラスを山の方向へ向け、\n雄大な山並みを望みながら生活を楽しめるようにした。\n外装材の木のランダムな節や、内装壁の漆喰の塗りムラが、\n空間と素材を繋ぐ要素としての役割を果たしていた。",
+      "en": "Tokyo 2018\nHousing is located on a hill overlooking the Tanzawa mountain range.\nTaking a cue from the work of the Owner is a woodworking artist,\nIt was the volume, such as a lump of wood, such as carved.\nIrregularities were drilled from the volume is an opening, such as a high-side light,\nInsert the ever-changing light in the room.\nThe first floor living room, toward the second floor bath and a rooftop terrace in the direction of the mountain,\nIt was to enjoy life while hope majestic mountains.\nAnd random section of the tree of the exterior material, the coating unevenness of the interior wall plaster,\nHe had played a role as an element that connects the space and materials.",
+      "zh": "东京2018\n房屋位于俯瞰丹泽山脉的一座小山上。\n从业主的工作得到暗示是木工艺术家，\n这是量，如木头疙瘩，如雕刻。\n凹凸是从体积为钻出的开口，诸如高侧光，\n插入在房间里不断变化的光。\n一楼客厅，朝二楼的浴室和中山路方向的屋顶露台，\n这是享受，同时希望雄伟的高山生活。\n和外部材料的树的随机部分中，所述内壁石膏的涂布不均，\n他已经发挥了作用作为连接的空间和材料的元素。"
     },
     "pickup": true,
-    "order": 0,
+    "order": 7,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project11_photo01.jpg",
+      "width": 1064,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part03_project11_photo01.jpg",
+        "width": 1064,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
+        "filename": "part03_project11_photo02.jpg",
         "width": 1303,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo03.jpg",
+        "width": 1246,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo04.jpg",
+        "width": 849,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo05.jpg",
+        "width": 733,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo06.jpg",
+        "width": 525,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo07.jpg",
+        "width": 1228,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo08.jpg",
+        "width": 1204,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo09.jpg",
+        "width": 535,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo10.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo11.jpg",
+        "width": 1255,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_photo12.jpg",
+        "width": 1230,
+        "height": 800
+      },
+      {
+        "filename": "part03_project11_plan_1FL.jpg",
+        "width": 3773,
+        "height": 5660
+      },
+      {
+        "filename": "part03_project11_plan_2FL.jpg",
+        "width": 2832,
+        "height": 4248
+      },
+      {
+        "filename": "part03_project11_section.jpg",
+        "width": 3869,
+        "height": 5804
+      }
+    ]
+  },
+  {
+    "id": "part03_project10",
+    "name": {
+      "ja": "In No House",
+      "en": "In No House",
+      "zh": "在没有房子"
+    },
+    "description": {
+      "ja": "尾道市因島　2018年予定\n見え隠れする島、隠の島と呼ばれたのが転じて因島になったという。\n因島に、”隠”の宿を設計した。\n場所は小さな漁港のある鏡浦町。瀬戸内海を眺める山道を辿り、日常を抜け出したところで、この隠れ家の宿にたどり着く。\n築百年の古民家には因島の記憶が詰まっている。躯体はそのままとして古民家の雰囲気を残した。\nリノーベーションを施す部分は古材を取り入れつつ革新的な使い方でそれらを再構築した。\n隔たされた場所性と、水軍のような独自性を感じられる宿とした。\n平面も、“隠れる”プランとなっている。\n各部屋は壁で区切らず、ふすまで緩やかに仕切る。\nいわば完全に閉じたわけでもなく、開いているわけでもない。程よく隠れる心地よさを味わえる。\n屋根裏も利用し、アティックな空間とした。",
+      "en": "Onomichi Innoshima scheduled 2018\nGlimpses of the island, that was referred to as the hidden island became Innoshima in turn.\nIn Innoshima, it was designed the inn of the \"hidden\".\nPlace is a small fishing port Gyeongpo the town. Follow the mountain road overlooking the Seto Inland Sea, where slipped out the day-to-day, get to the inn of this retreat.\nThe old houses dating back a hundred years are filled with memories of Innoshima. Skeleton is left of the old house atmosphere as it is.\nPart subjected to a linoleic coacervation was re-build them in the innovative use while incorporating the old materials.\nAnd Hedata location of, and the inn feel the uniqueness of, such as the naval force.\nPlane also, has become a \"hidden\" plan.\nEach room is not separated by a wall, partition to moderate in the bran.\nWithout necessarily so to speak, completely closed, nor are open. Enjoy the comfort of hiding moderately.\nAlso use the attic, and the attic space.",
+      "zh": "尾道因岛计划2018\n在岛上，这是被称为隐岛又将成为因岛的影子。\n在因岛，它被设计的“隐性”的客栈。\n广场是一个小渔港镜浦台镇。按照山路俯瞰濑户内海，其中溜出了一天到一天，得到该撤退的客栈。\n距今百年老房子充满了因岛的回忆。骨架被留在老房子的气氛，因为它是。\n经受亚油酸凝聚的部分是重新建立他们的创新使用，同时融合了旧材料。\n和Hedata位置，客栈感受的独特性，如海军力量。\n飞机也已成为一个“隐藏”的计划。\n每个房间不是由壁分隔，分区在麸皮中度。\n而不必这么说，完全封闭的，也不是开放的。享受隐藏适度的舒适度。\n还可以使用阁楼，以及阁楼空间。"
+    },
+    "pickup": true,
+    "order": 8,
+    "thumbnail": {
+      "filename": "part03_project10_photo01.jpg",
+      "width": 1230,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part03_project10_photo01.jpg",
+        "width": 1230,
+        "height": 800
+      },
+      {
+        "filename": "part03_project10_photo02.jpg",
+        "width": 1420,
+        "height": 800
+      },
+      {
+        "filename": "part03_project10_photo03.jpg",
+        "width": 1420,
+        "height": 800
+      },
+      {
+        "filename": "part03_project10_photo04.jpg",
+        "width": 1500,
+        "height": 800
+      },
+      {
+        "filename": "part03_project10_photo05.jpg",
+        "width": 1420,
+        "height": 800
+      },
+      {
+        "filename": "part03_project10_photo06.jpg",
+        "width": 1420,
+        "height": 800
+      },
+      {
+        "filename": "part03_project10_photo07.jpg",
+        "width": 1230,
         "height": 800
       }
     ]
   },
   {
-    "id": "8",
+    "id": "part03_project09",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "pearl pavilion",
+      "en": "pearl pavilion",
+      "zh": "珍珠馆"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "北京三里屯　2018年(第一号店)　2019年（第二号店）\nデパートのテナントとして入る、タピオカ旗艦店の設計。\n手作りにこだわるタピオカ店の、コンセプトを伝える広告塔としての店の設計。\n中国語でタピオカは”真珠（女乃）茶”と呼ぶ。\n多面体をチューブで貫通させて出来た動きのある水玉模様。\nタピオカミルクのなめらかで躍動的な食感を表現した。",
+      "en": "Beijing Sanlitun 2018 (first store) 2019 (second shop)\nEnter as a tenant of the department store, the design of tapioca flagship store.\nOf tapioca store stick to the hand-made, store design as a billboard to convey the concept.\nTapioca in Chinese is called \"pearl (woman 乃) tea\".\nPolka dots with motion made by the polyhedron is passed through a tube.\nRepresentation of the smooth, vibrant texture of the tapioca milk.",
+      "zh": "北京三里屯2018（第一店）2019（第二店）\n输入作为百货公司的租户，木薯旗舰店的设计。\n木薯店坚持手工制作，店面设计作为一个广告牌传达的概念。\n在中国木薯被称为“珍珠（女乃）茶”。\n圆点与由多面体由运动通过管。\n的木薯牛奶光滑，充满活力的质感表现。"
     },
-    "pickup": true,
-    "order": 0,
+    "pickup": false,
+    "order": 9,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project09_photo01.jpg",
+      "width": 1432,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part03_project09_photo01.jpg",
+        "width": 1432,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part03_project09_photo02.jpg",
+        "width": 1131,
+        "height": 800
+      },
+      {
+        "filename": "part03_project09_photo03.jpg",
+        "width": 1309,
+        "height": 800
+      },
+      {
+        "filename": "part03_project09_photo04.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project09_photo05.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project09_photo06.jpg",
+        "width": 1066,
         "height": 800
       }
     ]
   },
   {
-    "id": "9",
+    "id": "part03_project08",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "Shelf of Strings",
+      "en": "Shelf of Strings",
+      "zh": "字符串的货架"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "東京都世田谷区　2017年\n本棚＆ディスプレイの設計\n音楽をこよなく愛する施主のために、\n弦をイメージした本棚を提案した。\n横材（弦）に太さをもたせることで、最低限の垂直要素で成り立つ、水平性の強い本棚を目指した。\n横材に溝を掘り、CDやレコードをディスプレイする機能を兼ねた。\n太くてシャープな小口をデザインしたことで、カラフルな本、ジャケットたちに負けない存在感を持たせた。",
+      "en": "Setagaya-ku, Tokyo, 2017\nBookshelf and display of design\nThe music for the lover the Owner,\nIt proposed a bookshelf in the image of the strings.\nBy to have a thickness in the cross member (chord), established with minimum vertical elements, aimed strong horizontality bookshelf.\nDigging a trench in the cross-member, also serves as a function to display the CD or record.\nThick and it was designed a sharp small, was to have a presence that does not lose colorful book, the jacket us.",
+      "zh": "世田谷区，东京，2017年\n书架和设计的显示\n该音乐情人业主，\n这串的图像中提出了一个书架。\n通过具有厚度在横构件（和弦），其中最小垂直元件建立，目的是强水平状态书架。\n挖在横构件的沟槽，还用作显示CD或记录的功能。\n厚，它的目的是锋利的小，是有存在不会丢失丰富多彩的书，夹克我们。"
     },
-    "pickup": true,
-    "order": 0,
+    "pickup": false,
+    "order": 10,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project08_photo01.jpg",
+      "width": 1200,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part03_project08_photo01.jpg",
+        "width": 1200,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part03_project08_photo02.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project08_photo03.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project08_photo04.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part03_project08_photo05.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part03_project08_photo06.jpg",
+        "width": 1080,
+        "height": 800
+      },
+      {
+        "filename": "part03_project08_photo07.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part03_project08_photo08.jpg",
+        "width": 2339,
+        "height": 3309
+      }
+    ]
+  },
+  {
+    "id": "part03_project07",
+    "name": {
+      "ja": "NAN Lab.\"naturry",
+      "en": "NAN Lab. \"Naturry",
+      "zh": "NAN实验室。 “Naturry”"
+    },
+    "description": {
+      "ja": "神奈川県海老名市　2017年\n新築商業ビルに入る飲食テナントの設計。\nカレーのシンボルであるナーンを、天井から壁にかけて吊るし下げた\n大らかで、なめらかなカーブはナンのなめらかな食感とリンクさせ、\n天然木のキメ細かい木目がナンの口当たりを感じさせる。\n意匠、文化の印象付けの代わりに、形状感、素材感という直裁的な味付けを試みた。",
+      "en": "Ebina, Kanagawa Prefecture 2017\nDesign of food and drink tenant to enter the newly-built commercial buildings.\nThe Nan is a symbol of curry, was lowered hung over the wall from the ceiling\nIn either Daira, smooth curve is to link with the smooth texture of Nan,\nFine granularity grain of natural wood feel the taste of Nan.\nDesign, instead of the impression with the culture, shape feeling, tried straightforward seasoning that texture.",
+      "zh": "海老名，神奈川县2017年\n食品和饮料租户的设计进入新建的商业建筑。\n楠是咖喱的象征，降低挂在从天花板壁\n在任一Daira，光滑曲线是链路与楠的质地光滑，\n天然木材的精细粒度粒觉得楠的味道。\n设计，而是与文化，形状感觉的印象，尝试简单的调料纹理。"
+    },
+    "pickup": false,
+    "order": 11,
+    "thumbnail": {
+      "filename": "part03_project07_photo01.jpg",
+      "width": 1200,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part03_project07_photo01.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project07_photo02.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project07_photo03.jpg",
+        "width": 1200,
         "height": 800
       }
     ]
   },
   {
-    "id": "10",
+    "id": "part03_project06",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "時間の家",
+      "en": "Time of the house",
+      "zh": "房子的时间"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "川崎市麻生区百合丘　2017年\n南の隣地に住宅が建つことになり、光環境が変わる。\n窓の意味合いをとらえなおすこと始めた。\nビューが望めない南面の窓は、トップライトや雪見窓とし、採光用に限定した。\n朝、昼、夕の光を特徴づけることで、刻々と変わる光環境を楽しめる家とした。",
+      "en": "Kawasaki Aso-ku, Yuri 2017\nTo the south of the adjacent land will be houses built, it changes light environment.\nIt began to re-capture the implications of the window.\nThe window of the south side, which can not be expected view, the top lights and snow viewing window, was limited for the lighting.\nMorning, noon, to characterize the evening light, was home to enjoy the ever-changing light environment.",
+      "zh": "川崎麻生区，2017年尤里\n到相邻土地的南侧将建成的房屋，它的变化的光环境。\n它开始重新捕获窗口的影响。\n南侧，不能预期视图的窗口，顶灯和雪观察窗，被限制用于照明。\n早晨，中午，表征晚上灯，在家里享受千变万化的光环境。"
     },
-    "pickup": true,
-    "order": 0,
+    "pickup": false,
+    "order": 12,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project06_photo01.jpg",
+      "width": 1200,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
-        "width": 1189,
+        "filename": "part03_project06_photo01.jpg",
+        "width": 1200,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part03_project06_photo02.jpg",
+        "width": 1066,
+        "height": 800
+      },
+      {
+        "filename": "part03_project06_photo03.jpg",
+        "width": 1066,
+        "height": 800
+      },
+      {
+        "filename": "part03_project06_photo04.jpg",
+        "width": 1066,
         "height": 800
       }
     ]
   },
   {
-    "id": "11",
+    "id": "part03_project05",
     "name": {
-      "ja": "大屋根の住宅",
-      "en": "Large roof house"
+      "ja": "福岡マンションリノベーションプロジェクト",
+      "en": "Fukuoka apartment renovation project",
+      "zh": "福冈公寓改造工程"
     },
     "description": {
-      "ja": "かやぶき屋根の農家と一面に広がる畑の風景があちこちで見られた当敷地一帯、\nその懐かしい風景を、厚みのある大屋根で再現した。\n大屋根と軒の連続したボリュームを作り出し、窓をセットバックさせることで、奥行きのある塊を表現した。\n大屋根の下に住む両親世帯と、大屋根に住む子世帯。　\n一つ屋根の下ながらも、程よく独立した上下の空間を作った。\n斜め屋根の下部の余剰空間をハイサイドに変えることで、１Fを間接光で明るく照らした。\n窓の配置をウッドチップのパターンに追随させることで一体感ある外観を形成した。",
-      "en": "The nostalgic scenery of the entire site, where you can see the scenery of thatched-roof farmhouses and fields spreading all over, was reproduced with a thick large roof. \n By creating a continuous volume of the large roof and eaves and setting back the windows, a deep mass was expressed. \n Parents' households living under the big roof and child households living on the big roof. \n Even under one roof, we created a reasonably independent upper and lower space. \n By changing the surplus space under the diagonal roof to the high side, the 1st floor was brightly illuminated with indirect light. \n By making the arrangement of the windows follow the pattern of the wood chips, a cohesive appearance was formed."
+      "ja": "福岡県福岡市　2017年\nマンション一室を改修し、庭に開いた。\nリビングとキッチンの間に”第二のファサード”をつくり、リビングを半外部化した。\nキッチンも庭に向け、見渡せる調理台とした。\nリビングを充実させ、家族が自然に集う空間とした。",
+      "en": "Fukuoka, Fukuoka Prefecture, 2017\nTo repair an apartment room, open to the garden.\nCreate a \"second facade\" between the living room and kitchen, was Hansoto Buka living.\nThe kitchen is also directed to the garden, and a kitchen table overlooking.\nTo enhance the living room, the family has a space gather naturally.",
+      "zh": "福冈，福冈县，2017年\n要修复的公寓房，开到花园。\n创建客厅和厨房之间的“第二立”，是Hansoto布卡生活。\n厨房还涉及到花园和厨房的桌子，俯瞰。\n为了增强客厅，家里有一个空间聚集自然。"
     },
     "pickup": true,
-    "order": 0,
+    "order": 13,
     "thumbnail": {
-      "filename": "image01.jpg",
-      "width": 1189,
+      "filename": "part03_project05_photo01.jpg",
+      "width": 1200,
       "height": 800
     },
     "images": [
       {
-        "filename": "image01.jpg",
+        "filename": "part03_project05_photo01.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo02.jpg",
+        "width": 1295,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo03.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo04.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo05.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo06.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo07.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo08.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project05_photo09.jpg",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part03_project04",
+    "name": {
+      "ja": "まなび家の森",
+      "en": "Manabi house forest",
+      "zh": "马纳比房子森林"
+    },
+    "description": {
+      "ja": "横浜市　2017年\n駅前の託児スペース。\n都市にいながら、\"森\"のなかで遊べる空間を作った。\n子供の背より低い部分の棚は、斜めに切り落とすように処理することで、\n収納量を確保すると同時に、遊ぶスペースを広くした。\nぶつかってもケガしないという安全面の配慮と、筋交いを兼ねた棚の強度アップの役割を持たせた\nそしてその操作によって、林立する棚が生き生きとした樹木に変化し、木立が立ち並ぶ森を作り出した。",
+      "en": "Yokohama 2017\nChild space in front of the station.\nWhile are in the city, I made a space to play among the \"forest\".\nShelf below the back of the child part, by processing as cut off obliquely,\nAnd at the same time to ensure the amount of storage, and a wide space to play.\nAnd consideration of safety that it does not hurt also hit, was to have a role in the intensity up of shelf which also serves as a brace\nAnd by the operation, changes in trees forest to shelf was a lively, created a forest grove lined.",
+      "zh": "2017年横滨\n在站前儿童空间。\n而在城市，我做了一个空间之中的“森林”中扮演。\n搁架下方的子部分的背面，如剪切加工过斜，\n并在同一时间，以确保存储量，以及广泛的发挥空间。\n而考虑到安全性，它不也伤打，是有力度了架子也作为一个支柱作用\n而到了操作，在树木森林货架上的变化是一个活泼，创造了林成荫的树林。"
+    },
+    "pickup": false,
+    "order": 14,
+    "thumbnail": {
+      "filename": "part03_project04_photo01.jpg",
+      "width": 1200,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part03_project04_photo01.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo02.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo03.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo04.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo05.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo06.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo07.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo08.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo09.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project04_photo10.jpg",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part03_project03",
+    "name": {
+      "ja": "祝祭の市",
+      "en": "City Festival",
+      "zh": "城节"
+    },
+    "description": {
+      "ja": "東京都世田谷区　2017年\n各地の物産を扱うアンテナショップ\n商品をきれいにディスプレイするのではなく、トレーを使って盛ることで\n豊饒な地方をイメージさせるとともに、\n日常ではない祭りにも通じる、市、の賑わいを表現した。\n通しボルトにナットを止め、棚を浮かせることで、\n陳腐なアンテナショップのイメージを払拭し、浮遊感と軽快感を演出した。\nナットを調整することで、棚の上げ下げができる。\nまた、棚とボルトが連結することで初めて成立する構造体にもチャレンジした。",
+      "en": "Setagaya-ku, Tokyo, 2017\nAntenna shop dealing with various places of Bussan\nClean rather than to display the goods, by the molar using the tray\nWith the image of fertile region,\nLead also to the festival is not a day-to-day, was the city, the bustle of representation.\nStop the nut to the through-bolts, by floating the shelf,\nTo dispel the image of banal antenna shop, and produce a feeling of floating and light feeling.\nBy adjusting the nut you can raise and lower shelves.\nAlso, it was challenged in structure for the first time established by the shelf and the bolt are connected.",
+      "zh": "世田谷区，东京，2017年\n天线店处理物产的各个地方\n清洁而不是使用托盘中显示的商品，由摩尔\n与肥沃区域的图像，\n也导致节日是不是一天到一天，是城市，代表性的喧嚣。\n停止螺母的贯穿螺栓，通过浮置搁板，\n为了消除陈腐天线店的图像，并产生浮动和光感的感觉。\n通过调整螺母可以提高和降低货架。\n此外，它在结构上受到挑战，用于通过机柜，并连接所述螺栓建立了第一个时间。"
+    },
+    "pickup": false,
+    "order": 15,
+    "thumbnail": {
+      "filename": "part03_project03_photo01.jpg",
+      "width": 1207,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part03_project03_photo01.jpg",
+        "width": 1207,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo02.jpg",
+        "width": 529,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo03.jpg",
+        "width": 1207,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo04.jpg",
+        "width": 529,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo05.jpg",
+        "width": 529,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo06.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo07.jpg",
+        "width": 1207,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo08.jpg",
+        "width": 1177,
+        "height": 800
+      },
+      {
+        "filename": "part03_project03_photo09.jpg",
+        "width": 1208,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part03_project01",
+    "name": {
+      "ja": "軽井沢",
+      "en": "Karuizawa",
+      "zh": "轻井泽"
+    },
+    "description": {
+      "ja": "長野県軽井沢　2018年\n軽井沢の木々に囲まれたスペースにおける家具の設計\n周囲との調和と耐候性の、両立を目指した\n家具はPVC編みの密度を調整し、木々に溶け込ませた\nブランコは細かいフレームに分岐させ、効率的な構造を目指しつつ、枝葉と同化させた",
+      "en": "Nagano Prefecture Karuizawa 2018\nFurniture design in Karuizawa of trees surrounded by space\nHarmony and weather resistance with the surrounding, aimed at both\nFurniture adjusts the density of PVC knitting, it was dissolve in trees\nBlanco is branched into a fine frame, while aiming at efficient structure was assimilated with foliage",
+      "zh": "长野县轻井泽2018\n家具设计中的树木轻井泽的空间包围\n和谐与周围的耐候性，其目的是既\n家具调整PVC编织的密度，这是溶解在树上\n布兰科被分支成细帧，而针对高效的结构，用叶子同化"
+    },
+    "pickup": false,
+    "order": 16,
+    "thumbnail": {
+      "filename": "part03_project01_photo01.jpg",
+      "width": 1200,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part03_project01_photo01.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project01_photo02.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project01_photo03.jpg",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part03_project01_photo04.jpg",
+        "width": 1066,
+        "height": 800
+      },
+      {
+        "filename": "part03_project01_photo05.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part03_project01_photo06.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part03_project01_photo07.jpg",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part02_project10",
+    "name": {
+      "ja": "切り欠きシェルフ",
+      "en": "Notch shelf",
+      "zh": "缺口货架"
+    },
+    "description": {
+      "ja": "2016年秋　東京都葛飾区\n丸太に切れ目を入れ、\n棚板を差し込む展示棚とした。\nリズミカルな切れ目を丸太に入れることで、棚柱を、\n樹皮の文様の繰り返しが美しい、白樺の樹林に見立てた。\n店舗は民芸品を取り扱う。\n民芸の言葉を作った柳光悦も白樺派に属していたという。",
+      "en": "2016 autumn Katsushika-ku, Tokyo\nPut a break on the log,\nWas the exhibition shelf inserting the shelves.\nBy placing the rhythmic cut to logs, the shelf pillar,\nBeautiful repetition of motifs of bark, likened to a birch forest.\nStores are dealing with folk art.\nMingei also Koetsu Yanagi made the word belonged to shirakabaha.",
+      "zh": "2016秋葛饰区，东京\n把休息的日志，\n是展架插入货架。\n通过将节奏下调至日志，货架支柱，\n树皮的图案美丽的重复，比喻为一个桦树林。\n商店在处理民间艺术。\n民艺也光悦柳发字属于白桦派。"
+    },
+    "pickup": false,
+    "order": 17,
+    "thumbnail": {
+      "filename": "part02_project10_photo01.jpg",
+      "width": 533,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part02_project10_photo01.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo02.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo03.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo04.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo05.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo06.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo07.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo08.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo09.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project10_photo10.jpg",
+        "width": 533,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part02_project09",
+    "name": {
+      "ja": "Ceiling Tree",
+      "en": "Ceiling Tree",
+      "zh": "天花板树"
+    },
+    "description": {
+      "ja": "リクルートMTLのための打ち合わせスペース\n2016春\n貸しビル木天井をかける\n均質なオフィス空間に、木に包まれた癒やしの空間がほしい。\n蛍光灯の眩しい照明ではなく、暖かく柔らかい光に包まれたい。\n既存の蛍光灯の光を柔らかい間接光に変えるために、木天井をかけたい。\n貸しビルのため、天井、壁に一切傷をつけてはいけないという制約に対し\n可動家具を構造材として利用することで解決した。\n本棚に野縁を掛け渡し、天井を留め付ける工法をとった。\nX\tY軸両方の耐力が得られるように、本棚の方向を変えている。\n野縁にかかるモーメントが均等となるように、本棚の位置を決めた。\n天井の照り返しからくる木の色の温かい光が、空間全体を包む。\n天井面自体も暗く、重くならないように、有孔ボードを使い、それ自体に軽快さを持たせる。\nオフィスの一角に、大樹に包まれたような、癒やしの空間が出現した。\n家具も天然木材、緑の張地、枝の形状のものを多用し、森を感じさせるスペースとしている。",
+      "en": "Meeting space for the recruitment MTL\n2016 Spring\nMultiplying the rental building wood ceiling\nA homogeneous office space, we want space for healing wrapped in wood.\nRather than the dazzling illumination of the fluorescent lamp, we want wrapped in warm, soft light.\nIn order to change the light of the existing fluorescent lamp with a soft indirect light, we want to apply a wood ceiling.\nFor rental building, the ceiling, to the constraint that all the wall should not be scratching\nIt was solved by utilizing movable furniture as a structural material.\nPass over the ceiling joists to the bookshelf, it took the method to attach fasten the ceiling.\nAs proof of both X Y-axis is obtained, and by changing the direction of the bookshelf.\nAs the moment applied to the ceiling joists is equal to Position bookshelf.\nWarm light color of the wood coming from the glare of the ceiling, wrap the entire space.\nCeiling surface itself is also dark, so as not to be heavy, use a perforated board, to have a lightness to itself.\nIn the office of the corner, such as wrapped in Taiki, space for healing has emerged.\nFurniture is also widely used natural wood, green Zhang land, those of the branches of the shape, and the space feel the forest.",
+      "zh": "会议空间的招聘MTL\n2016春季\n乘以出租楼木质吊顶\n均匀的办公空间，我们要医治包裹在木空间。\n而不是荧光灯的照明炫目，我们希望包裹在温暖，柔软的光。\n为了与柔和的间接光来改变光现有的荧光灯，我们要申请一个木质吊顶。\n对于出租楼，天花板，以约束，所有的墙壁不应该被划伤\n它是通过利用可移动的家具作为结构材料解决。\n在吊顶龙骨穿越到书架，花了附加系在天花板上的方法。\n由于两个X Y轴的证明获得的，并且通过改变所述书架的方向。\n由于瞬间施加在吊顶龙骨等于位置书架。\n从天花板的眩光未来木材的温暖的光色，包裹整个空间。\n天花板表面本身也是暗，以免重，使用穿孔板，有亮度本身。\n在角落里，如包裹在大树的办公室，愈合空间已经出现。\n家具也被广泛使用的天然木材，绿色张土地，这些形状的分支机构，以及空间感觉的森林。"
+    },
+    "pickup": true,
+    "order": 18,
+    "thumbnail": {
+      "filename": "part02_project09_photo01.jpg",
+      "width": 1270,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part02_project09_photo01.jpg",
+        "width": 1270,
+        "height": 800
+      },
+      {
+        "filename": "part02_project09_photo02.jpg",
+        "width": 1197,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part02_project08",
+    "name": {
+      "ja": "K邸リノベーション",
+      "en": "K House Renovation",
+      "zh": "ķ家居装修"
+    },
+    "description": {
+      "ja": "建て替えずに、耐震改修してよりよく住み続ける提案\n2015秋ー\n新築も念頭にあるお施主様に対し、\n最小限の手を加えて、愛着のある場所であり続ける、\n新築しなくても、安心して、より快適に住み慣れた場所に住み続けられる、\nリノベーションの提案をした。",
+      "en": "Without rebuilding, we proposed to continue to live better in earthquake-resistant repair\n2015 ackee\nNew construction also for your Buyer like that in mind,\nIn addition to the minimum of hand, continue to be the location of the attachment,\nEven without new construction, with confidence, we continue to live in more comfortable dear old place,\nIt was a proposal of renovation.",
+      "zh": "如果没有重建，我们建议继续更好地生活在防震修复\n2015年西非荔枝果\n新的建设也为你的买家喜欢这一点，\n除了最小的手，不断地将附接的位置，\n即使没有新的建设，有信心，我们继续住在更舒适的亲爱的老地方，\n这是改造的建议。"
+    },
+    "pickup": false,
+    "order": 19,
+    "thumbnail": {
+      "filename": "part02_project08_photo01.jpg",
+      "width": 1106,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part02_project08_photo01.jpg",
+        "width": 1106,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo02.jpg",
+        "width": 1042,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo03.jpg",
+        "width": 1123,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo04.jpg",
+        "width": 550,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo05.jpg",
+        "width": 531,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo06.jpg",
+        "width": 545,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo07.jpg",
         "width": 1189,
         "height": 800
       },
       {
-        "filename": "image02.jpg",
-        "width": 1303,
+        "filename": "part02_project08_photo08.jpg",
+        "width": 532,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo09.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part02_project08_photo10.jpg",
+        "width": 718,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part02_project07",
+    "name": {
+      "ja": "Ｐ邸 友人のためのリノベーション",
+      "en": "Renovation for P House friends",
+      "zh": "装修对于P家的朋友"
+    },
+    "description": {
+      "ja": "2012冬\n平面ではなく、断面の操作で部屋を区切る。\nまず、一番奥にあるリビングを土間に変えた。\n土間に座りながら街並みを見下ろし、お茶を一杯。\nどこか懐かしい縁側空間が自宅にできた。友人が集う風景が目に浮かぶ。\n次に、天井をいくつかの積層された面とし、互いに間接照明で照らしあうようにした。\n天井が低く、安心感のあるベッドスペースや、天井が高く、開放的なリビングのように、天井の高さが空間\nを分けた。",
+      "en": "2012 winter\nNot a plane, separate room in the operation of the cross-section.\nFirst of all, it is changing the living room at the far end to the dirt floor.\nOverlooking the rooftops while sitting on the dirt floor, a cup of tea.\nNostalgic edge space could be at home. Friends gather landscape is floating in the eye.\nNext, the number of the stacked surface of the ceiling, and to each other against the indirect illumination from each other.\nThe ceiling is low, and bed space with a sense of security, high ceilings, like an open plan living, ceiling height space\nThey were divided.",
+      "zh": "2012冬季\n不在一个平面上，单独的房间中的横截面的操作。\n首先，它改变了客厅在远端的泥地上。\n俯瞰屋顶，而坐在泥地上，一杯茶。\n怀旧边缘空间可能是在家里。朋友聚会景观的眼睛浮动。\n接着，在天花板的堆叠表面的数量，并且对于彼此对彼此间接照明。\n天花板较低，具有安全，高高的天花板，像一个开放式的客厅，天花板高度空间感床空间\n他们被划分了。"
+    },
+    "pickup": false,
+    "order": 20,
+    "thumbnail": {
+      "filename": "part02_project07_photo01.jpg",
+      "width": 1199,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part02_project07_photo01.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo02.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo03.jpg",
+        "width": 1201,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo04.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo05.jpg",
+        "width": 532,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo06.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo07.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo08.jpg",
+        "width": 532,
+        "height": 800
+      },
+      {
+        "filename": "part02_project07_photo09.jpg",
+        "width": 1199,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part02_project01",
+    "name": {
+      "ja": "studio池　第一番街公演「創生紀」 のための舞台装置",
+      "en": "studio pond first Avenue concert stage equipment for the \"creation century",
+      "zh": "工作室池塘第一大道演唱会舞台设备的“创建百年”"
+    },
+    "description": {
+      "ja": "用賀アートホール/世田谷区　用賀　2012 春",
+      "en": "Yoga Art Hall / Setagaya-ku, Yoga 2012 Spring",
+      "zh": "瑜伽艺术厅/世田谷区，瑜珈2012年春季"
+    },
+    "pickup": false,
+    "order": 21,
+    "thumbnail": {
+      "filename": "part02_project01_photo01.jpg",
+      "width": 1204,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part02_project01_photo01.jpg",
+        "width": 1204,
+        "height": 800
+      },
+      {
+        "filename": "part02_project01_photo02.jpg",
+        "width": 1204,
+        "height": 800
+      },
+      {
+        "filename": "part02_project01_photo03.jpg",
+        "width": 1204,
+        "height": 800
+      },
+      {
+        "filename": "part02_project01_photo04.jpg",
+        "width": 531,
+        "height": 800
+      },
+      {
+        "filename": "part02_project01_photo05.jpg",
+        "width": 1204,
+        "height": 800
+      },
+      {
+        "filename": "part02_project01_photo06.jpg",
+        "width": 1204,
+        "height": 800
+      },
+      {
+        "filename": "part02_project01_photo07.jpg",
+        "width": 1204,
+        "height": 800
+      },
+      {
+        "filename": "part02_project01_photo08.jpg",
+        "width": 1124,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project12",
+    "name": {
+      "ja": "ウエハースバー",
+      "en": "Wafer bar",
+      "zh": "威棒"
+    },
+    "description": {
+      "ja": "世田谷区用賀　2017年夏\n住宅の下地として使われるパネル。\n普段目に触れることのない構造材の、特性を活かして、仕上げを兼ねて使う試みである。\nパネルを斜め45°に屏風状に立て、XY方向に木垂木を通すことで、\n木どうしのめり込みで安定する構造を試みた。\nステージ側に開くように、全体を扇型に配置した。",
+      "en": "Summer Setagaya-ku, Yoga 2017\nPanel to be used as a base of the housing.\nThat no structural material touching the usually eyes, taking advantage of the characteristics, is an attempt to use doubles as a finish.\nStanding on the folding screen-like panel at an angle 45 °, by passing the wood rafters in the XY direction,\nWe tried to stabilize the structure in the sinking tree each other.\nAs open stage side, it was placed in its entirety fan shape.",
+      "zh": "夏世田谷区，2017年瑜伽\n面板被用作壳体的底部。\n没有结构材料接触通常眼睛，走特色优势，就是用双打作为完成的尝试。\n以一角度45站在屏风状面板°，通过将木椽的XY方向，\n我们试图稳定那颗树交相辉映的结构。\n作为开放段侧，它被放置在其全部扇形。"
+    },
+    "pickup": false,
+    "order": 22,
+    "thumbnail": {
+      "filename": "part01_project12_photo01.jpg",
+      "width": 1200,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project12_photo01.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project12_photo02.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part01_project12_photo03.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project12_photo04.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project12_photo05.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project12_photo06.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project12_photo07.jpg",
+        "width": 1131,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project11",
+    "name": {
+      "ja": "スケッチ",
+      "en": "sketch",
+      "zh": "草图"
+    },
+    "description": {
+      "ja": "デザインを進める際は、具体的な形にする前に、\nラフスケッチを使ってイメージを施主と何度もやりとりをします。\n可能性の幅をできるだけ広げ、\n施主といっしょにベストの解答にたどり着くためです。\nまた、ディテールを考える際もスケッチを多用します。\n様々な解から、空間との一体感と使いやすさを両立したベストの案を探ります。",
+      "en": "When proceeding with the design, prior to the specific form,\nAlso exchange the Owner and many times the image using the rough sketch.\nSpread as much as possible the possibility of the width,\nTogether with the Owner is due to arrive at the best answer.\nIt also makes extensive use of sketches when considering the detail.\nFrom a variety of solutions, we explore the best of the proposal that are both ease of use and sense of unity with the space.",
+      "zh": "当与设计出发，现有的特定形式，\n还使用草图交流业主和多次的图像。\n传播尽可能宽度的可能性，\n加上业主是由于在最好的答案到达。\n这也使得大量使用草图考虑到细节时。\n从各种解决方案中，我们摸索出最佳的，它们都易于使用的建议，并与空间的统一感。"
+    },
+    "pickup": false,
+    "order": 23,
+    "thumbnail": {
+      "filename": "part01_project11_photo01.png",
+      "width": 1067,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project11_photo01.png",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo02.png",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo03.png",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo04.png",
+        "width": 1067,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo11.jpg",
+        "width": 1236,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo12.jpg",
+        "width": 1231,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo13.jpg",
+        "width": 1283,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo14.jpg",
+        "width": 947,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo15.jpg",
+        "width": 687,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo16.jpg",
+        "width": 1225,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo17.jpg",
+        "width": 457,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo18.jpg",
+        "width": 478,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo19.jpg",
+        "width": 1413,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo20.jpg",
+        "width": 1377,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo21.jpg",
+        "width": 490,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo22.jpg",
+        "width": 946,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo23.jpg",
+        "width": 1117,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo24.jpg",
+        "width": 597,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo25.jpg",
+        "width": 1261,
+        "height": 800
+      },
+      {
+        "filename": "part01_project11_photo26.jpg",
+        "width": 715,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project10",
+    "name": {
+      "ja": "LIGHT COVER",
+      "en": "LIGHT COVER",
+      "zh": "灯罩"
+    },
+    "description": {
+      "ja": "演出家の定期自宅公演のための舞台装置\n用賀　2016　夏\n階段劇場仕様の自宅を建てた演出家の方が、\n年に一回自宅で公演を行う。\n舞台空間を塩ビのシェルフで覆うことで、\n上部天窓の自然光、スポットライトの光が、\n一様に柔らかい抽象的な光に変換され、\n光の幕が舞台を覆う効果が得られた。\nケの住居空間に、一時的にハレの空間を作った。",
+      "en": "Stage equipment for the director of regular home performances\nYoga 2016 summer\nIf the director who built the home of stairs theater specifications,\nPerforming a concert in one home a year.\nBy covering the stage space in the shelf of PVC,\nNatural light in the upper skylight, the light of the spotlight,\nIs converted to uniform soft abstract light,\nThe effect of curtain of light covers the stage was obtained.\nResidential space of Ke, was temporarily made the space of Halle.",
+      "zh": "舞台设备的定期上门演出导演\n瑜伽2016年夏季\n如果谁建的楼梯影院规格家里的导演，\n一年在一个家庭进行了一场音乐会。\n通过在PVC的搁板覆盖舞台空间，\n在上天窗自然光，聚光灯的光，\n被转换成均匀的软抽象光，\n的灯罩得到阶段的帘式的效果。\n柯的居住空间，暂时由哈雷的空间。"
+    },
+    "pickup": false,
+    "order": 24,
+    "thumbnail": {
+      "filename": "part01_project10_photo01.jpg",
+      "width": 800,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project10_photo01.jpg",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "filename": "part01_project10_photo02.jpg",
+        "width": 531,
+        "height": 800
+      },
+      {
+        "filename": "part01_project10_photo03.jpg",
+        "width": 1205,
+        "height": 800
+      },
+      {
+        "filename": "part01_project10_photo04.jpg",
+        "width": 531,
+        "height": 800
+      },
+      {
+        "filename": "part01_project10_photo05.jpg",
+        "width": 1131,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project09",
+    "name": {
+      "ja": "DANCING YOKKI\nYSF(用賀サマーフェスティバル)１０周年忘年会のためのプロジェクションマッピング",
+      "en": "DANCING YOKKI\nYSF projection mapping for the (Yoga Summer Festival) 10 anniversary of year-end party",
+      "zh": "DANCING YOKKI\n在（瑜珈夏季音乐节）10周年忘年的YSF投影映射"
+    },
+    "description": {
+      "ja": "麻布　2014冬\n音楽とお酒に酔いしれて旧友と会話を楽しむ忘年会。\n会場の音のリズムに合わせて踊る、用賀のキャラクターであるよっきーが、会場をさらに盛り上げます。\nプログラミングプラットフォームVVVVを使った試み。",
+      "en": "Azabu 2014 winter\nYear-end party to enjoy a conversation with an old friend drunk to music and drink.\nDance to the rhythm of the venue sound, is a character of Yoga Yokki will further boost the venue.\nAttempts to using the programming platform VVVV.",
+      "zh": "麻布2014年冬季\n忘年会享受与老朋友醉音乐和饮料的对话。\n跳舞的场地声音的节奏，是瑜伽Yokki的角色将进一步推动会场。\n尝试使用的编程平台VVVV。"
+    },
+    "pickup": false,
+    "order": 25,
+    "thumbnail": {
+      "filename": "part01_project09_photo01.jpg",
+      "width": 450,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project09_photo01.jpg",
+        "width": 450,
+        "height": 800
+      },
+      {
+        "filename": "part01_project09_photo02.jpg",
+        "width": 449,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project08",
+    "name": {
+      "ja": "HURRICANE\nstudio池　第三番街公演「ネオン」のための舞台装置",
+      "en": "HURRICANE\nstudio pond Third Avenue concert stage equipment for the \"Neon",
+      "zh": "飓风\n工作室池塘第三大道演唱会舞台设备的“霓虹”"
+    },
+    "description": {
+      "ja": "ジャズバー　キンのツボ　世田谷区　用賀 　2012 秋\n様相―記号―図像の反復\n今回の舞台装置では、\n現代文明によって切り離された様相、記号、図像を、再構築して共存させることで、\n現代人の視覚のリハビリテーションを試みている。\nそしてその手段として選んだのは、まさに様相と図像を記号から分断した、\nパソコンのプログラミング言語である。\n様相―移動するドットの集まりから生じる台風\n記号―点滅するネオンサイン\n図像―無限に生まれる線から生まれる幾何学模様\n舞台でその場その場で生まれる生音を拾って、\nプログラミングを介して再構築され、\n様相、記号、図像へと変換されてプロジェクターで壁に、\n視覚的要素として投影される。\n様相、記号、図像の重なり合い、繰り返しが、\nみる人に”見る”ことをあきらめさせ、\n”観る”人へと導く。",
+      "en": "Jazz bar Kin of pot Setagaya-ku, Yoga 2012 autumn\nAspect - symbol - iconography of repetition\nIn this stage device,\nAppearance, separated by modern civilization, symbols, iconography, by the coexistence rebuilding,\nWe are trying to rehabilitation of the modern man of vision.\nAnd chose as its means, it was just divided the appearance and iconography from the symbol,\nIs the programming language of the personal computer.\nAspect - typhoon resulting from the collection of dots to be moved\nSign - neon sign blinking\nIconography - geometric patterns born from the infinitely born line\nPicking up unprocessed born on the fly in the arena,\nIt is rebuilt through the programming,\nAspect, symbol, the converted the wall by a projector to iconography,\nIt is projected as a visual element.\nAspect, symbol, overlap of iconography, repeatedly,\nLet give up the \"see\" things people see,\n\"Watch\" lead to person.",
+      "zh": "锅世田谷区的爵士酒吧健，瑜珈2012秋\n看点 - 符号 - 重复的肖像\n在该载台装置，\n外观上，相隔现代文明的符号，意象，由共存重建，\n我们正试图现代人的视觉康复。\n并选择为手段，它只是分为外观和意象从符号，\n是个人计算机的编程语言。\n看点 - 从点的集合导致台风移动\n登录 - 霓虹灯闪烁\n影像学 - 从无限出生线诞生的几何图案\n拿起未处理出生在舞台上飞，\n它是通过编程重建，\n方面，符号，转换后的所述壁由投影仪到肖像，\n据预测为视觉元素。\n一方面，符号，重叠意象，反反复复，\n让放弃“看”东西的人看，\n“观察”导致人。"
+    },
+    "pickup": false,
+    "order": 26,
+    "thumbnail": {
+      "filename": "part01_project08_photo01.jpg",
+      "width": 1422,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project08_photo01.jpg",
+        "width": 1422,
+        "height": 800
+      },
+      {
+        "filename": "part01_project08_photo02.jpg",
+        "width": 1422,
+        "height": 800
+      },
+      {
+        "filename": "part01_project08_photo03.jpg",
+        "width": 1422,
+        "height": 800
+      },
+      {
+        "filename": "part01_project08_photo04.jpg",
+        "width": 1422,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project07",
+    "name": {
+      "ja": "IN BETWEEN\n上海万博期間のインスタレーション",
+      "en": "IN BETWEEN\nInstallation of Shanghai World Expo period",
+      "zh": "在这两者之间\n上海世博会期间的安装"
+    },
+    "description": {
+      "ja": "2010冬 (KKAA)\n枕状のビニールの細胞を空気のチューブでつなぎ合わせ、建築化するインスタレーションであ\nる。\n一つの細胞が所定の圧力になるまで空気が充てんされ、十分な圧力になると、今度は膜の反力\nに押され、空気を横の細胞に渡してあげる。\n接する細胞の状況によってかかる圧力が変わり、形状もそれぞれ異なってくる。\n独立した細胞でありながらも、お互いつながり、栄養を送りあって組織を形成する。\n生物に近い状態の建築を目指した。\n空気の強い圧力に耐えられる強靭さと、透明度の高さが同時に要求された。\nETFEという膜素材がその条件を満たし、実現に至った。",
+      "en": "2010 winter (KKAA)\nThe pillow-shaped plastic cell joined with air tubes, installation der to architectural\nThat.\nOne of the cells air to a predetermined pressure is filled, at a sufficient pressure, the reaction force of the turn membrane\nPushed in, we'll pass the air next to the cell.\nContact changes the pressure exerted by the cellular context, the shape also different, respectively.\nYet independent cells also form tissue each other feed another connection, nutrition.\nIt aimed at the building of the state close to the organism.\nAnd strength to withstand the strong pressure of the air, the height of the transparency is requested simultaneously.\nMembrane material called ETFE meets its conditions, has led to the realization.",
+      "zh": "2010年冬季（KKAA）\n枕形塑料细胞加入了与空气管，安装到DER建筑\n那。\n一个细胞空气至预定压力的被填充，在足够的压力下，转膜的反作用力\n推入，我们将通过旁边的单元格中的空气。\n接触分别改变由细胞环境所施加的压力，该形状也不同。\n然而独立细胞也形成组织彼此进料的另一连接，营养。\n这是针对国家接近生物体的建设。\n和强度来承受空气的强大压力下，透明的高度同时请求。\n膜材料ETFE称为满足其条件，导致了实现。"
+    },
+    "pickup": false,
+    "order": 27,
+    "thumbnail": {
+      "filename": "part01_project07_photo01.jpg",
+      "width": 1200,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project07_photo01.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project07_photo02.jpg",
+        "width": 533,
+        "height": 800
+      },
+      {
+        "filename": "part01_project07_photo03.jpg",
+        "width": 1238,
+        "height": 800
+      },
+      {
+        "filename": "part01_project07_photo04.jpg",
+        "width": 1199,
+        "height": 800
+      },
+      {
+        "filename": "part01_project07_photo05.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project07_photo06.jpg",
+        "width": 1199,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project06",
+    "name": {
+      "ja": "FREEPAPER DOME 結婚二次会のための会場設営",
+      "en": "Site management for the FREEPAPER DOME marriage after-party",
+      "zh": "现场管理为FREEPAPER DOME婚后方"
+    },
+    "description": {
+      "ja": "渋谷区　２０１３夏\nフリーペーパーは、フリーの情報を配る媒体である。\nその固定観念を取り去り、フリーペーパーを、都市に固有して存在する建材ととらえなおしたの\nが、今回の試みである。\nフリーペーパーを丸めて、輪ゴムで止めると、圧縮に抵抗できる中空の棒に変わる。\n互いに紐で通し、トラス状に固定する。\n合理性を超えた面白味を都市で発見することができた。",
+      "en": "Shibuya 2013 summer\nFree paper, which is a medium to distribute free information.\nDeprived of its stereotypes, a free paper, it was re-captured and building materials that are present in specific to the city\nBut, it is this time of the attempt.\nRounded free paper and stopped with a rubber band, changes to the hollow rod that can resist compression.\nThrough a string together, securing the truss shape.\nWe were able to discover the fun that goes beyond the rationality in the city.",
+      "zh": "涩谷2013夏季\n免费纸，这是免费派发信息的媒介。\n失去了其定型，无纸，它被重新捕获，建设中存在的具体城市的材料\n但是，它是这次的尝试。\n圆形自由纸，并用橡胶带停止时，改变在中空杆可抗压缩。\n通过一个串起来，确保桁架形状。\n我们能够发现，超越了在城市理性的乐趣。"
+    },
+    "pickup": false,
+    "order": 28,
+    "thumbnail": {
+      "filename": "part01_project06_photo01.jpg",
+      "width": 1200,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project06_photo01.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "filename": "part01_project06_photo02.jpg",
+        "width": 1200,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project05",
+    "name": {
+      "ja": "嵌合バー",
+      "en": "Fitting bar",
+      "zh": "安装条"
+    },
+    "description": {
+      "ja": "2014\nYSF10周年のためのBARである\n小さなピースが、お互い嵌合してつながることで、強靭で大きな空間を構成する。\n形状はあえて完結させず、必要機能に応じて継ぎ足し可能とすることで、\n無限の可能性を残す。\n柱と屋根のあるべき姿という固定概念も取り払う。\n柱は、もはや邪魔な存在ではなく、それ自体がカウンターになり、テーブルになり、収納となる。\n柱に機能が内包される。\n大きな屋根が、さまざまな機能からなる柱によって支えられ、美しい影を地面に落とす。",
+      "en": "2014\nIt is a BAR for YSF10 anniversary\nSmall pieces, that lead fitted each other, constitute a large space and tough.\nShape dare not complete, that it allows replenishment depending on the desired functionality,\nLeave the infinite possibilities.\nFixed concept that ought to be the pillar and the roof also get rid of.\nPillar is no longer a hindrance exists, it itself becomes the counter, become a table, and storage.\nFunction in the pillar is included.\nLarge roof, supported by pillars made of a variety of functions, dropping a beautiful shadow on the ground.",
+      "zh": "2014\n这是YSF10周年BAR\n小块，铅配合对方，构成一个大的空间和坚韧。\n外形不敢彻底，它允许增资取决于所期望的功能，\n离开了无限的可能性。\n固定的概念，应该是支柱和车顶也摆脱。\n支柱不再是一个障碍存在，它本身成为了柜台，成为表，和存储。\n在支柱的功能是包括在内。\n大型屋顶由柱子支撑制成的各种功能，在地面下降一个美丽的影子。"
+    },
+    "pickup": false,
+    "order": 29,
+    "thumbnail": {
+      "filename": "part01_project05_photo01.jpg",
+      "width": 1066,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project05_photo01.jpg",
+        "width": 1066,
+        "height": 800
+      },
+      {
+        "filename": "part01_project05_photo02.jpg",
+        "width": 599,
+        "height": 800
+      },
+      {
+        "filename": "part01_project05_photo03.jpg",
+        "width": 599,
+        "height": 800
+      },
+      {
+        "filename": "part01_project05_photo04.jpg",
+        "width": 599,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project04",
+    "name": {
+      "ja": "ROCK　CLOTH\nロックフェスティバルのための会場構成",
+      "en": "ROCK CLOTH\nVenue construction for the Rock Festival",
+      "zh": "ROCK布\n场馆建设的摇滚音乐节"
+    },
+    "description": {
+      "ja": "クラブクアトロ　渋谷区　２０１３夏\n正方形の布を一定のルールでつなぎ合わせ、広げると、\n美しい幾何学模様が出来上がる。\nロックの精神は理屈抜きの美学。\nロックにふさわしく、意味や理屈のある記号性ではなく、\n純粋な美しいものを目指した。\n直前に旅した、アルハンブラ宮殿の幾何学模様が大変ヒントになった。\n幾何学に合わせて布を切り、つなぎ合わせるだけだと、\n切り絵になってしまう。\n同じ形の正方形を使い、制約を設けた先に、\n三次元の幾何学模様という新しい表現を得た。\n美は制約から生まれる。\n発熱量の高い照明の下での使用のため、\n使うのは不燃性の不織布。",
+      "en": "Club Quattro, Shibuya-ku 2013 summer\nPieced together a square of cloth with certain rules, and expand,\nBeautiful geometric patterns is completed.\nAesthetics of the lock of the spirit is visceral.\nAppropriate for the lock, rather than a sign of a meaningful and theory,\nIt aimed at the purely beautiful.\nTraveled to just before, geometric patterns of the Alhambra has become very tips.\nTurn off the cloth to fit the geometry, and just piece together,\nBecome cutout.\nUse a square of the same shape, previously provided with the constraints,\nI got a new representation of three-dimensional geometric pattern.\nBeauty is born from the constraints.\nFor use under high calorific value lighting,\nUse of the non-flammable non-woven fabric.",
+      "zh": "俱乐部的Quattro，涩谷区2013夏季\n拼凑起来的布方一定的规则，扩大，\n美丽的几何图案完成。\n精神的锁美学是内脏。\n适合锁，而不是一个有意义的和理论的标志，\n它瞄准了纯粹的美丽。\n前往之前，阿罕布拉的几何图案已经变得非常的提示。\n关闭布，以适应几何体，只是拼凑，\n成为缺口。\n使用相同形状的方形，预先设有的制约，\n我得到了三维几何图案的新表示。\n美是从约束诞生。\n对于下热值高的照明用途，\n使用不易燃的非织造织物制成。"
+    },
+    "pickup": false,
+    "order": 30,
+    "thumbnail": {
+      "filename": "part01_project04_photo01.jpg",
+      "width": 1429,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project04_photo01.jpg",
+        "width": 1429,
+        "height": 800
+      },
+      {
+        "filename": "part01_project04_photo02.jpg",
+        "width": 1600,
+        "height": 800
+      },
+      {
+        "filename": "part01_project04_photo03.jpg",
+        "width": 1600,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project03",
+    "name": {
+      "ja": "BamBooBar",
+      "en": "BamBooBar",
+      "zh": "BamBooBar"
+    },
+    "description": {
+      "ja": "YSF12周年のためのBARである\n東京近辺の竹林で切り出した竹50本ほどを、3mほどの部材200本に製材し、\nなるべくビスを使わないように作ったバー。\n夏祭りにふさわしい、和を感じる大人の集い語り合う空間を提供した。",
+      "en": "It is a BAR for YSF12 anniversary\nAs much as fifty bamboo cut out in the bamboo forest in the vicinity of Tokyo, sawn to 200 present members of about 3m,\nBar made as much as possible not to use the service.\nWorthy of the summer festival, provided the adult gathering talk space to feel the sum.",
+      "zh": "这是YSF12周年BAR\n多达五十个竹竹林在东京附近的切出，锯成约3米200组现在的成员，\n酒吧做尽可能不使用该服务。\n夏季节日值得的，提供的成人聚会交谈的空间感受的总和。"
+    },
+    "pickup": false,
+    "order": 31,
+    "thumbnail": {
+      "filename": "part01_project03_photo01.jpg",
+      "width": 1071,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project03_photo01.jpg",
+        "width": 1071,
+        "height": 800
+      },
+      {
+        "filename": "part01_project03_photo02.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part01_project03_photo03.jpg",
+        "width": 1131,
+        "height": 800
+      },
+      {
+        "filename": "part01_project03_photo04.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part01_project03_photo05.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part01_project03_photo06.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part01_project03_photo07.jpg",
+        "width": 800,
+        "height": 1203
+      }
+    ]
+  },
+  {
+    "id": "part01_project02",
+    "name": {
+      "ja": "BALLOON HOUSE",
+      "en": "BALLOON HOUSE",
+      "zh": "气球HOUSE"
+    },
+    "description": {
+      "ja": "用賀駅前/世田谷区　用賀　　2012\nこの風船519 本を使った『バルーンハウス』は、ふわっとしていて、やわらかくて、\n思わず触りたくなる親しみを感じる。\n普通の家は耐久性をもって周りを遮断しますが、『バルーンハウス』は周りの環境を取り入れ、\n風に揺らぎつつ建っている。\n耐久性のある素材は、必ずしも人の体と相性が良いとは言えない。人間の体も自然の一部として、\n同じく自然界の肌理で出来た素材を使いたい。人が呼吸するように、家も呼吸する。\nそのような夢の家のイメージを、この多気質で、風に揺れ動く、『バルーンハウス』で表現した。",
+      "en": "Yoga Station / Setagaya-ku, Yoga 2012\n\"Balloon house\" using the balloon 519 this is not fluffy, soft,\nI feel the familiarity will want to touch involuntarily.\nOrdinary house will cut off around with the durability but, \"balloon house\" is incorporating the environment around,\nIt is built while fluctuation in the wind.\nDurable material, not necessarily a good human body and compatibility. As part of the human body and nature,\nAlso I want to use a material made of natural texture. People in such a way to breathe, home also to breathe.\nThe image of such a dream of a house, in this multi-temperament, swaying in the wind, was represented by a \"balloon house\".",
+      "zh": "瑜伽站/世田谷区，瑜伽2012\n“气球屋”用气球519这不是蓬松，柔软，\n我觉得熟悉将要不由自主地触摸。\n普通住宅将围绕切断与耐久性，但是，“气球屋”是围绕结合环境，\n它同时在风中起伏建成。\n耐用的材料，不一定是一个好人体和兼容性。由于人体与自然的一部分，\n此外，我想用天然质地的材料。以这样的方式人们的呼吸，家里也呼吸。\n的房子这样的梦想，在这个多的气质，在风中摇曳的图像，是由“气球屋”表示。"
+    },
+    "pickup": false,
+    "order": 32,
+    "thumbnail": {
+      "filename": "part01_project02_photo01.jpg",
+      "width": 1203,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project02_photo01.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part01_project02_photo02.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part01_project02_photo03.jpg",
+        "width": 1061,
+        "height": 800
+      },
+      {
+        "filename": "part01_project02_photo04.jpg",
+        "width": 1203,
+        "height": 800
+      },
+      {
+        "filename": "part01_project02_photo05.jpg",
+        "width": 1452,
+        "height": 800
+      }
+    ]
+  },
+  {
+    "id": "part01_project01",
+    "name": {
+      "ja": "studio池　第二番街公演「ピエロの花」のための舞台装置",
+      "en": "studio pond Second Avenue concert stage equipment for the \"clown of the flower",
+      "zh": "工作室池塘第二大道演唱会舞台设备的“花的小丑”"
+    },
+    "description": {
+      "ja": "世田谷美術館世田谷区　用賀　2012 春\nハンガーの作る幾何学模様が世田谷美術館に桜を咲かせる。\nシーン1は商人でにぎわう古代の市場。そこに立つ一本の桜の木。繊細なハンガーが作り出す\n五角形の模様が桜の花びらにシンクロしていく。\nシーン2は、貴人の屋敷。極細のハンガーどうしが構造的に極限状態でつながれ、今にも崩れ落\nちそうな弱い構造体が作り出す緊張感によって、砂上の楼閣を表現。\n街のみなさんの協力のもと2000本ほどのハンガーをリユースで集めて組み立てた。",
+      "en": "Setagaya Art Museum Setagaya-ku, Yoga 2012 Spring\nGeometric patterns to make the hanger bloom cherry blossoms in Setagaya Art Museum.\nScene 1 is ancient market crowded with merchants. One of the cherry trees that stand there. Produce delicate hanger\nPentagonal patterns continue to sync to the petals of cherry tree.\nScene 2, the mansion of the nobility. Hanger each other of ultrafine connected by a structurally extreme conditions, drop collapse even now\nBy tensions geological weak structure produces, representing a house of cards.\nIt was assembled collection of hangers about the original 2,000 of your cooperation of the city in the reuse.",
+      "zh": "世田谷美术馆世田谷区，瑜珈2012年春季\n几何图案，使世田谷美术馆衣架盛开的樱花。\n场景1是古老的市场与商家拥挤。其中的樱花树是站在那里的。产生微妙的衣架\n五角形图案继续同步到樱花的花瓣。\n场景2，贵族的豪宅。衣架对方超细的连接由结构极端情况下，降崩溃即使是现在\n通过紧张的地质软弱结构产生，代表纸牌做的房子。\n它组装衣架收集有关您在重用城市合作的原2000。"
+    },
+    "pickup": false,
+    "order": 33,
+    "thumbnail": {
+      "filename": "part01_project01_photo01.jpg",
+      "width": 1205,
+      "height": 800
+    },
+    "images": [
+      {
+        "filename": "part01_project01_photo01.jpg",
+        "width": 1205,
+        "height": 800
+      },
+      {
+        "filename": "part01_project01_photo02.jpg",
+        "width": 1205,
+        "height": 800
+      },
+      {
+        "filename": "part01_project01_photo03.jpg",
+        "width": 1421,
         "height": 800
       }
     ]

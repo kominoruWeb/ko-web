@@ -14,6 +14,7 @@ const Outer = styled.div`
 const SwiperOuter = styled.div`
   background-color: #000;
   position: relative;
+  user-select: none;
 `
 
 const ControllOuter = styled.div`
@@ -56,13 +57,23 @@ const RightControllButton = styled(ControllButton)`
 
 
 const ImageOuter = styled.div`
-  height: 30rem;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  height: 40rem;
+
+  @media (max-height: 50rem) {
+    height: 30rem;
+  }
+  @media (max-height: 40rem) {
+    height: 20rem;
+  }
+
+
   picture, img {
     height: 100%;
-    width: auto;
+    width: 100%;
+    object-fit: contain;
   }
 `
 

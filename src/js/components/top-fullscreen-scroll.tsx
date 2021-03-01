@@ -4,6 +4,9 @@ import styled from 'styled-components';
 import { bottomBar } from '../css-mixins/bottom-bar';
 import SvgSquareLogo from '../generated/svg/square-logo';
 import { Image } from './image';
+import works from '../works.json';
+import { Text } from './text'
+import { Link } from 'react-router-dom'
 
 const Outer = styled.div`
   position: relative;
@@ -23,17 +26,19 @@ const LogoOuter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  pointer-events: none;
 `
 
 const ItemContainer = styled.div`
 `
 
-const ItemOuter = styled.div`
+const ItemOuter = styled(Link)`
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   clip-path: inset(0 0 0 0);
+  display: block;
 `
 
 const Item = styled.div`
@@ -69,33 +74,30 @@ const ItemBackgroundOuter = styled.div`
 
 
 
-
-export const TopFullscreenScroll: FunctionComponent = () => {
+type TopFullscreenScrollProps = {
+  works: typeof works
+}
+export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = ({works}) => {
   return <Outer>
     <LogoOuter>
       <SvgSquareLogo />
     </LogoOuter>
     <ItemContainer>
-      <ItemOuter>
-        <Item>
-          <ItemLabel>
-            K邸リノベーション
-          </ItemLabel>
-          <ItemBackgroundOuter>
-            <Image name="image01.jpg" width="1189" height="800" />
-          </ItemBackgroundOuter>
-        </Item>
-      </ItemOuter>
-      <ItemOuter>
-        <Item>
-          <ItemLabel>
-            IN NO HOUSE
-          </ItemLabel>
-          <ItemBackgroundOuter>
-            <Image name="image02.jpg" width="1303" height="800" />
-          </ItemBackgroundOuter>
-        </Item>
-      </ItemOuter>
+      {
+        works.map(work => {
+          return <ItemOuter to={`/works/${work.id}`}>
+            <Item>
+              <ItemLabel>
+                <Text {...work.name} />
+              </ItemLabel>
+              <ItemBackgroundOuter>
+                <Image name={work.thumbnail.filename
+                } width={work.thumbnail.width} height={work.thumbnail.height} />
+              </ItemBackgroundOuter>
+            </Item>
+          </ItemOuter>
+        })
+      }
     </ItemContainer>
 
   </Outer>
