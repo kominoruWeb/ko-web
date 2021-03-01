@@ -12,7 +12,7 @@ const Outer = styled.div`
 `
 
 const SwiperOuter = styled.div`
-  background-color: #000;
+  background-color: var(--dark-brown);
   position: relative;
   user-select: none;
 `

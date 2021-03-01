@@ -52,6 +52,7 @@ const Item = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  pointer-events: none;
 `
 
 const ItemLabel = styled.div`

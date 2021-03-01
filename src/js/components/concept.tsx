@@ -1,5 +1,6 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import SvgAboutImage0001 from '../generated/svg/about-image-0001';
 import SvgAboutImage0002 from '../generated/svg/about-image-0002';
@@ -14,6 +15,8 @@ const Outer = styled.div`
 const ConceptItem = styled.div`
   padding: 4rem 1rem 5rem;
   background-color: var(--brown);
+  position: relative;
+  overflow: hidden;
   &:nth-child(2n - 1){
     background-color: var(--dark-brown);
   }
@@ -69,7 +72,27 @@ const ConceptImageOuter = styled.div`
   }
 `
 
+const ConceptLayoutImageOuter = styled.div`
+  position: absolute;
+  opacity: 0.25;
+  bottom: 0;
+  color: var(--inverted-text-color);
+  align-self: center;
+  right: 20%;
+  transform: scale(1.25);
+  transform-origin: center bottom;
+  margin-bottom: 4rem;
+  svg {
+    max-width: 100%;
+    width: 100%;
+  }
+`
+const ConceptLayoutImageOuterRight = styled(ConceptLayoutImageOuter)`
+`
+
 export const Concept: FunctionComponent = () => {
+  const {search} = useLocation()
+  const isAlt = search === '?alt'
   return <Outer>
     <ConceptItem>
       <ConceptItemInner>
@@ -82,9 +105,14 @@ export const Concept: FunctionComponent = () => {
             en={`We continue to demonstrate that the quality of space is not always proportional to the budget. \nGood architecture and good space are determined by how uncompromising the design process is and how much time you spend scrutinizing. \n Therefore, what is needed is the owner's understanding of the commitment. \nBy carefully examining the balance of materials, paying attention to details, and devising \n, we design a balanced and calm space that cannot be obtained with expensive building materials.`}
           />
         </ConceptText>
-        <ConceptImageOuter>
-          <SvgAboutImage0001/>
-        </ConceptImageOuter>
+        {
+          isAlt ? <ConceptLayoutImageOuter>
+            <SvgAboutImage0001/>
+          </ConceptLayoutImageOuter> :
+          <ConceptImageOuter>
+            <SvgAboutImage0001/>
+          </ConceptImageOuter>
+        }
       </ConceptItemInner>
     </ConceptItem>
     <ConceptItem>
@@ -98,9 +126,14 @@ export const Concept: FunctionComponent = () => {
             en={`I feel that a good space has the power to close people's gaps. \n In a rich space, people's hearts will be enriched, and \n there will be hospitality and gratitude. \n Even in a dry space like an office building, relationships that tend to be squeaky can be forgiven by putting yourself in a comfortable space. \n We will design a space where you can return to the origin of people.`}
           />
         </ConceptText>
-        <ConceptImageOuter>
-          <SvgAboutImage0002/>
-        </ConceptImageOuter>
+        {
+          isAlt ? <ConceptLayoutImageOuterRight>
+            <SvgAboutImage0002/>
+          </ConceptLayoutImageOuterRight> :
+          <ConceptImageOuter>
+            <SvgAboutImage0002/>
+          </ConceptImageOuter>
+        }
       </ConceptItemInner>
     </ConceptItem>
     <ConceptItem>
@@ -114,9 +147,14 @@ export const Concept: FunctionComponent = () => {
             en={`The material is basically a natural material. \nNo matter how much a printed sheet is made to resemble a real tree, \nit is just a flat surface with no irregularities when enlarged. \nBut natural materials contain cells, which have additional components that can be expanded and contracted as much as you like. \nIt can be said that its depth gives people calmness, and \n gives a place close to nature to various microorganisms that are indispensable around people. \n A harmonious space, rather than a clean appearance, leads to physical and mental health. \n For that purpose, we will design with depth using a lot of natural materials. \nGood architecture and good space are determined by how uncompromising the design process is and how much time you spend scrutinizing. \n Therefore, what is needed is the owner's understanding of the commitment. \nBy carefully examining the balance of materials, paying attention to details, and devising, \n we design a well-balanced and calm space that cannot be obtained with expensive building materials.`}
           />
         </ConceptText>
-        <ConceptImageOuter>
-          <SvgAboutImage0003/>
-        </ConceptImageOuter>
+        {
+          isAlt ? <ConceptLayoutImageOuter>
+            <SvgAboutImage0003/>
+          </ConceptLayoutImageOuter> :
+          <ConceptImageOuter>
+            <SvgAboutImage0003/>
+          </ConceptImageOuter>
+        }
       </ConceptItemInner>
     </ConceptItem>
   </Outer>

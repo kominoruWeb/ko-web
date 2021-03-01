@@ -10,17 +10,13 @@ const Outer = styled.div`
 `
 
 const TopFullscreenScrollOuter = styled.div`
-  z-index: -1;
 `
-
 
 const WorksOuter = styled.div`
   width: 100%;
-  z-index: 100;
 `
 
 const ConceptOuter = styled.div`
-z-index: 100;
 `
 
 export const TopPage: FunctionComponent = () => {
