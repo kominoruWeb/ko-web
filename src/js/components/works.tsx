@@ -6,9 +6,18 @@ import { WorkItem } from './work-item';
 
 const Outer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.25rem;
   background-color: var(--brown);
+  @media (max-width: 100rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 70rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 40rem) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 const WorkItemOuter = styled.div`
@@ -24,8 +33,8 @@ type WorksProps = {
 export const Works: FunctionComponent<WorksProps> = ({works}) => {
   return <Outer>
     {works.map(work => {
-      return <WorkItemOuter>
-        <WorkItem key={work.id} work={work} />
+      return <WorkItemOuter key={work.id} >
+        <WorkItem work={work}/>
       </WorkItemOuter>
     })}
   </Outer>

@@ -9,16 +9,21 @@ const CSS = createGlobalStyle`
     --text-color: #000;
     --inverted-text-color: #f0f0f0;
     --gray: #e6e6e6;
-    --brown: #302c27;
-    --dark-brown: #29241f;
+    --brown: #22201e;
+    --dark-brown: #1b1a19;
     --header-height: 2rem;
     color: var(--text-color);
     overflow-x: hidden;
+
+    @media (max-width: 50rem) {
+      --header-height: 3rem;
+    }
   }
   
   a {
     color: inherit;
     text-decoration: inherit;
+
   }
 
 
@@ -37,6 +42,17 @@ const CSS = createGlobalStyle`
 `
 
 export const RootCSS: FunctionComponent = () => {
+  useEffect(() => {
+    const setViewHeight = () => {
+      document.documentElement.style.setProperty('--view-height', `${window.innerHeight}px`)
+    }
+    setViewHeight()
+    window.addEventListener('resize', setViewHeight)
+    return () => {
+      window.removeEventListener('resize', setViewHeight)
+    }
+  })
+
   useEffect(() => {
     const link = document.createElement('link')
     link.rel = 'stylesheet'

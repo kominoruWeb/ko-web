@@ -38,6 +38,12 @@ export const ConceptTitle = styled.div`
     width: 100%;
     margin: 1.75rem 0;
     background-color: currentcolor;
+    @media (max-width: 40rem) {
+      margin: 1.5rem 0;
+    }
+  }
+  @media (max-width: 40rem) {
+
   }
 `
 
@@ -46,12 +52,21 @@ export const ConceptText = styled.div`
   line-height: 2;
   margin: -0.5rem 0;
   white-space: pre-wrap;
+  @media (max-width: 40rem) {
+    line-height: 1.75;
+    margin: -0.275rem 0;
+    white-space: normal;
+  }
 `
 
 const ConceptImageOuter = styled.div`
   color: var(--inverted-text-color);
   margin-top: 3rem;
   align-self: center;
+  svg {
+    max-width: 100%;
+    width: 100%;
+  }
 `
 
 export const Concept: FunctionComponent = () => {
@@ -68,7 +83,7 @@ export const Concept: FunctionComponent = () => {
           />
         </ConceptText>
         <ConceptImageOuter>
-          <SvgAboutImage0001 />
+          <SvgAboutImage0001/>
         </ConceptImageOuter>
       </ConceptItemInner>
     </ConceptItem>
@@ -84,7 +99,7 @@ export const Concept: FunctionComponent = () => {
           />
         </ConceptText>
         <ConceptImageOuter>
-          <SvgAboutImage0002 />
+          <SvgAboutImage0002/>
         </ConceptImageOuter>
       </ConceptItemInner>
     </ConceptItem>
@@ -100,7 +115,7 @@ export const Concept: FunctionComponent = () => {
           />
         </ConceptText>
         <ConceptImageOuter>
-          <SvgAboutImage0003 />
+          <SvgAboutImage0003/>
         </ConceptImageOuter>
       </ConceptItemInner>
     </ConceptItem>

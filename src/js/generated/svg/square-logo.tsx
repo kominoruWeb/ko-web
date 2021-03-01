@@ -7,6 +7,7 @@ function SvgSquareLogo(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       width={215.977}
       height={178.088}
+      viewBox="0 0 215.977 178.088"
       {...props}
     >
       <path

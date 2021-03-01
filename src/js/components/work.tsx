@@ -22,18 +22,25 @@ const DetailOuter = styled.div`
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  box-sizing: border-box;
   padding: 0 1rem;
+
+  @media (max-width: 40rem) {
+    margin-top: 3rem;
+  }
 `
 
 const Name = styled.div`
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 1.5;
+  margin-top: calc(1.25rem * 0.5 / 2 * -1);
   &::after {
     content: '';
     display: block;
     height: calc(1rem / 8);
     width: 100%;
-    margin: 1.5rem 0;
+    margin: calc(1.25rem * 0.5 / 2 * -1 + 1.5rem) 0 1.5rem;
     background-color: currentcolor;
   }
 `
@@ -42,6 +49,11 @@ const Description = styled.div`
   margin: -0.5rem 0;
   line-height: 2;
   white-space: pre-wrap;
+  @media (max-width: 40rem) {
+    margin: -0.25rem 0;
+    line-height: 1.75;
+    white-space: normal;
+  }
 `
 
 type WorkProps = {

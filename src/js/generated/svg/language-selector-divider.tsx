@@ -7,6 +7,7 @@ function SvgLanguageSelectorDivider(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       width={12.134}
       height={15.7}
+      viewBox="0 0 12.134 15.7"
       {...props}
     >
       <path d="M0 15.7L9.634 0h2.5L2.5 15.7z" fill="currentcolor" />

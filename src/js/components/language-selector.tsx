@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import SvgLanguageSelectorDivider from '../generated/svg/language-selector-divider';
-import { languages, useLanguage } from '../hooks/use-language';
+import { Language, languages, useLanguage } from '../hooks/use-language';
 
 const Outer = styled.div`
 `
@@ -10,6 +10,7 @@ const Outer = styled.div`
 const LanguageItemContainer = styled.div`
   display: flex;
   align-items: center;
+  margin: 0 0.5rem;
 `
 
 const LanguageItem = styled.div`
@@ -21,6 +22,10 @@ const LanguageItem = styled.div`
   &:hover {
     opacity: 0.5;
   }
+
+  @media (max-width: 50rem) {
+    
+  }
 `
 
 const LanguageItemLabel = styled.div``
@@ -31,7 +36,10 @@ const Divider = styled.div`
   background-color: var(--text-color);
 `
 
-export const LanguageSelector: FunctionComponent = () => {
+type LanguageSelectorProps = {
+  onChange?: (language: Language) => void
+}
+export const LanguageSelector: FunctionComponent<LanguageSelectorProps> = ({onChange}) => {
   const {setLanguage} = useLanguage()
   return <Outer>
     <LanguageItemContainer>
@@ -41,7 +49,12 @@ export const LanguageSelector: FunctionComponent = () => {
             i > 0 &&
             <Divider />
           }
-          <LanguageItem onClick={() => setLanguage(language)}>
+          <LanguageItem onClick={() => {
+            setLanguage(language)
+            if(onChange){
+              onChange(language)
+            }
+          }}>
             <LanguageItemLabel>
               {language.toUpperCase()}
             </LanguageItemLabel>

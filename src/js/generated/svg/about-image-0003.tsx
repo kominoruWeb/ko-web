@@ -7,6 +7,7 @@ function SvgAboutImage0003(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       width={339.065}
       height={242.217}
+      viewBox="0 0 339.065 242.217"
       {...props}
     >
       <ellipse

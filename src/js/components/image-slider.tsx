@@ -59,21 +59,27 @@ const RightControllButton = styled(ControllButton)`
 const ImageOuter = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
   height: 40rem;
 
   @media (max-height: 50rem) {
     height: 30rem;
   }
-  @media (max-height: 40rem) {
-    height: 20rem;
+  @media (max-width: 40rem) {
+    height: 100%;
   }
 
 
   picture, img {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: contain;
+    @media (max-width: 40rem) {
+      width: 100%;
+      height: auto;
+      object-fit: none;
+    }
   }
 `
 
@@ -92,6 +98,7 @@ export const ImageSlider: FunctionComponent<ImageSliderProps> = ({images}) => {
         slidesPerView={1}
         onSwiper={(swiper => setSwiper(swiper))}
         loop
+        autoHeight
       >
         {images.map((image, i) => {
           return <SwiperSlide key={i}>

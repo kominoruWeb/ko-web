@@ -7,6 +7,7 @@ function SvgArrow(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       width={12.677}
       height={33.667}
+      viewBox="0 0 12.677 33.667"
       {...props}
     >
       <path

@@ -7,6 +7,7 @@ function SvgDownwardArrow(props: React.SVGProps<SVGSVGElement>) {
       xmlns="http://www.w3.org/2000/svg"
       width={67.334}
       height={23.098}
+      viewBox="0 0 67.334 23.098"
       {...props}
     >
       <path

@@ -15,11 +15,11 @@ const Outer = styled.div`
 `
 
 const LogoOuter = styled.div`
-  z-index: 1;
   color: var(--inverted-text-color);
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: var(--view-height);
+  transition: height 0.4s ease-in-out;
   top: 0;
   left: 0;
   display: flex;
@@ -30,6 +30,7 @@ const LogoOuter = styled.div`
 `
 
 const ItemContainer = styled.div`
+  clip-path: inset(0 0 0 0);
 `
 
 const ItemOuter = styled(Link)`
@@ -55,8 +56,9 @@ const Item = styled.div`
 
 const ItemLabel = styled.div`
   color: var(--inverted-text-color);
-  z-index: 1;
-  margin-bottom: 3rem;
+  margin-bottom: calc(100vh - var(--view-height) + 3rem);
+  text-transform: uppercase;
+  transition: margin-bottom 0.4s;
   ${bottomBar}
 `
 const ItemBackgroundOuter = styled.div`
@@ -68,6 +70,7 @@ const ItemBackgroundOuter = styled.div`
   img {
     width: 100vw;
     height: 100vh;
+    transition: height 0.4s;
     object-fit: cover;
   }
 `
@@ -79,13 +82,10 @@ type TopFullscreenScrollProps = {
 }
 export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = ({works}) => {
   return <Outer>
-    <LogoOuter>
-      <SvgSquareLogo />
-    </LogoOuter>
     <ItemContainer>
       {
         works.map(work => {
-          return <ItemOuter to={`/works/${work.id}`}>
+          return <ItemOuter to={`/works/${work.id}`} key={work.id}>
             <Item>
               <ItemLabel>
                 <Text {...work.name} />
@@ -99,6 +99,9 @@ export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = 
         })
       }
     </ItemContainer>
+    <LogoOuter>
+      <SvgSquareLogo />
+    </LogoOuter>
 
   </Outer>
 }
