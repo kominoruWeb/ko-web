@@ -1,11 +1,20 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { bottomBar } from '../css-mixins/bottom-bar';
 import { Image } from './image';
 import { Text } from './text';
 import { WorkItemProps } from './works';
+
+const scrollUp = keyframes`
+  from {
+    transform: translateY(0.5rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+`
 
 const WorkItemOuter = styled(Link)`
   position: relative;
@@ -50,10 +59,14 @@ const WorkItemLabel = styled.div`
   text-decoration: underline;
   text-decoration-thickness: calc(1rem / 8);
   text-underline-offset: 0.5rem;
+  text-decoration-color: transparent;
   opacity: 0;
-  transition: opacity 0.6s;
+  transition: opacity 0.6s, text-decoration-color 0.6s 0.2s;
+  font-size: 0.9rem;
   ${WorkItemOuter}:hover & {
     opacity: 1;
+    animation: ${scrollUp} 0.4s ease-out;
+    text-decoration-color: currentColor;
   }
 `
 

@@ -9,10 +9,10 @@ const Outer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 0.25rem;
   background-color: var(--dark-brown);
-  @media (max-width: 100rem) {
+  @media (max-width: 120rem) {
     grid-template-columns: repeat(3, 1fr);
   }
-  @media (max-width: 70rem) {
+  @media (max-width: 90rem) {
     grid-template-columns: repeat(2, 1fr);
   }
   @media (max-width: 40rem) {

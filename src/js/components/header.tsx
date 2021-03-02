@@ -10,17 +10,20 @@ import { LanguageSelector } from './language-selector';
 import { MobileMenu } from './mobile-menu'
 
 const Outer = styled.div`
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 1.75rem;
   display: flex;
   align-items: center;
-  background-color: var(--inverted-text-color);
-  backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.5rem);
   height: var(--header-height);
   box-sizing: border-box;
+  color: var(--text-color);
+  @media (max-width: 40rem) {
+    padding: 0.25rem 1rem;
+  }
 `
 
 const LogoOuter = styled(Link)`
-  color: var(--text-color);
   transition: opacity 0.4s;
   &:hover {
     opacity: 0.5;
@@ -28,11 +31,11 @@ const LogoOuter = styled(Link)`
 `
 
 const NavigatorOuter = styled.div`
-  margin-left: 3rem;
+  margin-left: auto;
 `
 
 const LanguageSelectorOuter = styled.div`
-  margin-left: auto;
+  margin-left: 4rem;
 `
 
 const HamburgerOuter = styled.div`

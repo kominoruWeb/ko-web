@@ -78,7 +78,7 @@ const ImageOuter = styled.div`
     @media (max-width: 40rem) {
       width: 100%;
       height: auto;
-      object-fit: none;
+      object-fit: fill;
     }
   }
 `

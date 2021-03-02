@@ -27,6 +27,7 @@ const LogoOuter = styled.div`
   align-items: center;
   justify-content: center;
   pointer-events: none;
+  transform: scale(1.25);
 `
 
 const ItemContainer = styled.div`

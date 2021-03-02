@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 const Outer = styled.div`
-  margin: 0 -0.75rem;
+  margin: 0 -0.8rem;
   display: flex;
-  @media (max-width: 40rem) {
+  @media (max-width: 50rem) {
     flex-direction: column;
     margin: 0.5rem 0;
   }
@@ -15,9 +15,10 @@ const Outer = styled.div`
 const itemCSS = css`
   font-family: 'Cabin';
   font-weight: 500;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.8rem;
   transition: opacity 0.4s;
   display: block;
+  font-size: 0.85rem;
   &:hover {
     opacity: 0.5;
   }

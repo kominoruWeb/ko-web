@@ -56,7 +56,7 @@ const Detail = styled.div`
 export const Profile: FunctionComponent = () => {
   return <Outer>
     <Name>
-      <Text ja="胡　実　Ko-mi" />
+      <Text ja="胡　実　KOMINORU" />
     </Name>
     <Role>
       <Text ja="代表 / 一級建築士" en="CEO / Architect" />

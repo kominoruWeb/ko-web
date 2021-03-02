@@ -19,6 +19,7 @@ const LanguageItem = styled.div<{selected?: boolean}>`
   padding: 0.25rem 0.5rem;
   cursor: pointer;
   transition: all 0.4s;
+  font-size: 0.85rem;
   &:hover {
     opacity: 0.5;
   }

@@ -9,9 +9,9 @@ const CSS = createGlobalStyle`
     --text-color: #000;
     --inverted-text-color: #f0f0f0;
     --gray: #e6e6e6;
-    --brown: #22201e;
-    --dark-brown: #1b1a19;
-    --header-height: 2rem;
+    --brown: #221f1b;
+    --dark-brown: #1d1b19;
+    --header-height: 3rem;
     color: var(--text-color);
     overflow-x: hidden;
 
@@ -56,7 +56,7 @@ export const RootCSS: FunctionComponent = () => {
   useEffect(() => {
     const link = document.createElement('link')
     link.rel = 'stylesheet'
-    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap'
+    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght@400;500;700&display=swap'
     document.head.appendChild(link)
     return () => {
       document.head.removeChild(link)

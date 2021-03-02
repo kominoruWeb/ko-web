@@ -67,10 +67,15 @@ const ConceptImageOuter = styled.div`
   color: var(--inverted-text-color);
   margin-top: 3rem;
   align-self: center;
+  padding: 0 2rem;
   svg {
     max-width: 100%;
     width: 100%;
   }
+`
+
+const ConceptImageOuter2 = styled(ConceptImageOuter)`
+  padding: 0;
 `
 
 const ConceptLayoutImageOuter = styled.div`
@@ -79,6 +84,7 @@ const ConceptLayoutImageOuter = styled.div`
   bottom: 0;
   color: var(--inverted-text-color);
   align-self: center;
+  
   transform: scale(1.25) translateX(8rem);
   transform-origin: center bottom;
   margin-bottom: 4rem;
@@ -130,9 +136,9 @@ export const Concept: FunctionComponent = () => {
           isAlt ? <ConceptLayoutImageOuterRight>
             <SvgAboutImage0002/>
           </ConceptLayoutImageOuterRight> :
-          <ConceptImageOuter>
+          <ConceptImageOuter2>
             <SvgAboutImage0002/>
-          </ConceptImageOuter>
+          </ConceptImageOuter2>
         }
       </ConceptItemInner>
     </ConceptItem>

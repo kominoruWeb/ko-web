@@ -42,8 +42,5 @@ export const LabelledArrow: FunctionComponent<LabelledArrowProps> = ({children, 
     <ArrowOuter>
       <SvgDownwardArrow />
     </ArrowOuter>
-    <Label>
-      <Text {...label} />
-    </Label>
   </Outer>
 }
