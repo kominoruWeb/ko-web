@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
 const remToPixel = (rem: number) => {
-  console.log(getComputedStyle(document.documentElement).fontSize)
   return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
 }
 

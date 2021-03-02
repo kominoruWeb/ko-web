@@ -28,7 +28,6 @@ type WorkPageProps = {
 
 export const WorkPage: FunctionComponent<WorkPageProps> = ({workId}) => {
   const work = works.find(work => work.id === workId)
-  console.log(work)
   if(!work) return <ErrorPage code={404} message="Not found" />
   return <Outer>
     <Work work={work} />

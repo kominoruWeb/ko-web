@@ -60,8 +60,10 @@ const ItemLabel = styled.div`
   margin-bottom: calc(100vh - var(--view-height) + 3rem);
   text-transform: uppercase;
   transition: margin-bottom 0.4s;
+  z-index: 1;
   ${bottomBar}
 `
+
 const ItemBackgroundOuter = styled.div`
   position: absolute;
   top: 0;

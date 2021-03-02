@@ -387,12 +387,12 @@
       "en": "Tokyo 2018\nHousing is located on a hill overlooking the Tanzawa mountain range.\nTaking a cue from the work of the Owner is a woodworking artist,\nIt was the volume, such as a lump of wood, such as carved.\nIrregularities were drilled from the volume is an opening, such as a high-side light,\nInsert the ever-changing light in the room.\nThe first floor living room, toward the second floor bath and a rooftop terrace in the direction of the mountain,\nIt was to enjoy life while hope majestic mountains.\nAnd random section of the tree of the exterior material, the coating unevenness of the interior wall plaster,\nHe had played a role as an element that connects the space and materials.",
       "zh": "东京2018\n房屋位于俯瞰丹泽山脉的一座小山上。\n从业主的工作得到暗示是木工艺术家，\n这是量，如木头疙瘩，如雕刻。\n凹凸是从体积为钻出的开口，诸如高侧光，\n插入在房间里不断变化的光。\n一楼客厅，朝二楼的浴室和中山路方向的屋顶露台，\n这是享受，同时希望雄伟的高山生活。\n和外部材料的树的随机部分中，所述内壁石膏的涂布不均，\n他已经发挥了作用作为连接的空间和材料的元素。"
     },
-    "pickup": false,
-    "pickupOrder": 0,
+    "pickup": true,
+    "pickupOrder": 1,
     "order": 7,
     "thumbnail": {
-      "filename": "part03_project11_photo01.jpg",
-      "width": 1064,
+      "filename": "part03_project11_photo02.jpg",
+      "width": 1303,
       "height": 800
     },
     "images": [
@@ -485,8 +485,8 @@
       "en": "Onomichi Innoshima scheduled 2018\nGlimpses of the island, that was referred to as the hidden island became Innoshima in turn.\nIn Innoshima, it was designed the inn of the \"hidden\".\nPlace is a small fishing port Gyeongpo the town. Follow the mountain road overlooking the Seto Inland Sea, where slipped out the day-to-day, get to the inn of this retreat.\nThe old houses dating back a hundred years are filled with memories of Innoshima. Skeleton is left of the old house atmosphere as it is.\nPart subjected to a linoleic coacervation was re-build them in the innovative use while incorporating the old materials.\nAnd Hedata location of, and the inn feel the uniqueness of, such as the naval force.\nPlane also, has become a \"hidden\" plan.\nEach room is not separated by a wall, partition to moderate in the bran.\nWithout necessarily so to speak, completely closed, nor are open. Enjoy the comfort of hiding moderately.\nAlso use the attic, and the attic space.",
       "zh": "尾道因岛计划2018\n在岛上，这是被称为隐岛又将成为因岛的影子。\n在因岛，它被设计的“隐性”的客栈。\n广场是一个小渔港镜浦台镇。按照山路俯瞰濑户内海，其中溜出了一天到一天，得到该撤退的客栈。\n距今百年老房子充满了因岛的回忆。骨架被留在老房子的气氛，因为它是。\n经受亚油酸凝聚的部分是重新建立他们的创新使用，同时融合了旧材料。\n和Hedata位置，客栈感受的独特性，如海军力量。\n飞机也已成为一个“隐藏”的计划。\n每个房间不是由壁分隔，分区在麸皮中度。\n而不必这么说，完全封闭的，也不是开放的。享受隐藏适度的舒适度。\n还可以使用阁楼，以及阁楼空间。"
     },
-    "pickup": true,
-    "pickupOrder": 1,
+    "pickup": false,
+    "pickupOrder": 0,
     "order": 8,
     "thumbnail": {
       "filename": "part03_project10_photo01.jpg",
@@ -744,8 +744,8 @@
     "pickupOrder": 3,
     "order": 13,
     "thumbnail": {
-      "filename": "part03_project05_photo01.jpg",
-      "width": 1200,
+      "filename": "part03_project05_photo02.jpg",
+      "width": 1295,
       "height": 800
     },
     "images": [
@@ -1913,6 +1913,7 @@
         "filename": "part01_project01_photo02.jpg",
         "width": 1205,
         "height": 800
+
       },
       {
         "filename": "part01_project01_photo03.jpg",

@@ -17,7 +17,7 @@ const ConceptItem = styled.div`
   background-color: var(--brown);
   position: relative;
   overflow: hidden;
-  &:nth-child(2n - 1){
+  &:nth-child(2n){
     background-color: var(--dark-brown);
   }
 `
@@ -55,6 +55,7 @@ export const ConceptText = styled.div`
   line-height: 2;
   margin: -0.5rem 0;
   white-space: pre-wrap;
+  text-align: justify;
   @media (max-width: 40rem) {
     line-height: 1.75;
     margin: -0.275rem 0;
@@ -78,8 +79,7 @@ const ConceptLayoutImageOuter = styled.div`
   bottom: 0;
   color: var(--inverted-text-color);
   align-self: center;
-  right: 20%;
-  transform: scale(1.25);
+  transform: scale(1.25) translateX(8rem);
   transform-origin: center bottom;
   margin-bottom: 4rem;
   svg {

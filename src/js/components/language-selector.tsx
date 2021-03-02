@@ -10,10 +10,10 @@ const Outer = styled.div`
 const LanguageItemContainer = styled.div`
   display: flex;
   align-items: center;
-  margin: 0 0.5rem;
+  margin: 0 -0.5rem;
 `
 
-const LanguageItem = styled.div`
+const LanguageItem = styled.div<{selected?: boolean}>`
   font-family: 'Cabin';
   font-weight: 500;
   padding: 0.25rem 0.5rem;
@@ -22,6 +22,8 @@ const LanguageItem = styled.div`
   &:hover {
     opacity: 0.5;
   }
+
+  ${({selected}) => selected ? 'opacity: 0.5;': ''}
 
   @media (max-width: 50rem) {
     
@@ -40,7 +42,7 @@ type LanguageSelectorProps = {
   onChange?: (language: Language) => void
 }
 export const LanguageSelector: FunctionComponent<LanguageSelectorProps> = ({onChange}) => {
-  const {setLanguage} = useLanguage()
+  const {language: currentLanguage, setLanguage} = useLanguage()
   return <Outer>
     <LanguageItemContainer>
       {languages.map((language, i) => {
@@ -49,7 +51,7 @@ export const LanguageSelector: FunctionComponent<LanguageSelectorProps> = ({onCh
             i > 0 &&
             <Divider />
           }
-          <LanguageItem onClick={() => {
+          <LanguageItem selected={currentLanguage === language} onClick={() => {
             setLanguage(language)
             if(onChange){
               onChange(language)

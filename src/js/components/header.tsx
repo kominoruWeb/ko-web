@@ -10,7 +10,7 @@ import { LanguageSelector } from './language-selector';
 import { MobileMenu } from './mobile-menu'
 
 const Outer = styled.div`
-  padding: 0.25rem;
+  padding: 0.25rem 0.75rem;
   display: flex;
   align-items: center;
   background-color: var(--inverted-text-color);

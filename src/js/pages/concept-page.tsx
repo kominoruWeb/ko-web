@@ -26,12 +26,6 @@ const ConceptOuter = styled.div`
 
 export const ConceptPage: FunctionComponent = () => {
   return <Outer>
-    <ProfileOuter>
-      <Profile />
-    </ProfileOuter>
-    <ArrowOuter>
-      <LabelledArrow ja="設計理念" en="Design philosophy" />
-    </ArrowOuter>
     <ConceptOuter>
       <Concept />
     </ConceptOuter>
