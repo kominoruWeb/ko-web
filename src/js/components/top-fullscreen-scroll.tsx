@@ -43,6 +43,7 @@ const ItemOuter = styled(Link)`
   display: block;
 `
 
+
 const Item = styled.div`
   position: fixed;
   top: 0;
@@ -54,6 +55,9 @@ const Item = styled.div`
   align-items: center;
   justify-content: flex-end;
   pointer-events: none;
+  @media (max-width: 50rem) {
+    justify-content: center;
+  }
 `
 
 const ItemLabel = styled.div`
@@ -63,6 +67,10 @@ const ItemLabel = styled.div`
   transition: margin-bottom 0.4s;
   z-index: 1;
   ${bottomBar}
+  @media (max-width: 50rem) {
+    margin-bottom: -5rem;
+    font-size: 0.9rem;
+  }
 `
 
 const ItemBackgroundOuter = styled.div`
@@ -85,7 +93,7 @@ type TopFullscreenScrollProps = {
   works: typeof works
 }
 export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = ({works}) => {
-  return <Outer>
+  return <Outer id="top-fullscreen-scroll">
     <ItemContainer>
       {
         works.map(work => {

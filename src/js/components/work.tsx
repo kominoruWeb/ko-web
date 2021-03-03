@@ -53,6 +53,7 @@ const Description = styled.div`
     margin: -0.25rem 0;
     line-height: 1.75;
     white-space: normal;
+    text-align: justify;
   }
 `
 
@@ -60,7 +61,7 @@ type WorkProps = {
   work: typeof works[number]
 }
 export const Work: FunctionComponent<WorkProps> = ({work}) => {
-  return <Outer>
+  return <Outer key={work.id}>
     <ImageSliderOuter>
       <ImageSlider images={work.images}/>
     </ImageSliderOuter>

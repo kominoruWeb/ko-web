@@ -1,14 +1,25 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
+
+export const scrollUp = keyframes`
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+`
 
 const Outer = styled.div`
   margin: 0 -0.8rem;
   display: flex;
   @media (max-width: 50rem) {
     flex-direction: column;
-    margin: 0.5rem 0;
+    margin: -1.25rem 0;
   }
 `
 
@@ -22,10 +33,30 @@ const itemCSS = css`
   &:hover {
     opacity: 0.5;
   }
-
   @media (max-width: 50rem) {
-    font-size: 1.25rem;
-    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1.25rem 0;
+    animation: ${scrollUp} 0.4s ease-out forwards;
+    opacity: 0;
+    &:nth-child(1){
+      animation-delay: 0.0s;
+    }
+    &:nth-child(2){
+      animation-delay: 0.1s;
+    }
+    &:nth-child(3){
+      animation-delay: 0.2s;
+    }
+    &:nth-child(4){
+      animation-delay: 0.3s;
+    }
+    &:nth-child(5){
+      animation-delay: 0.4s;
+    }
+    &:nth-child(6){
+      animation-delay: 0.5s;
+    }
   }
 `
 

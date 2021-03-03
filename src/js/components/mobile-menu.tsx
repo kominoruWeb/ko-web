@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FunctionComponent } from 'react'
 import styled, { keyframes } from 'styled-components'
+import SvgLogo from '../generated/svg/logo'
+import { HumbergerIcon } from './hamburger-icon'
+import { HamburgerOuter } from './header'
 import { HeaderNavigator } from './header-navigator'
 import { LanguageSelector } from './language-selector'
 
@@ -27,14 +30,22 @@ const Outer = styled.div`
   color: var(--text-color);
   position: fixed;
   width: 100vw;
-  height: calc(var(--view-height) - var(--header-height));
-  top: var(--header-height);
+  height: var(--view-height);
+  top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   padding: 2rem;
   animation: ${fadeIn} 1s cubic-bezier(0, 1, 0, 1);
+`
+
+const LogoOuter = styled.div`
+  align-self: center;
+  @media (max-width: 50rem) {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
 `
 
 const NavigatorOuter = styled.div`
@@ -49,17 +60,48 @@ const LanguageSelectorOuter = styled.div`
   animation: ${blurIn} 1s cubic-bezier(0, 1, 0, 1);
 `
 
+const HamburgerContainer = styled.div`
+  display: flex;
+  width: 100%;
+  height: var(--header-height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  padding: 0.25rem 1rem;
+`
+
 type MobileMenuProps = {
   onClose?: () => void
 }
 export const MobileMenu: FunctionComponent<MobileMenuProps> = ({onClose}) => {
+  const [cross, setCross] = useState(false)
+  useEffect(() => {
+    setCross(true)
+  }, [])
+
+  const close = () => {
+    setCross(false)
+    if(onClose){
+      onClose()
+    }
+  }
 
   return <Outer>
+    <HamburgerContainer>
+      <HamburgerOuter onClick={close}>
+        <HumbergerIcon cross={cross}/>
+      </HamburgerOuter>
+    </HamburgerContainer>
+    <LogoOuter>
+      <SvgLogo />
+    </LogoOuter>
     <NavigatorOuter>
-      <HeaderNavigator onClick={onClose} />
+      <HeaderNavigator onClick={close} />
     </NavigatorOuter>
     <LanguageSelectorOuter>
-      <LanguageSelector onChange={onClose} />
+      <LanguageSelector onChange={close} />
     </LanguageSelectorOuter>
   </Outer>
 }

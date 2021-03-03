@@ -27,7 +27,7 @@ const LanguageItem = styled.div<{selected?: boolean}>`
   ${({selected}) => selected ? 'opacity: 0.5;': ''}
 
   @media (max-width: 50rem) {
-    
+    font-size: 1rem;
   }
 `
 
