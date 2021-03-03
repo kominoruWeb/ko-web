@@ -1,9 +1,10 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
-import { BrowserRouter, Route, Router, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Router, Switch, useLocation } from 'react-router-dom'
 import styled from 'styled-components';
 import { Footer } from './components/footer';
 import { Header } from './components/header';
+import { fadeIn } from './components/mobile-menu'
 import { Reset } from './components/reset';
 import { RootCSS } from './components/root-css';
 import { LanguageProvider } from './hooks/use-language';
@@ -13,6 +14,13 @@ import { TopPage } from './pages/top-page';
 import { WorkPage } from './pages/work-page';
 import { WorksPage } from './pages/works-page';
 const ScrollRestoration = require('react-scroll-restoration')
+
+
+
+const Outer = styled.div`
+  opacity: 0;
+  animation: ${fadeIn} 0.6s 0.4s forwards;
+`
 
 const HeaderOuter = styled.div`
   position: fixed;
@@ -33,24 +41,26 @@ export const App: FunctionComponent = () => {
       <ScrollRestoration />
       <Reset />
       <RootCSS />
-      <HeaderOuter>
-        <Header />
-      </HeaderOuter>
-      <ContentOuter>
-        <Switch>
-          <Route exact path="/" component={TopPage} />
-          <Route exact path="/concept" component={ConceptPage} />
-          <Route exact path="/works" component={WorksPage} />
-          <Route exact path="/works/:workId" render={({match}) => {
-            return <WorkPage workId={match.params.workId}/>
-          }}>
-          </Route>
-          <Route exact path="/contact" component={ContactPage} />
-        </Switch>
-      </ContentOuter>
-      <FooterOuter>
-        <Footer />
-      </FooterOuter>
+      <Outer>
+        <HeaderOuter>
+          <Header />
+        </HeaderOuter>
+        <ContentOuter>
+          <Switch>
+            <Route exact path="/" component={TopPage} />
+            <Route exact path="/concept" component={ConceptPage} />
+            <Route exact path="/works" component={WorksPage} />
+            <Route exact path="/works/:workId" render={({match}) => {
+              return <WorkPage workId={match.params.workId}/>
+            }}>
+            </Route>
+            <Route exact path="/contact" component={ContactPage} />
+          </Switch>
+        </ContentOuter>
+        <FooterOuter>
+          <Footer />
+        </FooterOuter>
+      </Outer>
     </LanguageProvider>
   </BrowserRouter>
 }

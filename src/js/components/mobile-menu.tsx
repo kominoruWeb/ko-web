@@ -44,7 +44,7 @@ const LogoOuter = styled.div`
   align-self: center;
   @media (max-width: 50rem) {
     margin-top: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: auto;
   }
 `
 

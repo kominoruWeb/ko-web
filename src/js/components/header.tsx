@@ -1,16 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import { FunctionComponent } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import SvgHamburger from '../generated/svg/hamburger'
 import SvgLogo from '../generated/svg/logo';
 import { useIsMobile } from '../hooks/use-is-mobile'
+import { useIsTop } from '../hooks/use-is-top'
 import { HumbergerIcon } from './hamburger-icon'
 import { HeaderNavigator } from './header-navigator';
 import { LanguageSelector } from './language-selector';
 import { MobileMenu } from './mobile-menu'
 
-const Outer = styled.div<{hide?: boolean}>`
+export const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`
+
+const Outer = styled.div<{hide?: boolean, top: boolean}>`
   padding: 0.25rem 1.75rem;
   display: flex;
   align-items: center;
@@ -23,6 +33,11 @@ const Outer = styled.div<{hide?: boolean}>`
   ${({hide}) => hide ? css`
     background-color: transparent;
     backdrop-filter: none;
+  ` : ''}
+  opacity: 0;
+  animation: ${fadeIn} 1s 2.6s forwards;
+  ${({top}) => !top ? css`
+    opacity: 1 !important;
   ` : ''}
   @media (max-width: 50rem) {
     padding: 0.25rem 1rem;
@@ -69,9 +84,9 @@ export const Header: FunctionComponent = () => {
   const isMobile = useIsMobile(50)
   const [isOpen, setIsOpen] = useState(false)
   const {pathname} = useLocation()
-  const [hide, setHide] = useState(pathname === '/')
+  const [hide, setHide] = useState(pathname === '/' && isMobile)
   useEffect(() => {
-    if(pathname === '/'){
+    if(pathname === '/' && isMobile){
       const listener = () => {
         const el = document.getElementById('top-fullscreen-scroll')
         if(el){
@@ -90,9 +105,11 @@ export const Header: FunctionComponent = () => {
       return () => {
         window.removeEventListener('scroll', listener)
       }
+    } else {
+      setHide(false)
     }
-  }, [pathname])
-  return <Outer hide={hide}>
+  }, [pathname, isMobile])
+  return <Outer hide={hide} top={pathname === '/'}>
     <LogoOuter to='/' hide={hide}>
       <SvgLogo />
     </LogoOuter>

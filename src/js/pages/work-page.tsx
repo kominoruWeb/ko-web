@@ -10,7 +10,7 @@ import works from '../works.json';
 import { ErrorPage } from './error-page';
 
 const Outer = styled.div`
-  margin-top: var(--header-height);
+  padding-top: var(--header-height);
   background-color: var(--brown);
 `
 

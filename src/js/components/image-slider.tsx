@@ -25,9 +25,6 @@ const SwiperOuter = styled.div`
   background-color: var(--darkest-brown);
   position: relative;
   user-select: none;
-  .swiper-container {
-    overflow: visible;
-  }
   .swiper-pagination {
     height: 2rem;
     bottom: 0;
@@ -142,6 +139,7 @@ const ImageOuter = styled.div`
     height: 100%;
     object-fit: contain;
     transform: scale(1.2);
+    opacity: 0;
     animation: ${padding} 2s 0.1s cubic-bezier(0.5, 0.5, 0, 1) forwards;
     @media (max-width: 40rem) {
       width: 100%;
@@ -176,8 +174,9 @@ export const ImageSlider: FunctionComponent<ImageSliderProps> = ({images}) => {
         onSwiper={(swiper => setSwiper(swiper))}
         loop
         autoHeight
+        speed={1000}
         autoplay={{
-          delay: 6000,
+          delay: 4000,
 
         }}
         pagination={{

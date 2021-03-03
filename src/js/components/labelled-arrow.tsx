@@ -17,11 +17,41 @@ const blink = keyframes`
   }
 `
 
+const scroll = keyframes`
+  from {
+    transform: translateY(-0.5rem);
+  }
+  to {
+    transform: translateY(0.5rem)
+  }
+`
+
+const fade = keyframes`
+  from {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+`
+
 const Outer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: ${blink} 4s infinite;
+  animation: ${scroll} 4s linear infinite, ${fade} 4s linear infinite;
 `
 
 const Label = styled.div`
