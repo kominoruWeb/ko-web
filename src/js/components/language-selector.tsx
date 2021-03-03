@@ -34,7 +34,7 @@ const LanguageItem = styled.div<{selected?: boolean}>`
 const LanguageItemLabel = styled.div``
 
 const Divider = styled.div`
-  width: calc(1rem / 8);
+  width: calc(1rem / 16);
   height: 1rem;
   background-color: var(--text-color);
 `

@@ -6,13 +6,13 @@ const CSS = createGlobalStyle`
   :root {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
-    --text-color: #000;
-    --inverted-text-color: #f0f0f0;
     --gray: #e6e6e6;
     --brown: #241e18;
     --dark-brown: #1d1814;
     --darkest-brown: #130f0b;
     --header-height: 3rem;
+    --text-color: var(--brown);
+    --inverted-text-color: #f0f0f0;
     color: var(--text-color);
     overflow-x: hidden;
 

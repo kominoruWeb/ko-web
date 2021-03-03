@@ -49,9 +49,6 @@ const WorkItemLabelOuter = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  @media (max-width: 50rem) {
-    opacity: 0;
-  }
 `
 
 const WorkItemLabel = styled.div`
