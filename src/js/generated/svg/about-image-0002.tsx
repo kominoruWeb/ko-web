@@ -18,7 +18,7 @@ function SvgAboutImage0002(props: React.SVGProps<SVGSVGElement>) {
         fill="none"
         stroke="currentcolor"
         strokeMiterlimit={10}
-        strokeWidth={2}
+        strokeWidth={1.5}
       />
       <circle
         cx={505.913}
@@ -27,7 +27,7 @@ function SvgAboutImage0002(props: React.SVGProps<SVGSVGElement>) {
         fill="none"
         stroke="currentcolor"
         strokeMiterlimit={10}
-        strokeWidth={2}
+        strokeWidth={1.5}
       />
       <circle
         cx={25.201}
@@ -36,7 +36,7 @@ function SvgAboutImage0002(props: React.SVGProps<SVGSVGElement>) {
         fill="none"
         stroke="currentcolor"
         strokeMiterlimit={10}
-        strokeWidth={2}
+        strokeWidth={1.5}
       />
     </svg>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { Language, useLanguage } from '../hooks/use-language'
 import works from '../works.json'
 import { ImageSlider } from './image-slider';
 import { Text } from './text';
@@ -45,10 +46,18 @@ const Name = styled.div`
   }
 `
 
-const Description = styled.div`
+const Description = styled.div<{language: Language}>`
   margin: -0.5rem 0;
   line-height: 2;
   white-space: pre-wrap;
+  ${({language}) => {
+    switch(language){
+      case 'en':
+        return css`
+          font-style: italic;
+        `
+    }
+  }}
   @media (max-width: 40rem) {
     margin: -0.25rem 0;
     line-height: 1.75;
@@ -61,6 +70,7 @@ type WorkProps = {
   work: typeof works[number]
 }
 export const Work: FunctionComponent<WorkProps> = ({work}) => {
+  const {language} = useLanguage()
   return <Outer key={work.id}>
     <ImageSliderOuter>
       <ImageSlider images={work.images}/>
@@ -69,7 +79,7 @@ export const Work: FunctionComponent<WorkProps> = ({work}) => {
       <Name>
         <Text {...work.name} />
         </Name>
-      <Description>
+      <Description language={language}>
         <Text {...work.description} />
       </Description>
     </DetailOuter>

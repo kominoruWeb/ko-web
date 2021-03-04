@@ -1,15 +1,16 @@
 import React, { useEffect } from 'react';
 import { FunctionComponent } from 'react';
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+import { Language, useLanguage } from '../hooks/use-language'
 
-const CSS = createGlobalStyle`
+const CSS = createGlobalStyle<{language: Language}>`
   :root {
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     --gray: #e6e6e6;
     --brown: #241e18;
-    --dark-brown: #1d1814;
-    --darkest-brown: #130f0b;
+    --dark-brown: #14110e;
+    --darkest-brown: #18130e;
     --header-height: 3rem;
     --text-color: var(--brown);
     --inverted-text-color: #f0f0f0;
@@ -43,6 +44,7 @@ const CSS = createGlobalStyle`
 `
 
 export const RootCSS: FunctionComponent = () => {
+  const {language} = useLanguage()
   useEffect(() => {
     const setViewHeight = () => {
       document.documentElement.style.setProperty('--view-height', `${window.innerHeight}px`)
@@ -57,11 +59,11 @@ export const RootCSS: FunctionComponent = () => {
   useEffect(() => {
     const link = document.createElement('link')
     link.rel = 'stylesheet'
-    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght@400;500;700&display=swap'
+    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght@300;400;500;700&display=swap'
     document.head.appendChild(link)
     return () => {
       document.head.removeChild(link)
     }
   })
-  return <CSS />
+  return <CSS language={language}/>
 }

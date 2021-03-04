@@ -1,5 +1,5 @@
-<svg id="a8f03bdb-b181-4c17-9e91-0b4512c7f01d" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="228.1279" height="208.5277" viewBox="0 0 228.1279 208.5277">
-  <ellipse cx="114.064" cy="107.3349" rx="113.064" ry="91.5787" style="fill: none;stroke: #f0f;stroke-miterlimit: 10;stroke-width: 2px"/>
-  <ellipse cx="114.0643" cy="107.3349" rx="112.2325" ry="73.064" transform="matrix(0.5935, -0.8049, 0.8049, 0.5935, -40.0187, 135.4398)" style="fill: none;stroke: #f0f;stroke-miterlimit: 10;stroke-width: 2px"/>
-  <path d="M181.0661,197.8223c-16.358,8.05-51.2718-29.3049-77.8274-83.2679S68.3874,10.1413,84.7454,2.0914s51.27,29.302,77.826,83.2649S197.4241,189.7724,181.0661,197.8223Z" style="fill: none;stroke: #f0f;stroke-miterlimit: 10;stroke-width: 2px"/>
+<svg id="f468d636-f336-487b-9f61-fa21a65fc57e" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" width="228.1279" height="208.5277" viewBox="0 0 228.1279 208.5277">
+  <ellipse cx="114.064" cy="107.3349" rx="113.064" ry="91.5787" style="fill: none;stroke: #f0f;stroke-miterlimit: 10;stroke-width: 1.5px"/>
+  <ellipse cx="114.0643" cy="107.3349" rx="112.2325" ry="73.064" transform="matrix(0.5935, -0.8049, 0.8049, 0.5935, -40.0187, 135.4398)" style="fill: none;stroke: #f0f;stroke-miterlimit: 10;stroke-width: 1.5px"/>
+  <path d="M181.0661,197.8223c-16.358,8.05-51.2718-29.3049-77.8274-83.2679S68.3874,10.1413,84.7454,2.0914s51.27,29.302,77.826,83.2649S197.4241,189.7724,181.0661,197.8223Z" style="fill: none;stroke: #f0f;stroke-miterlimit: 10;stroke-width: 1.5px"/>
 </svg>

@@ -18,7 +18,7 @@ function SvgAboutImage0003(props: React.SVGProps<SVGSVGElement>) {
         fill="none"
         stroke="currentcolor"
         strokeMiterlimit={10}
-        strokeWidth={2}
+        strokeWidth={1.5}
       />
       <ellipse
         cx={169.532}
@@ -28,7 +28,7 @@ function SvgAboutImage0003(props: React.SVGProps<SVGSVGElement>) {
         fill="none"
         stroke="currentcolor"
         strokeMiterlimit={10}
-        strokeWidth={2}
+        strokeWidth={1.5}
       />
       <ellipse
         cx={225.001}
@@ -38,7 +38,7 @@ function SvgAboutImage0003(props: React.SVGProps<SVGSVGElement>) {
         fill="none"
         stroke="currentcolor"
         strokeMiterlimit={10}
-        strokeWidth={2}
+        strokeWidth={1.5}
       />
     </svg>
   );
