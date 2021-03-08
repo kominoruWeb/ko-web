@@ -57,7 +57,7 @@ const WorkItemLabel = styled.div`
   color: var(--inverted-text-color);
   line-height: 2.5;
   text-decoration: underline;
-  text-decoration-thickness: calc(1rem / 8);
+  text-decoration-thickness: calc(1rem / 16);
   text-underline-offset: 0.5rem;
   text-decoration-color: transparent;
   opacity: 0;

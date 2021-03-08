@@ -49,7 +49,7 @@ const SwiperOuter = styled.div`
       &::after {
         content: '';
         display: block;
-        height: calc(1rem / 8);
+        height: calc(1rem / 16);
         width: 100%;
         background-color: currentcolor;
       }

@@ -39,7 +39,7 @@ const Name = styled.div`
   &::after {
     content: '';
     display: block;
-    height: calc(1rem / 8);
+    height: calc(1rem / 16);
     width: 100%;
     margin: calc(1.25rem * 0.5 / 2 * -1 + 1.5rem) 0 1.5rem;
     background-color: currentcolor;

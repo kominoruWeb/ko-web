@@ -38,7 +38,7 @@ export const ConceptTitle = styled.div`
   &::after {
     content: '';
     display: block;
-    height: calc(1rem / 8);
+    height: calc(1rem / 16);
     width: 100%;
     margin: 1.75rem 0;
     background-color: currentcolor;
@@ -73,7 +73,7 @@ export const ConceptText = styled.div<{language: Language}>`
 `
 
 const ConceptImageOuter = styled.div`
-  color: var(--inverted-text-color);
+  color: rgb(196, 196, 196);
   margin-top: 3rem;
   align-self: center;
   padding: 0 2rem;

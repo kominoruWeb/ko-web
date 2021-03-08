@@ -5,7 +5,7 @@ export const bottomBar = css`
     content: '';
     width: 100%;
     display: block;
-    height: calc(1rem / 8);
+    height: calc(1rem / 16);
     margin-top: 0.5rem;
     background-color: currentcolor;
   }

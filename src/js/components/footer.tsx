@@ -21,7 +21,7 @@ const ContactLink = styled.div`
   font-size: 1.25rem;
   font-family: 'Cabin';
   font-weight: 700;
-  border: calc(1rem / 8) solid currentcolor;
+  border: calc(1rem / 16) solid currentcolor;
   width: 100%;
   text-align: center;
   margin: 3.5rem 0 2rem;
