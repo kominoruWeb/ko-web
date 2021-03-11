@@ -33,7 +33,7 @@ const ConceptItemInner = styled.div`
 export const ConceptTitle = styled.div`
   color: var(--inverted-text-color);
   align-self: flex-start;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.175rem;
   &::after {
     content: '';

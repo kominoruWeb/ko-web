@@ -33,7 +33,7 @@ const DetailOuter = styled.div`
 
 const Name = styled.div`
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.5;
   margin-top: calc(1.25rem * 0.5 / 2 * -1);
   &::after {

@@ -8,7 +8,7 @@ const Outer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.25rem;
-  background-color: var(--dark-brown);
+  background-color: var(--darkest-brown);
   @media (max-width: 120rem) {
     grid-template-columns: repeat(3, 1fr);
   }

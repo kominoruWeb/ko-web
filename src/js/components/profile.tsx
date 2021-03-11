@@ -17,12 +17,13 @@ const ProfileOuter = styled.div`
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
+  margin-right: 0.75rem;
 `
 
 const Name = styled.div`
   font-size: 1.25rem;
   align-self: flex-start;
-  font-weight: 700;
+  font-weight: 500;
   &::after {
     content: '';
     display: block;
@@ -64,11 +65,12 @@ const Detail = styled.div`
 `
 
 const ProfileImageOuter = styled.div`
-  max-width: 14rem;
-  margin-right: 1.5rem;
+  max-width: 17rem;
+  margin-top: 3rem;
   @media (max-width: 40rem) {
     margin-right: 0;
     margin-bottom: 1.5rem;
+    margin-top: 0;
     max-width: none;
     max-height: 20rem;
     height: 25rem;
@@ -77,6 +79,7 @@ const ProfileImageOuter = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 20%;
     @media (max-width: 40rem) {
     }
   }
@@ -87,7 +90,7 @@ export const Profile: FunctionComponent = () => {
   return <Outer>
     <ProfileOuter>
       <Name>
-        <Text ja="胡　実　KOMINORU" />
+        <Text ja="胡　実　KO MINORU" />
       </Name>
       <Role>
         <Text ja="代表 / 一級建築士" en="CEO / Architect" />

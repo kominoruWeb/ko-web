@@ -37,7 +37,7 @@ const SwiperOuter = styled.div`
     box-sizing: border-box;
     .swiper-pagination-bullet {
       display: block;
-      color: var(--inverted-text-color);
+      color: var(--brown);
       opacity: 1;
       margin: -0.5rem 0.175rem;
       width: 1.75rem;
@@ -91,7 +91,7 @@ const ControllButton = styled.div`
   pointer-events: auto;
   transition: all 0.4s;
   cursor: pointer;
-  color: white;
+  color: var(--brown);
   &:hover {
     opacity: 0.5;
   }

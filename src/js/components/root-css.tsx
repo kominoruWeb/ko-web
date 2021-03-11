@@ -6,11 +6,11 @@ import { Language, useLanguage } from '../hooks/use-language'
 const CSS = createGlobalStyle<{language: Language}>`
   :root {
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 300;
+    font-weight: 100;
     --gray: #e6e6e6;
-    --brown: #241e18;
-    --dark-brown: #14110e;
-    --darkest-brown: #18130e;
+    --brown: #413d3a;
+    --dark-brown: #332e28;
+    --darkest-brown: #f0f0f0;
     --header-height: 3rem;
     --text-color: var(--brown);
     --hover-text-color: #6e6861;
@@ -60,7 +60,7 @@ export const RootCSS: FunctionComponent = () => {
   useEffect(() => {
     const link = document.createElement('link')
     link.rel = 'stylesheet'
-    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght@300;400;500;700&display=swap'
+    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght100;300;400;500;700&display=swap'
     document.head.appendChild(link)
     return () => {
       document.head.removeChild(link)

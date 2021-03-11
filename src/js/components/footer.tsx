@@ -20,7 +20,7 @@ const ContactLink = styled.div`
   max-width: 24rem;
   font-size: 1.25rem;
   font-family: 'Cabin';
-  font-weight: 700;
+  font-weight: 500;
   border: calc(1rem / 16) solid currentcolor;
   width: 100%;
   text-align: center;
