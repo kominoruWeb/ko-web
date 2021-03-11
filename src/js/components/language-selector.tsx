@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { FunctionComponent } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import SvgLanguageSelectorDivider from '../generated/svg/language-selector-divider';
 import { Language, languages, useLanguage } from '../hooks/use-language';
 
@@ -18,13 +18,15 @@ const LanguageItem = styled.div<{selected?: boolean}>`
   font-weight: 500;
   padding: 0.25rem 0.5rem;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: color 0.4s;
   font-size: 0.85rem;
   &:hover {
-    opacity: 0.5;
+    color: var(--hover-text-color);
   }
 
-  ${({selected}) => selected ? 'opacity: 0.5;': ''}
+  ${({selected}) => selected ? css`
+    color: var(--hover-text-color);
+  `: ''}
 
   @media (max-width: 50rem) {
     font-size: 1rem;

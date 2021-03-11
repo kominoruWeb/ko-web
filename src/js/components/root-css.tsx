@@ -13,6 +13,7 @@ const CSS = createGlobalStyle<{language: Language}>`
     --darkest-brown: #18130e;
     --header-height: 3rem;
     --text-color: var(--brown);
+    --hover-text-color: #6e6861;
     --inverted-text-color: #f0f0f0;
     color: var(--text-color);
     overflow-x: hidden;

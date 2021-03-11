@@ -18,10 +18,31 @@ const FlowItem = styled.div`
   }
 `
 
+const Note = styled.div`
+  font-size: 0.8rem;
+  color: var(--inverted-text-color);
+  line-height: 1.5;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+`
+
 
 export const Flow: FunctionComponent = () => {
   const {language} = useLanguage()
   return <Outer>
+    {
+      language === 'en' &&
+      <Note>
+        *The case that Japan is the construction site. In the case of overseas, we will discuss the conditions according to this.
+      </Note>
+    }
+    {
+      language === 'zh' &&
+      <Note>
+        *设计对象在日本时的流程。如果地点在海外，在这基础上进行沟通调整。
+      </Note>
+    }
     <FlowItem>
       <ConceptTitle>
         <Text

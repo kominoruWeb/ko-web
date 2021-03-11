@@ -33,6 +33,8 @@ const SwiperOuter = styled.div`
     align-items: center;
     opacity: 0;
     animation: ${fadein} 0.4s 2.1s forwards;
+    padding: 0 1rem;
+    box-sizing: border-box;
     .swiper-pagination-bullet {
       display: block;
       color: var(--inverted-text-color);

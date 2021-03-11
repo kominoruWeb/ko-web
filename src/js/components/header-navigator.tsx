@@ -30,8 +30,9 @@ const itemCSS = css`
   transition: opacity 0.4s;
   display: block;
   font-size: 0.85rem;
+  transition: color 0.4s;
   &:hover {
-    opacity: 0.5;
+    color: var(--hover-text-color);
   }
   @media (max-width: 50rem) {
     text-align: center;
@@ -62,10 +63,6 @@ const itemCSS = css`
 
 const Item = styled(Link)`
   ${itemCSS}
-  transition: opacity 0.4s;
-  &:hover {
-    opacity: 0.5;
-  }
 `
 
 const ExternalItem = styled.a`

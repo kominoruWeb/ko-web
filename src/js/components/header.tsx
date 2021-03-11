@@ -24,12 +24,13 @@ const Outer = styled.div<{hide?: boolean, top: boolean}>`
   padding: 0.25rem 1.75rem;
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(0.5rem);
   height: var(--header-height);
   box-sizing: border-box;
   color: var(--text-color);
   transition: all 0.4s;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.75);
+  /* backdrop-filter: blur(0.5rem); */
   ${({hide}) => hide ? css`
     background-color: transparent;
     backdrop-filter: none;
@@ -45,12 +46,12 @@ const Outer = styled.div<{hide?: boolean, top: boolean}>`
 `
 
 const LogoOuter = styled(Link)<{hide?: boolean}>`
-  transition: opacity 0.4s;
+  transition: opacity 0.4s, color 0.4s;
   ${({hide}) => hide ? css`
     opacity: 0;
   ` : ''}
   &:hover {
-    opacity: 0.5;
+    color: var(--hover-text-color);
   }
 `
 
@@ -74,8 +75,9 @@ export const HamburgerOuter = styled.div<{hide?: boolean}>`
   ${({hide}) => hide ? css`
     color: var(--inverted-text-color);
   ` : ''}
+  transition: color 0.4s;
   &:hover {
-    opacity: 0.5;
+    color: var(--hover-text-color);
   }
 `
 
