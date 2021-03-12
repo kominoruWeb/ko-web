@@ -60,7 +60,7 @@ export const RootCSS: FunctionComponent = () => {
   useEffect(() => {
     const link = document.createElement('link')
     link.rel = 'stylesheet'
-    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght100;300;400;500;700&display=swap'
+    link.href = 'https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght@100;500&display=swap'
     document.head.appendChild(link)
     return () => {
       document.head.removeChild(link)
