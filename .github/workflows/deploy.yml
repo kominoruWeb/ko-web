@@ -33,6 +33,6 @@ jobs:
           SHEET_ID: ${{ secrets.SHEET_ID }}
       - name: S3 sync
         working-directory: static-files
-        run: aws s3 sync --delete dist/ s3://S3_BUKET/
+        run: aws s3 sync --delete dist/ s3://$S3_BUKET/
         env:
           S3_BUKET: ${{ secrets.S3_BUKET}}
