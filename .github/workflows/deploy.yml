@@ -6,9 +6,11 @@ on:
 
 jobs:
   Deploy:
-    name: Upload static files
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Install webp
+        run: sudo apt install cwebp
       - name: Checkout
         uses: actions/checkout@v2
       - name: Configure AWS credentials
