@@ -1,4 +1,4 @@
 node_modules
 dist
 .DS_Store
-src/js/works.json
+/src/js/works.json
