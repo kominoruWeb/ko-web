@@ -1,10 +1,9 @@
-name: s3-deploy-sample
+name: Deyloy
 on:
   push:
     branches:
       - master
     workflow_dispatch:
-
 
 jobs:
   Deploy:
@@ -35,6 +34,6 @@ jobs:
           SHEET_ID: ${{ secrets.SHEET_ID }}
       - name: S3 sync
         run: |
-          aws s3 sync --delete ./dist/ s3://$S3_BUKET/
+          aws s3 sync --delete ./dist/ s3://$S3_BUKET/ --quiet
         env:
           S3_BUKET: ${{ secrets.S3_BUKET }}
