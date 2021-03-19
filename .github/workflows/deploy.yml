@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install webp
-        run: sudo apt-get install cwebp
+        run: sudo apt-get install webp
       - name: Checkout
         uses: actions/checkout@v2
       - name: Configure AWS credentials
