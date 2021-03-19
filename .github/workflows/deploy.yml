@@ -23,7 +23,11 @@ jobs:
           node-version: '14'
         run: |
           npm ci
+          npm run load-sheet-data
           npm run build
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          SHEET_ID: ${{ secrets.SHEET_ID }}
       - name: S3 sync
         working-directory: static-files
         run: aws s3 sync --delete dist/ s3://${S3_BUKET}/
