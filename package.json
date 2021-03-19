@@ -12,7 +12,7 @@
     "build": "npm run static && npm run svgr && npm run images && NODE_ENV=production npm run js -- --mode=production",
     "package-clean": "rm -rf package-lock.json node_modules",
     "svgr": "svgr --typescript --replace-attr-values \"#f0f=currentcolor\" --filename-case kebab -d src/js/generated/svg src/svg",
-    "images": "mkdir -p dist/images && cp -r src/images/* dist/images && cd src/images && find * -type f \\( -name '*.jpg' -o -name '*.png' \\) -print0 | xargs -0 -P8 -I{} sh -c 'cwebp -q 80 $0 -o ../../dist/images/${0%.*}.webp' {}",
+    "images": "mkdir -p dist/images && cp -r src/images/* dist/images && cd src/images && find * -type f \\( -name '*.jpg' -o -name '*.png' \\) -print0 | xargs -0 -P8 -I{} sh -c 'cwebp -quiet -q 80 $0 -o ../../dist/images/${0%.*}.webp' {}",
     "load-sheet-data": "node script/load.js"
   },
   "keywords": [],
