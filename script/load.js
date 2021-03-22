@@ -5,6 +5,7 @@ const {GoogleSpreadsheet} = require('google-spreadsheet')
 ;(async () => {
   const doc = new GoogleSpreadsheet(process.env.SHEET_ID)
   await doc.useApiKey(process.env.GOOGLE_API_KEY)
+  console.log(process.env.SHEET_ID.split(''))
   await doc.loadInfo()
 
   const works = await getData(doc.sheetsByTitle['works'])
