@@ -3,9 +3,9 @@ const path = require('path')
 const {GoogleSpreadsheet} = require('google-spreadsheet')
 
 ;(async () => {
-  const doc = new GoogleSpreadsheet(process.env.SHEET_ID)
+  // const doc = new GoogleSpreadsheet(process.env.SHEET_ID)
+  const doc = new GoogleSpreadsheet('11R3PoAxtkCiKpXbIEWUTq5I7sA0PNHpbB7YQILu-aZc')
   await doc.useApiKey(process.env.GOOGLE_API_KEY)
-  console.log(process.env.SHEET_ID.split(''))
   await doc.loadInfo()
 
   const works = await getData(doc.sheetsByTitle['works'])
