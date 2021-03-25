@@ -46,7 +46,7 @@ export const Flow: FunctionComponent = () => {
     <FlowItem>
       <ConceptTitle>
         <Text
-          ja="01. 無料相談"
+          ja="01. 問い合わせ相談"
           en="01. Free consultation"
           zh="01.免费咨询"
           />
