@@ -85,9 +85,9 @@ export const Flow: FunctionComponent = () => {
       </ConceptTitle>
       <ConceptText language={language}>
         <Text
-          ja={`設計契約を行い、いよいよ設計が本格的にスタートします。\n設計費は、床面積規模をもとに算出されますが、住宅であれば総工費のおよそ10％程度、\n保育園、クリニックであればおよそ7％程度となります。\n設計費のお支払いは、契約時20％、基本設計完了時30％、実施設計完了時30％、竣工時20％をベースとしています。`}
-          en={`After making a design contract, the design will be start.\nThe design cost is calculated based on the floor area scale and usage.\nIn the case of a house, it is about 10% of the total construction cost. And in case of a nursery school or clinic, it will be about 7%.\nPayment of design costs is based on 20% at the time of contract, 30% at the completion of schematic design, 30% at the completion of detailed design, and 20% at the time of completion.`}
-          zh={`签订设计合同后，将开始设计。\n设计成本是根据建筑面积比例计算的，如住宅，大约占总建筑成本的10％。如是托儿所或诊所，则约为7％。\n设计费用的支付，一般情况是在合同时20％，基本设计完成时30％，详细设计完成时30％，和完成时20％。`}
+          ja={`設計契約を行い、いよいよ設計が本格的にスタートします。\n設計費は、床面積規模をもとに算出されますが、住宅であれば総工費のおよそ12％程度、\n保育園、クリニックであればおよそ10％程度となります。\n設計費のお支払いは、契約時20％、基本設計完了時30％、実施設計完了時30％、竣工時20％をベースとしています。`}
+          en={`After making a design contract, the design will be start.\nThe design cost is calculated based on the floor area scale and usage.\nIn the case of a house, it is about 12% of the total construction cost. And in case of a nursery school or clinic, it will be about 10%.\nPayment of design costs is based on 20% at the time of contract, 30% at the completion of schematic design, 30% at the completion of detailed design, and 20% at the time of completion.`}
+          zh={`签订设计合同后，将开始设计。\n设计成本是根据建筑面积比例计算的，如住宅，大约占总建筑成本的12％。如是托儿所或诊所，则约为10％。\n设计费用的支付，一般情况是在合同时20％，基本设计完成时30％，详细设计完成时30％，和完成时20％。`}
         />
       </ConceptText>
     </FlowItem>
