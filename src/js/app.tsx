@@ -10,6 +10,7 @@ import { RootCSS } from './components/root-css';
 import { LanguageProvider } from './hooks/use-language';
 import { ConceptPage } from './pages/concept-page';
 import { ContactPage } from './pages/contact-page';
+import { ProfilePage } from './pages/profile-page';
 import { TopPage } from './pages/top-page';
 import { WorkPage } from './pages/work-page';
 import { WorksPage } from './pages/works-page';
@@ -54,6 +55,7 @@ export const App: FunctionComponent = () => {
               return <WorkPage workId={match.params.workId}/>
             }}>
             </Route>
+            <Route exact path="/profile" component={ProfilePage} />
             <Route exact path="/contact" component={ContactPage} />
           </Switch>
         </ContentOuter>

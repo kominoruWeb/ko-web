@@ -83,6 +83,7 @@ export const HeaderNavigator: FunctionComponent<HeaderNavigatorProps> = ({onClic
     <Item to='/' onClick={handleClick}>TOP</Item>
     <Item to='/concept' onClick={handleClick}>CONCEPT</Item>
     <Item to='/works' onClick={handleClick}>WORKS</Item>
+    <Item to='/profile' onClick={handleClick}>PROFILE</Item>
     <Item to='/contact' onClick={handleClick}>CONTACT</Item>
     <ExternalItem href='http://blog.kominoru.com/' target="_blank" onClick={handleClick}>BLOG</ExternalItem>
   </Outer>
