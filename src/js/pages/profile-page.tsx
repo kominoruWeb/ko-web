@@ -10,8 +10,8 @@ const Outer = styled.div`
 
 const ProfileOuter = styled.div`
   max-width: 40rem;
-  margin: 4rem auto 2rem;
-  padding: 0 1rem;
+  margin: 4rem auto 0;
+  padding: 0 1rem 2rem;
 `
 
 export const ProfilePage: FunctionComponent = () => {
