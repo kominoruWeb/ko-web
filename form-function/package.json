@@ -1,0 +1,23 @@
+{
+  "name": "form-function",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.936.0",
+    "class-validator": "^0.13.1",
+    "google-spreadsheet": "^3.1.15"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.77",
+    "@types/google-spreadsheet": "^3.1.3",
+    "@types/node": "^15.12.5",
+    "typescript": "^4.3.4"
+  }
+}
