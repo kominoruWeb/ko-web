@@ -31,7 +31,8 @@ const ArrowOuter = styled.div`
 
 export const ContactFormOuter = styled.div`
   width: 100%;
-  background-color: var(--inverted-text-color);
+  max-width: 40rem;
+  margin: 0 auto;
 `
 
 export const ContactPage: FunctionComponent = () => {
