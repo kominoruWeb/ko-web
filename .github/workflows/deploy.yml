@@ -29,6 +29,9 @@ jobs:
           npm ci
           npm run load-sheet-data
           npm run build
+          cd form-function
+          npm ci
+          cd ..
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           SHEET_ID: ${{ secrets.SHEET_ID }}
