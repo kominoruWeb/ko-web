@@ -47,6 +47,13 @@ const SentMessasge = styled.div`
   color: var(--inverted-text-color);
 `
 
+const Notice = styled.div`
+  text-align: center;
+  color: var(--inverted-text-color);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+`
+
 
 export const ContactForm: FunctionComponent = () => {
   const {language} = useLanguage()
@@ -54,7 +61,7 @@ export const ContactForm: FunctionComponent = () => {
     name: '',
     email: '',
     phoneNumber: '',
-    site: null,
+    site: '東京都',
     requests: [],
     hasLand: null,
     text: '',
@@ -90,46 +97,63 @@ export const ContactForm: FunctionComponent = () => {
   if(sent) {
     return <Outer>
       <SentMessasge>
-        <Text ja="送信が完了いたしました。お問い合わせありがとうございます。" en="Message has been sent. Thank you for your inquiry." zh="传输完成。感谢您的查询。" />
+        <Text ja="送信が完了いたしました。お問い合わせありがとうございます。" en="Message has been sent. Thank you for your inquiry." zh="送信完成 谢谢您的咨询" />
       </SentMessasge>
+      <Notice>
+        <Text ja="2営業日以内にお返事させて頂きます。暫しお待ちください。" en="We will get back to you within 2 working days." zh="两三工作日内给您回信，请稍等。" />
+      </Notice>
     </Outer>
   }
   return <Outer>
+    <Text
+      ja={<>
+        胡実建築設計事務所へのご質問やご相談は、下記フォームによりご連絡ください。<br />
+        必要事項をご記入の上、［送信］をクリックしてください。
+      </>}
+      en={<>
+        If you have any questions or inquiries to KOMINORUdesign, please use the form below.<br />
+        Please fill in the required items and click [Send].
+      </>}
+      zh={<>
+        如果您对胡実建築設計事務所有兴趣或咨询事项，请使用下面的表格。<br />
+        请填写必填项目，然后点击[发送]。
+      </>}
+    />
     <Form {...formProps}>
-      <InputContainer label={<Text ja="お名前" en="Name" zh="全名"/>} required>
+      <InputContainer label={<Text ja="お名前" en="Name" zh="姓名"/>} required>
         <TextInput name={'name'} />
       </InputContainer>
-      <InputContainer label={<Text ja="メールアドレス" en="邮件地址" />} required>
+      <InputContainer label={<Text ja="メールアドレス" en="Email address" zh="邮箱" />} required>
         <TextInput name={'email'} />
       </InputContainer>
-      <InputContainer label={<Text ja="電話番号" en="Phone number" zh="电话号码"/>} required>
+      <InputContainer label={<Text ja="電話番号" en="Phone number" zh="电话号码"/>}>
         <TextInput name={'phoneNumber'} />
       </InputContainer>
       <InputContainer label={<Text ja="計画地" en="Site" zh="地点"/>} >
         <Select name="site" options={new Map(prefectures.map(name => [name, name]))} />
       </InputContainer>
-      <InputContainer label={<Text ja="ご希望のサービス" en="Request" zh="要求"/>} >
+      <InputContainer label={<Text ja="ご要望" en="Request" zh="要求"/>} >
         <label>
           <MultipleCheckbox name="requests" value={({ja: 'ご相談', en: 'Consultation', zh: '咨询'})[language]} />
           <Text ja="ご相談" en="Consultation" zh="咨询" />
         </label>
         <label>
-          <MultipleCheckbox name="requests" value={({ja: 'ラフプラン提案', en: 'Rough plan proposal', zh: '粗略的计划提案'})[language]} />
-          <Text ja="ラフプラン提案" en="Rough plan proposal" zh="粗略的计划提案" />
+          <MultipleCheckbox name="requests" value={({ja: 'ラフプラン提案', en: 'Rough plan proposal', zh: '初期方案提案'})[language]} />
+          <Text ja="ラフプラン提案" en="Rough plan proposal" zh="初期方案提案" />
         </label>
         <label>
           <MultipleCheckbox name="requests" value={({ja: 'その他', en: 'Other', zh: '其他'})[language]} />
           <Text ja="その他" en="Other" zh="其他" />
         </label>
       </InputContainer>
-      <InputContainer label={<Text ja="土地の有無" en="Have land or not" zh="有地与否"/>} >
+      <InputContainer label={<Text ja="土地の有無" en="Have land or not" zh="土地"/>} >
         <label>
           <Radio name="hasLand" value={true}/>
-          <Text ja="ある" en="Yes" zh="有" />
+          <Text ja="あり" en="Yes" zh="有" />
         </label>
         <label>
           <Radio name="hasLand" value={false}/>
-          <Text ja="ない" en="No" zh="不"/>
+          <Text ja="なし" en="No" zh="没有"/>
         </label>
       </InputContainer>
       <InputContainer label={<Text ja="お問い合わせ内容" en="Content of inquiry" zh="查询内容"/>}>
@@ -141,7 +165,6 @@ export const ContactForm: FunctionComponent = () => {
             <Text ja="送信中" en="Sending" zh="现在发送" /> :
             <Text ja="送信する" en="Send" zh="发送" />
         }
-        
       </SendButton>
     </Form>
   </Outer>
