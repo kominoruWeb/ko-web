@@ -75,7 +75,7 @@ const InputWrapper = styled.div`
 
 export const Required = styled.span`
   font-size: 0.8em;
-  color: #888;
+  color: #ce4d4d;
   font-weight: bold;
   margin-left: 0.5rem;
   vertical-align: top;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FunctionComponent } from 'react'
 import styled from 'styled-components'
 import { createForm } from './form'
@@ -42,8 +42,14 @@ const SendButton = styled.button`
   }
 `
 
+const SentMessasge = styled.div`
+  text-align: center;
+  color: var(--inverted-text-color);
+`
+
 
 export const ContactForm: FunctionComponent = () => {
+  const {language} = useLanguage()
   const [values, formProps] = useForm({
     name: '',
     email: '',
@@ -52,53 +58,90 @@ export const ContactForm: FunctionComponent = () => {
     requests: [],
     hasLand: null,
     text: '',
-    language: ''
+    language: language
   })
   const [sending, setSending] = useState(false)
-  const {language} = useLanguage()
+  const [message, setMessage] = useState<string | null>(null)
+  const [sent, setSent] = useState(false)
+
+  useEffect(() => {
+    formProps.setValue({...formProps.value, language})
+  }, [language])
+
+  const send = async () => {
+    if(sending) return
+    setSending(true)
+    const res = await fetch('https://32thljarje.execute-api.ap-northeast-1.amazonaws.com/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(values)
+    })
+
+    const resBody = await res.json()
+
+    if(res.status === 200){
+      setSent(true)
+    } else {
+    }
+    setSending(false)
+  }
+  if(sent) {
+    return <Outer>
+      <SentMessasge>
+        <Text ja="送信が完了いたしました。お問い合わせありがとうございます。" en="Message has been sent. Thank you for your inquiry." zh="传输完成。感谢您的查询。" />
+      </SentMessasge>
+    </Outer>
+  }
   return <Outer>
     <Form {...formProps}>
-      <InputContainer label={<Text ja="お名前" en="Name"/>} required>
+      <InputContainer label={<Text ja="お名前" en="Name" zh="全名"/>} required>
         <TextInput name={'name'} />
       </InputContainer>
-      <InputContainer label={<Text ja="メールアドレス" en="Email address"/>} required>
+      <InputContainer label={<Text ja="メールアドレス" en="邮件地址" />} required>
         <TextInput name={'email'} />
       </InputContainer>
-      <InputContainer label={<Text ja="電話番号" en="Phone number"/>} required>
+      <InputContainer label={<Text ja="電話番号" en="Phone number" zh="电话号码"/>} required>
         <TextInput name={'phoneNumber'} />
       </InputContainer>
-      <InputContainer label={<Text ja="計画地" en="Site"/>} >
+      <InputContainer label={<Text ja="計画地" en="Site" zh="地点"/>} >
         <Select name="site" options={new Map(prefectures.map(name => [name, name]))} />
       </InputContainer>
-      <InputContainer label={<Text ja="ご希望のサービス" en="Request"/>} >
+      <InputContainer label={<Text ja="ご希望のサービス" en="Request" zh="要求"/>} >
         <label>
-          <MultipleCheckbox name="requests" value={({ja: 'ご相談', en: 'Consultation', zh: 'Consultation'})[language]} />
-          <Text ja="ご相談" en="Consultation" />
+          <MultipleCheckbox name="requests" value={({ja: 'ご相談', en: 'Consultation', zh: '咨询'})[language]} />
+          <Text ja="ご相談" en="Consultation" zh="咨询" />
         </label>
         <label>
-          <MultipleCheckbox name="requests" value={({ja: 'ラフプラン提案', en: 'Rough plan proposal', zh: 'Rough plan proposal'})[language]} />
-          <Text ja="ラフプラン提案" en="Rough plan proposal" />
+          <MultipleCheckbox name="requests" value={({ja: 'ラフプラン提案', en: 'Rough plan proposal', zh: '粗略的计划提案'})[language]} />
+          <Text ja="ラフプラン提案" en="Rough plan proposal" zh="粗略的计划提案" />
         </label>
         <label>
-          <MultipleCheckbox name="requests" value={({ja: 'その他', en: 'Other', zh: 'Other'})[language]} />
-          <Text ja="その他" en="Other" />
+          <MultipleCheckbox name="requests" value={({ja: 'その他', en: 'Other', zh: '其他'})[language]} />
+          <Text ja="その他" en="Other" zh="其他" />
         </label>
       </InputContainer>
-      <InputContainer label={<Text ja="土地の有無" en="Have land or not"/>} >
+      <InputContainer label={<Text ja="土地の有無" en="Have land or not" zh="有地与否"/>} >
         <label>
           <Radio name="hasLand" value={true}/>
-          <Text ja="ある" en="Yes" />
+          <Text ja="ある" en="Yes" zh="有" />
         </label>
         <label>
           <Radio name="hasLand" value={false}/>
-          <Text ja="ない" en="No" />
+          <Text ja="ない" en="No" zh="不"/>
         </label>
       </InputContainer>
-      <InputContainer label={<Text ja="お問い合わせ内容" en="Content of inquiry"/>}>
+      <InputContainer label={<Text ja="お問い合わせ内容" en="Content of inquiry" zh="查询内容"/>}>
         <Textarea name="text" />
       </InputContainer>
-      <SendButton>
-        <Text ja="送信する" en="Send" />
+      <SendButton onClick={send}>
+        {
+          sending ?
+            <Text ja="送信中" en="Sending" zh="现在发送" /> :
+            <Text ja="送信する" en="Send" zh="发送" />
+        }
+        
       </SendButton>
     </Form>
   </Outer>
