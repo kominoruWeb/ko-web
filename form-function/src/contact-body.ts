@@ -8,11 +8,14 @@ export class ContactBody {
   @Length(1, 100)
   name: string;
 
-  @IsEmail()
+  // @IsEmail()
+  @IsString()
   @Length(1, 256)
   email: string;
 
-  @IsPhoneNumber('JP')
+  // @IsPhoneNumber('JP')
+  @IsString()
+  @Length(1, 256)
   phoneNumber: string;
 
   @IsIn(prefectures)

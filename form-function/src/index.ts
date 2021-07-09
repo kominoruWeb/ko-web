@@ -10,7 +10,7 @@ const contactBodyToRowData = (contactBody: ContactBody) => {
     phoneNumber: contactBody.phoneNumber,
     site: contactBody.site ?? '',
     requests: contactBody.requests.join(', '),
-    hasLand: Number(contactBody.hasLand) ?? '',
+    hasLand: (contactBody.hasLand === null || typeof contactBody.hasLand === 'undefined') ? '' : Number(contactBody.hasLand),
     text: contactBody.text,
     language: contactBody.language,
     createdAt: (new Date()).toISOString(),
@@ -28,7 +28,7 @@ export const handler: APIGatewayProxyHandlerV2 = async (event, context) => {
         headers: {
           'Content-Type': 'application/json; charset=UTF-8'
         },
-        body: ''
+        body: JSON.stringify(err)
       }
     }
 
@@ -49,9 +49,8 @@ export const handler: APIGatewayProxyHandlerV2 = async (event, context) => {
     }
   }
   return {
-    statusCode: 400,
+    statusCode: 200,
     body: JSON.stringify({
-      event
     })
   }
 }
