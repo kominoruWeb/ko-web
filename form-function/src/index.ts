@@ -2,6 +2,7 @@ import { APIGatewayProxyHandlerV2 } from 'aws-lambda'
 import { IsArray, IsBoolean, IsEmail, IsIn, IsPhoneNumber, IsString, Length, validateSync } from 'class-validator'
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { ContactBody } from './contact-body';
+import aws from 'aws-sdk';
 
 const contactBodyToRowData = (contactBody: ContactBody) => {
   return {
