@@ -35,7 +35,7 @@ export const handler: APIGatewayProxyHandlerV2 = async (event, context) => {
     try {
       await ses.sendEmail({
         Destination: {
-          ToAddresses: ['mail@kominoru.com', 'piou@hotmail.co.jp']
+          ToAddresses: ['mail@kominoru.com']
         },
         Message: {
           Body: {
