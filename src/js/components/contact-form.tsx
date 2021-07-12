@@ -6,6 +6,7 @@ import { InputContainer } from './input-container'
 import { Text } from './text'
 import { ContactBody, prefectures } from '../../../form-function/src/contact-body'
 import { useLanguage } from '../hooks/use-language'
+import { validate } from 'class-validator'
 
 const {
   Form,
@@ -54,6 +55,13 @@ const Notice = styled.div`
   margin-top: 1rem;
 `
 
+const Message = styled.div`
+  text-align: center;
+  color: var(--inverted-text-color);
+  margin-top: 1rem;
+
+`
+
 
 export const ContactForm: FunctionComponent = () => {
   const {language} = useLanguage()
@@ -76,6 +84,9 @@ export const ContactForm: FunctionComponent = () => {
   }, [language])
 
   const send = async () => {
+    if((await validate(new ContactBody(values))).length > 0){
+      alert()
+    }
     if(sending) return
     setSending(true)
     const res = await fetch('https://32thljarje.execute-api.ap-northeast-1.amazonaws.com/', {
@@ -156,9 +167,15 @@ export const ContactForm: FunctionComponent = () => {
           <Text ja="なし" en="No" zh="没有"/>
         </label>
       </InputContainer>
-      <InputContainer label={<Text ja="お問い合わせ内容" en="Content of inquiry" zh="查询内容"/>}>
+      <InputContainer label={<Text ja="お問い合わせ内容" en="Content of inquiry" zh="查询内容" />}>
         <Textarea name="text" />
       </InputContainer>
+      {
+        message &&
+        <Message>
+          <Text ja="必須項目を誤入力ください" en="Please input required items." zh="請輸入必填項目。" />
+        </Message>
+      }
       <SendButton onClick={send}>
         {
           sending ?
