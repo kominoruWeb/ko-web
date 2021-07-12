@@ -25,7 +25,6 @@ const DetailOuter = styled.div`
   width: 100%;
   box-sizing: border-box;
   padding: 0 1rem;
-
   @media (max-width: 40rem) {
     margin-top: 3rem;
   }

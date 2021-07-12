@@ -21,6 +21,9 @@ const ScrollRestoration = require('react-scroll-restoration')
 const Outer = styled.div`
   opacity: 0;
   animation: ${fadeIn} 0.6s 0.4s forwards;
+  min-height: var(--view-height);
+  display: flex;
+  flex-direction: column;
 `
 
 const HeaderOuter = styled.div`
@@ -31,7 +34,13 @@ const HeaderOuter = styled.div`
   z-index: 100;
 `
 
-const FooterOuter = styled.div``
+const FooterOuter = styled.div`
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--brown);
+`
 
 const ContentOuter = styled.div`
 `

@@ -15,7 +15,7 @@ export class ContactBody {
 
   // @IsPhoneNumber('JP')
   @IsString()
-  @Length(1, 256)
+  @Length(0, 256)
   phoneNumber: string;
 
   @IsIn(prefectures)

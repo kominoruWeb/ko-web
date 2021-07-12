@@ -11,15 +11,20 @@ import { ErrorPage } from './error-page';
 
 const Outer = styled.div`
   padding-top: var(--header-height);
+  background-color: var(--darkest-brown);
+`
+
+const WorkOuter = styled.div`
   background-color: var(--brown);
 `
 
 const ArrowOuter = styled.div`
-  margin: 5.5rem 0;
+  padding: 5.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--inverted-text-color);
+  background-color: var(--brown);
 `
 
 type WorkPageProps = {
@@ -30,7 +35,9 @@ export const WorkPage: FunctionComponent<WorkPageProps> = ({workId}) => {
   const work = works.find(work => work.id === workId)
   if(!work) return <ErrorPage code={404} message="Not found" />
   return <Outer>
-    <Work work={work} />
+    <WorkOuter>
+      <Work work={work} />
+    </WorkOuter>
     <ArrowOuter>
       <LabelledArrow ja="MORE WORKS" en="MORE WORKS" />
     </ArrowOuter>
