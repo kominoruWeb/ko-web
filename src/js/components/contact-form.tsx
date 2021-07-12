@@ -76,7 +76,7 @@ export const ContactForm: FunctionComponent = () => {
     language: language
   })
   const [sending, setSending] = useState(false)
-  const [message, setMessage] = useState<string | null>(null)
+  const [message, setMessage] = useState(false)
   const [sent, setSent] = useState(false)
 
   useEffect(() => {
@@ -85,7 +85,7 @@ export const ContactForm: FunctionComponent = () => {
 
   const send = async () => {
     if((await validate(new ContactBody(values))).length > 0){
-      alert()
+      setMessage(true)
     }
     if(sending) return
     setSending(true)
