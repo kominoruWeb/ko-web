@@ -37,12 +37,6 @@ export const ContactFormOuter = styled.div`
 
 export const ContactPage: FunctionComponent = () => {
   return <Outer>
-    <ProfileOuter>
-      <Profile />
-    </ProfileOuter>
-    <ArrowOuter>
-      <LabelledArrow ja="設計業務の流れ" en="Design work flow" />
-    </ArrowOuter>
     <FlowOuter>
       <Flow />
     </FlowOuter>
