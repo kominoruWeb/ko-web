@@ -1,4 +1,5 @@
-import React from 'react';
+import { parsePath } from 'history';
+import React, { useState } from 'react';
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { css, keyframes } from 'styled-components';
@@ -80,11 +81,25 @@ export const HeaderNavigator: FunctionComponent<HeaderNavigatorProps> = ({onClic
     }
   }
   return <Outer>
-    <Item to='/' onClick={handleClick}>TOP</Item>
-    <Item to='/concept' onClick={handleClick}>CONCEPT</Item>
-    <Item to='/works' onClick={handleClick}>WORKS</Item>
-    <Item to='/profile' onClick={handleClick}>PROFILE</Item>
-    <Item to='/contact' onClick={handleClick}>CONTACT</Item>
+    <HeaderNavigatorItem to='/' onClick={handleClick}>TOP</HeaderNavigatorItem>
+    <HeaderNavigatorItem to='/concept' onClick={handleClick}>CONCEPT</HeaderNavigatorItem>
+    <HeaderNavigatorItem to='/works' onClick={handleClick}>WORKS</HeaderNavigatorItem>
+    <HeaderNavigatorItem to='/profile' onClick={handleClick}>PROFILE</HeaderNavigatorItem>
+    <HeaderNavigatorItem to='/contact' onClick={handleClick}>CONTACT</HeaderNavigatorItem>
     <ExternalItem href='http://blog.kominoru.com/' target="_blank" onClick={handleClick}>BLOG</ExternalItem>
   </Outer>
+}
+
+type HeaderNavigatorItemProps = {
+  onClick: () => void,
+  to: string
+}
+export const HeaderNavigatorItem: FunctionComponent<HeaderNavigatorItemProps> = ({onClick, to, children}) => {
+  const location = parsePath(to)
+  return <Item to={() => ({...location, key: createKey()})} onClick={onClick}>{children}</Item>
+}
+
+const createKey = () => {
+  const source = 'abcdefghijklmnopqrstuvwxyz0123456789'
+  return Array.from(Array(12), () => source[Math.floor(Math.random() * source.length)]).join('')
 }

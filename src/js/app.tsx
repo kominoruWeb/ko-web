@@ -7,6 +7,7 @@ import { Header } from './components/header';
 import { fadeIn } from './components/mobile-menu'
 import { Reset } from './components/reset';
 import { RootCSS } from './components/root-css';
+import { ScrollToTop } from './components/scroll-to-top';
 import { LanguageProvider } from './hooks/use-language';
 import { ConceptPage } from './pages/concept-page';
 import { ContactPage } from './pages/contact-page';
@@ -14,9 +15,6 @@ import { ProfilePage } from './pages/profile-page';
 import { TopPage } from './pages/top-page';
 import { WorkPage } from './pages/work-page';
 import { WorksPage } from './pages/works-page';
-const ScrollRestoration = require('react-scroll-restoration')
-
-
 
 const Outer = styled.div`
   opacity: 0;
@@ -47,8 +45,8 @@ const ContentOuter = styled.div`
 
 export const App: FunctionComponent = () => {
   return <BrowserRouter>
+    <ScrollToTop />
     <LanguageProvider>
-      <ScrollRestoration />
       <Reset />
       <RootCSS />
       <Outer>
