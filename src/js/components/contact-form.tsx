@@ -59,7 +59,14 @@ const Message = styled.div`
   text-align: center;
   color: var(--inverted-text-color);
   margin-top: 1rem;
+  line-height: 1.5;
+`
 
+const HeadText = styled.div`
+  text-align: center;
+  color: var(--inverted-text-color);
+  margin-bottom: 4rem;
+  line-height: 1.75;
 `
 
 
@@ -116,20 +123,22 @@ export const ContactForm: FunctionComponent = () => {
     </Outer>
   }
   return <Outer>
-    <Text
-      ja={<>
-        胡実建築設計事務所へのご質問やご相談は、下記フォームによりご連絡ください。<br />
-        必要事項をご記入の上、［送信］をクリックしてください。
-      </>}
-      en={<>
-        If you have any questions or inquiries to KOMINORUdesign, please use the form below.<br />
-        Please fill in the required items and click [Send].
-      </>}
-      zh={<>
-        如果您对胡実建築設計事務所有兴趣或咨询事项，请使用下面的表格。<br />
-        请填写必填项目，然后点击[发送]。
-      </>}
-    />
+    <HeadText>
+      <Text
+        ja={<>
+          胡実建築設計事務所へのご質問やご相談は、下記フォームによりご連絡ください。<br />
+          必要事項をご記入の上、［送信］をクリックしてください。
+        </>}
+        en={<>
+          If you have any questions or inquiries to KOMINORUdesign, please use the form below.<br />
+          Please fill in the required items and click [Send].
+        </>}
+        zh={<>
+          如果您对胡実建築設計事務所有兴趣或咨询事项，请使用下面的表格。<br />
+          请填写必填项目，然后点击[发送]。
+        </>}
+      />
+    </HeadText>
     <Form {...formProps}>
       <InputContainer label={<Text ja="お名前" en="Name" zh="姓名"/>} required>
         <TextInput name={'name'} />
