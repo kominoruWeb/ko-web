@@ -3,8 +3,6 @@ import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { ContactForm } from '../components/contact-form'
 import { Flow } from '../components/flow';
-import { LabelledArrow } from '../components/labelled-arrow';
-import { Profile } from '../components/profile';
 
 const Outer = styled.div`
   padding-top: var(--header-height);
