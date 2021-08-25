@@ -8,5 +8,5 @@ if(!!window.MSInputMethodContext && !!document.documentMode){
     <script>alert('このブラウザはサポートされていません')</script>
   `)
 } else {
-  document.write('<script src="index.js"></script>')
+  document.write('<script src="/index.js"></script>')
 }
