@@ -38,5 +38,6 @@ jobs:
       - name: S3 sync
         run: |
           aws s3 sync --delete ./dist/ s3://$S3_BUKET/ --quiet
+          aws cloudfront create-invalidation --distribution-id E39X89ZQL521NQ --paths "/*"
         env:
           S3_BUKET: ${{ secrets.S3_BUKET }}
