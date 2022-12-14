@@ -140,8 +140,8 @@ export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = 
                 <Text {...work.name} />
               </ItemLabel>
               <ItemBackgroundOuter>
-                <Image name={work.thumbnail.filename
-                } width={work.thumbnail.width} height={work.thumbnail.height} />
+                <Image name={work.thumbnail?.filename ?? ''
+                } width={work.thumbnail?.width ?? ''} height={work.thumbnail?.height ?? ''} />
               </ItemBackgroundOuter>
             </Item>
           </ItemOuter>

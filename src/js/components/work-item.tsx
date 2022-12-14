@@ -79,7 +79,7 @@ export const WorkItem: FunctionComponent<WorkItemProps> = ({ work }) => {
   return <WorkItemOuter to={`/works/${work.id}`}>
     <Canvas width="1618" height="1000" />
     <WorkItemBackground>
-      <Image name={work.thumbnail.filename} width={work.thumbnail.width} height={work.thumbnail.height} />
+      <Image name={work.thumbnail?.filename ?? ''} width={work.thumbnail?.width ?? ''} height={work.thumbnail?.height ?? ''} />
     </WorkItemBackground>
     <WorkItemLabelOuter>
       <WorkItemLabel>
