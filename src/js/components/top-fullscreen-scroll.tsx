@@ -12,6 +12,7 @@ import SvgDownwardArrow from '../generated/svg/downward-arrow'
 import { LabelledArrow } from './labelled-arrow'
 import { useIsTop } from '../hooks/use-is-top'
 import { fadeIn } from './mobile-menu'
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   position: relative;

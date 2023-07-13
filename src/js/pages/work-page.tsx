@@ -4,10 +4,9 @@ import styled from 'styled-components';
 import { LabelledArrow } from '../components/labelled-arrow'
 import { Work } from '../components/work';
 import { Works } from '../components/works';
-import SvgArrow from '../generated/svg/arrow';
-import SvgDownwardArrow from '../generated/svg/downward-arrow';
 import works from '../works.json';
 import { ErrorPage } from './error-page';
+import { useParams } from 'react-router-dom';
 
 const Outer = styled.div`
   padding-top: var(--header-height);
@@ -28,10 +27,10 @@ const ArrowOuter = styled.div`
 `
 
 type WorkPageProps = {
-  workId: string
 }
 
-export const WorkPage: FunctionComponent<WorkPageProps> = ({workId}) => {
+export const WorkPage: FunctionComponent<WorkPageProps> = () => {
+  const {workId} = useParams()
   const work = works.find(work => work.id === workId)
   if(!work) return <ErrorPage code={404} message="Not found" />
   return <Outer>

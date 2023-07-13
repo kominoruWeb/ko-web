@@ -1,6 +1,6 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
-import { BrowserRouter, Route, Router, Switch, useLocation } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import styled from 'styled-components';
 import { Footer } from './components/footer';
 import { Header } from './components/header';
@@ -15,6 +15,7 @@ import { ProfilePage } from './pages/profile-page';
 import { TopPage } from './pages/top-page';
 import { WorkPage } from './pages/work-page';
 import { WorksPage } from './pages/works-page';
+import { BaseProps } from './types/base-props';
 
 const Outer = styled.div`
   opacity: 0;
@@ -43,7 +44,7 @@ const FooterOuter = styled.div`
 const ContentOuter = styled.div`
 `
 
-export const App: FunctionComponent = () => {
+export const App: FunctionComponent<BaseProps> = () => {
   return <BrowserRouter>
     <ScrollToTop />
     <LanguageProvider>
@@ -54,17 +55,16 @@ export const App: FunctionComponent = () => {
           <Header />
         </HeaderOuter>
         <ContentOuter>
-          <Switch>
-            <Route exact path="/" component={TopPage} />
-            <Route exact path="/concept" component={ConceptPage} />
-            <Route exact path="/works" component={WorksPage} />
-            <Route exact path="/works/:workId" render={({match}) => {
-              return <WorkPage workId={match.params.workId}/>
-            }}>
+          <Routes>
+
+            <Route path="/" element={<TopPage />} />
+            <Route path="/concept" element={<ConceptPage />} />
+            <Route path="/works" element={<WorksPage />} />
+            <Route path="/works/:workId" element={<WorkPage />}>
             </Route>
-            <Route exact path="/profile" component={ProfilePage} />
-            <Route exact path="/contact" component={ContactPage} />
-          </Switch>
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
         </ContentOuter>
         <FooterOuter>
           <Footer />

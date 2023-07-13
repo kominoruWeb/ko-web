@@ -7,6 +7,7 @@ import SvgAboutImage0002 from '../generated/svg/about-image-0002';
 import SvgAboutImage0003 from '../generated/svg/about-image-0003';
 import { Language, useLanguage } from '../hooks/use-language'
 import { Text } from './text';
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   display: flex;
@@ -105,7 +106,7 @@ const ConceptLayoutImageOuter = styled.div`
 const ConceptLayoutImageOuterRight = styled(ConceptLayoutImageOuter)`
 `
 
-export const Concept: FunctionComponent = () => {
+export const Concept: FunctionComponent<BaseProps> = () => {
   const {language} = useLanguage()
   return <Outer>
     <ConceptItem>

@@ -6,6 +6,7 @@ import { ContactFormOuter, FlowOuter } from '../pages/contact-page'
 import { ContactForm } from './contact-form'
 import { Flow } from './flow'
 import { blurIn, fadeIn } from './mobile-menu'
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   background-color: var(--brown);
@@ -46,7 +47,7 @@ const ContactOuter = styled.div`
   width: 100%;
 `
 
-export const Footer: FunctionComponent = () => {
+export const Footer: FunctionComponent<BaseProps> = () => {
   const {pathname} = useLocation()
   const [isOpen, setIsOpen] = useState(false)
 

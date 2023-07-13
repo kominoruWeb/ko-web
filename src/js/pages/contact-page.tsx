@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { ContactForm } from '../components/contact-form'
 import { Flow } from '../components/flow';
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   padding-top: var(--header-height);
@@ -33,7 +34,7 @@ export const ContactFormOuter = styled.div`
   margin: 0 auto;
 `
 
-export const ContactPage: FunctionComponent = () => {
+export const ContactPage: FunctionComponent<BaseProps> = () => {
   return <Outer>
     <FlowOuter>
       <Flow />

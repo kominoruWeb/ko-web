@@ -1,5 +1,5 @@
 import { parsePath } from 'history';
-import React, { useState } from 'react';
+import React, { ReactNode } from 'react';
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { css, keyframes } from 'styled-components';
@@ -92,11 +92,11 @@ export const HeaderNavigator: FunctionComponent<HeaderNavigatorProps> = ({onClic
 
 type HeaderNavigatorItemProps = {
   onClick: () => void,
-  to: string
+  to: string,
+  children?: ReactNode
 }
 export const HeaderNavigatorItem: FunctionComponent<HeaderNavigatorItemProps> = ({onClick, to, children}) => {
-  const location = parsePath(to)
-  return <Item to={() => ({...location, key: createKey()})} onClick={onClick}>{children}</Item>
+  return <Item to={to} onClick={onClick}>{children}</Item>
 }
 
 const createKey = () => {

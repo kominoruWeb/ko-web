@@ -1,6 +1,7 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
+import { BaseProps } from '../types/base-props';
 
 const Picture = styled.picture`
   display: block;

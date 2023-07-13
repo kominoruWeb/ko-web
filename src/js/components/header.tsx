@@ -10,6 +10,7 @@ import { HumbergerIcon } from './hamburger-icon'
 import { HeaderNavigator } from './header-navigator';
 import { LanguageSelector } from './language-selector';
 import { MobileMenu } from './mobile-menu'
+import { BaseProps } from '../types/base-props';
 
 export const fadeIn = keyframes`
   from {
@@ -82,7 +83,7 @@ export const HamburgerOuter = styled.div<{hide?: boolean}>`
 `
 
 
-export const Header: FunctionComponent = () => {
+export const Header: FunctionComponent<BaseProps> = () => {
   const isMobile = useIsMobile(50)
   const [isOpen, setIsOpen] = useState(false)
   const {pathname} = useLocation()

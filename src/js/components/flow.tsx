@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useLanguage } from '../hooks/use-language'
 import { ConceptText, ConceptTitle } from './concept';
 import { Text } from './text';
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
 `
@@ -28,7 +29,7 @@ const Note = styled.div`
 `
 
 
-export const Flow: FunctionComponent = () => {
+export const Flow: FunctionComponent<BaseProps> = () => {
   const {language} = useLanguage()
   return <Outer>
     {

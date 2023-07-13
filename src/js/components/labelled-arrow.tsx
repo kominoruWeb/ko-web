@@ -4,6 +4,7 @@ import styled, { keyframes } from 'styled-components'
 import SvgDownwardArrow from '../generated/svg/downward-arrow'
 import { Language } from '../hooks/use-language'
 import { Text } from './text'
+import { BaseProps } from '../types/base-props';
 
 const blink = keyframes`
   from {
@@ -67,7 +68,7 @@ type LabelledArrowProps = {
   [language in Language]?: string
 }
 
-export const LabelledArrow: FunctionComponent<LabelledArrowProps> = ({children, ...label}) => {
+export const LabelledArrow: FunctionComponent<LabelledArrowProps> = ({...label}) => {
   return <Outer>
     <ArrowOuter>
       <SvgDownwardArrow />

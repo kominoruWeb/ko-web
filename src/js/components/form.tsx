@@ -1,6 +1,7 @@
 import React, { useState, FunctionComponent, useContext, ReactNode,  createContext, ReactElement } from 'react'
 import { FilteredKeys } from '../utils/filtered-keys'
 import { isNullish } from '../utils/is-nullish'
+import { BaseProps } from '../types/base-props';
 
 
 export const createForm = <T, >() => {
@@ -9,6 +10,7 @@ export const createForm = <T, >() => {
   type FormProps = {
     value: T,
     setValue: React.Dispatch<React.SetStateAction<T>>
+    children?: ReactNode
   }
 
   function useForm(defaultValue: T): [T, FormProps]{
@@ -33,6 +35,7 @@ export const createForm = <T, >() => {
     className?: string,
     name: keyof T,
     placeholder?: string
+    children?: ReactNode
   }
   
   const Text: FunctionComponent<TextProps> = ({children, className, name, placeholder = ''}) => {
@@ -45,6 +48,7 @@ export const createForm = <T, >() => {
     className?: string,
     name: keyof T,
     placeholder?: string
+    children?: ReactNode
   }
   const Textarea: FunctionComponent<TextareaProps> = ({children, className, name, placeholder = ''}) => {
     const [values, setValue] = useContext(FormContext) || []
@@ -54,7 +58,8 @@ export const createForm = <T, >() => {
 
   type CheckboxProps = {
     className?: string,
-    name: keyof T
+    name: keyof T,
+    children?: ReactNode
   }
   const Checkbox: FunctionComponent<CheckboxProps> = ({children, className, name}) => {
     const [values, setValue] = useContext(FormContext) || []

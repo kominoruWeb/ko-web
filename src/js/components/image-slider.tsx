@@ -4,8 +4,10 @@ import styled, { keyframes } from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SvgArrow from '../generated/svg/arrow'
 import { Image } from './image'
-import SwiperCore, { Autoplay, Controller, Pagination } from 'swiper'
+import SwiperCore from 'swiper'
+import { Controller, Autoplay, Pagination } from 'swiper/modules'
 import { useIsMobile } from '../hooks/use-is-mobile'
+import { BaseProps } from '../types/base-props';
 
 SwiperCore.use([Controller, Autoplay, Pagination])
 

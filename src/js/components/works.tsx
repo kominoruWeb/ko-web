@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import works from '../works.json';
 import { WorkItem } from './work-item';
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   display: grid;

@@ -1,17 +1,23 @@
 const fsp = require('fs').promises
 const path = require('path')
 const {GoogleSpreadsheet} = require('google-spreadsheet')
+const {GoogleAuth} = require('google-auth-library')
+require('dotenv').config()
 
 ;(async () => {
   // const doc = new GoogleSpreadsheet(process.env.SHEET_ID)
-  const doc = new GoogleSpreadsheet('11R3PoAxtkCiKpXbIEWUTq5I7sA0PNHpbB7YQILu-aZc')
-  await doc.useApiKey(process.env.GOOGLE_API_KEY)
+  const auth = new GoogleAuth({
+    scopes: [
+      'https://www.googleapis.com/auth/spreadsheets'
+    ]
+  }).fromAPIKey(process.env.GOOGLE_API_KEY)
+  const doc = new GoogleSpreadsheet('11R3PoAxtkCiKpXbIEWUTq5I7sA0PNHpbB7YQILu-aZc', auth)
   await doc.loadInfo()
 
   const works = await getData(doc.sheetsByTitle['works'])
   const workImages = await getData(doc.sheetsByTitle['workImages'])
 
-  const res = works.reverse().filter(work => !Number(work.hidden)).map((work, i) => {
+  const res = works.reverse().filter(work => !Number(work.hidden) || work.id).map((work, i) => {
     const images = workImages.filter(image => image.workId === work.id).map(image => ({
       id: image.id,
       filename: image.filename,
@@ -44,7 +50,8 @@ const {GoogleSpreadsheet} = require('google-spreadsheet')
 async function getData(sheet){
   await sheet.loadHeaderRow()
   const rows = await (await sheet.getRows()).map(row => {
-    return Object.fromEntries(sheet.headerValues.map(key => [key, row[key]]))
+    console.log(row)
+    return Object.fromEntries(sheet.headerValues.map(key => [key, row.get(key)]))
   })
   return rows
   

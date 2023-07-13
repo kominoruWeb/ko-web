@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react'
 import styled from 'styled-components'
 import { Text } from './text'
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   display: flex;
@@ -83,7 +84,8 @@ export const Required = styled.span`
 
 type InputContainerProps = {
   label: ReactNode,
-  required?: boolean
+  required?: boolean,
+  children?: ReactNode
 }
 export const InputContainer: FunctionComponent<InputContainerProps> = ({children, label, required}) => {
   return <Outer>
