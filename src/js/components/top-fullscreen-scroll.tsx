@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createRef, useEffect, useRef, useState } from 'react';
 import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
 import { bottomBar } from '../css-mixins/bottom-bar';
@@ -13,6 +13,7 @@ import { LabelledArrow } from './labelled-arrow'
 import { useIsTop } from '../hooks/use-is-top'
 import { fadeIn } from './mobile-menu'
 import { BaseProps } from '../types/base-props';
+import classNames from 'classnames'
 
 const Outer = styled.div`
   position: relative;
@@ -45,7 +46,7 @@ const LogoOuter = styled.div`
   }
 `
 
-const ArrowOuter = styled.div<{hide: boolean}>`
+const ArrowOuter = styled.div`
   color: var(--inverted-text-color);
   position: fixed;
   width: 100vw;
@@ -62,9 +63,9 @@ const ArrowOuter = styled.div<{hide: boolean}>`
   transition: opacity 0.4s;
   opacity: 0;
   animation: ${fadeIn} 1s 2.6s forwards;
-  ${({hide}) => hide ? css`
+  &.hide {
     opacity: 0 !important;
-  ` : ''}
+  }
 `
 
 const ItemContainer = styled.div`
@@ -76,12 +77,11 @@ const ItemOuter = styled(Link)`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  clip-path: inset(0 0 0 0);
   display: block;
 `
 
 
-const Item = styled.div`
+const ItemInner = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -124,6 +124,40 @@ const ItemBackgroundOuter = styled.div`
   }
 `
 
+type ItemProps = {
+  work: (typeof works)[number]
+}
+const Item: FunctionComponent<ItemProps> = ({work}) => {
+  const [position, setPosition] = useState(0)
+  const outerRef = useRef<HTMLAnchorElement>(null)
+  useEffect(() => {
+    const listener = () => {
+      const outer = outerRef.current
+      if(outer){
+        const rect = outer.getBoundingClientRect()
+        console.log(rect)
+      }
+    } 
+    window.addEventListener('sccroll', listener)
+    window.addEventListener('resize', listener)
+    return () => {
+      window.removeEventListener('sccroll', listener)
+      window.removeEventListener('resize', listener)
+    }
+  }, [])
+  return <ItemOuter to={`/works/${work.id}`} key={work.id} ref={outerRef}>
+    <ItemInner>
+      <ItemLabel>
+        <Text {...work.name} />
+      </ItemLabel>
+      <ItemBackgroundOuter style={{opacity: position}}>
+        <Image name={work.thumbnail?.filename ?? ''
+        } width={work.thumbnail?.width ?? ''} height={work.thumbnail?.height ?? ''} />
+      </ItemBackgroundOuter>
+    </ItemInner>
+  </ItemOuter>
+}
+
 
 
 type TopFullscreenScrollProps = {
@@ -134,27 +168,15 @@ export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = 
   return <Outer id="top-fullscreen-scroll">
     <ItemContainer>
       {
-        works.map(work => {
-          return <ItemOuter to={`/works/${work.id}`} key={work.id}>
-            <Item>
-              <ItemLabel>
-                <Text {...work.name} />
-              </ItemLabel>
-              <ItemBackgroundOuter>
-                <Image name={work.thumbnail?.filename ?? ''
-                } width={work.thumbnail?.width ?? ''} height={work.thumbnail?.height ?? ''} />
-              </ItemBackgroundOuter>
-            </Item>
-          </ItemOuter>
-        })
+        works.map(work => <Item key={work.id} work={work} />)
       }
     </ItemContainer>
     <LogoOuter>
       <SvgSquareLogo />
     </LogoOuter>
-    <ArrowOuter hide={!isTop}>
+    <ArrowOuter className={classNames({hide: !isTop})}>
       <LabelledArrow />
     </ArrowOuter>
-
   </Outer>
 }
+
