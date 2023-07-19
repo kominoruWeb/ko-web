@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FunctionComponent } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
 import { ContactFormOuter, FlowOuter } from '../pages/contact-page'
 import { ContactForm } from './contact-form'

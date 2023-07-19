@@ -1,7 +1,6 @@
 import React, { FunctionComponent, ReactNode } from 'react'
 import styled from 'styled-components'
 import { Text } from './text'
-import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   display: flex;

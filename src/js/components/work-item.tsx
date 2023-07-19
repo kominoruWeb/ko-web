@@ -2,11 +2,9 @@ import React from 'react';
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import { bottomBar } from '../css-mixins/bottom-bar';
 import { Image } from './image';
 import { Text } from './text';
 import { WorkItemProps } from './works';
-import { BaseProps } from '../types/base-props';
 
 const scrollUp = keyframes`
   from {

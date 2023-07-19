@@ -5,7 +5,6 @@ import { Language, useLanguage } from '../hooks/use-language'
 import works from '../works.json'
 import { ImageSlider } from './image-slider';
 import { Text } from './text';
-import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   display: flex;

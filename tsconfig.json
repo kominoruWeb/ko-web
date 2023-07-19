@@ -13,7 +13,6 @@
     "strictPropertyInitialization": false,
     "jsx": "react",
     "resolveJsonModule": true,
-    "noUnusedLocals": true,
     "plugins": [
       {
         "name": "typescript-styled-plugin"

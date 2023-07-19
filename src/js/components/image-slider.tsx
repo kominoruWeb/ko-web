@@ -7,7 +7,6 @@ import { Image } from './image'
 import SwiperCore from 'swiper'
 import { Controller, Autoplay, Pagination } from 'swiper/modules'
 import { useIsMobile } from '../hooks/use-is-mobile'
-import { BaseProps } from '../types/base-props';
 
 SwiperCore.use([Controller, Autoplay, Pagination])
 

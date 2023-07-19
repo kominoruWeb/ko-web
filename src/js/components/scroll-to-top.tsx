@@ -1,6 +1,5 @@
-import React, { FunctionComponent, useEffect } from 'react'
+import { FunctionComponent, useEffect } from 'react'
 import { useLocation, useNavigationType } from 'react-router-dom'
-import styled from 'styled-components'
 
 type ScrollToTopProps = {
 

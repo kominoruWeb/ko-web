@@ -10,22 +10,11 @@ const Outer = styled.div`
   background-color: var(--brown);
 `
 
-const ProfileOuter = styled.div`
-  max-width: 40rem;
-  margin: 4rem auto 2rem;
-  padding: 0 1rem;
-`
-
 export const FlowOuter = styled.div`
   background-color: var(--dark-brown);
   padding: 4rem 1rem;
   width: 100%;
   box-sizing: border-box;
-`
-
-const ArrowOuter = styled.div`
-  color: var(--inverted-text-color);
-  margin: 4rem 0;
 `
 
 export const ContactFormOuter = styled.div`

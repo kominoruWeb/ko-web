@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { FunctionComponent } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import styled, { css, keyframes } from 'styled-components';
-import SvgHamburger from '../generated/svg/hamburger'
+import styled, { keyframes } from 'styled-components';
 import SvgLogo from '../generated/svg/logo';
 import { useIsMobile } from '../hooks/use-is-mobile'
-import { useIsTop } from '../hooks/use-is-top'
 import { HumbergerIcon } from './hamburger-icon'
 import { HeaderNavigator } from './header-navigator';
 import { LanguageSelector } from './language-selector';

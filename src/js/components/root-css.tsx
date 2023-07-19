@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FunctionComponent } from 'react';
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { Language, useLanguage } from '../hooks/use-language'
 import { BaseProps } from '../types/base-props';
 

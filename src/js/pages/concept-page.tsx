@@ -2,8 +2,6 @@ import React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Concept } from '../components/concept';
-import { LabelledArrow } from '../components/labelled-arrow'
-import { Profile } from '../components/profile';
 import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
@@ -15,11 +13,6 @@ export const ProfileOuter = styled.div`
   max-width: 40rem;
   margin: 6rem auto 4rem;
   padding: 0 1rem;
-`
-
-const ArrowOuter = styled.div`
-  color: var(--inverted-text-color);
-  margin: 4rem 0;
 `
 
 const ConceptOuter = styled.div`

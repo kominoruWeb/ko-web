@@ -1,7 +1,6 @@
 import React from 'react'
 import { FunctionComponent } from 'react'
-import styled, { css } from 'styled-components'
-import { BaseProps } from '../types/base-props';
+import styled from 'styled-components'
 import classNames from 'classnames';
 
 const Outer = styled.div`

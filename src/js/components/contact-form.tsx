@@ -105,8 +105,6 @@ export const ContactForm: FunctionComponent<BaseProps> = () => {
       body: JSON.stringify(values)
     })
 
-    const resBody = await res.json()
-
     if(res.status === 200){
       setSent(true)
     } else {

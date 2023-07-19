@@ -3,20 +3,6 @@ import { FunctionComponent } from 'react'
 import styled, { keyframes } from 'styled-components'
 import SvgDownwardArrow from '../generated/svg/downward-arrow'
 import { Language } from '../hooks/use-language'
-import { Text } from './text'
-import { BaseProps } from '../types/base-props';
-
-const blink = keyframes`
-  from {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.75;
-  }
-  to {
-    opacity: 1;
-  }
-`
 
 const scroll = keyframes`
   from {
@@ -53,11 +39,6 @@ const Outer = styled.div`
   justify-content: center;
   align-items: center;
   animation: ${scroll} 4s linear infinite, ${fade} 4s linear infinite;
-`
-
-const Label = styled.div`
-  width: 0;
-  white-space: nowrap;
 `
 
 const ArrowOuter = styled.div`

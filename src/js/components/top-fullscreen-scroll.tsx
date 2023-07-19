@@ -1,18 +1,15 @@
-import React, { createRef, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FunctionComponent } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { bottomBar } from '../css-mixins/bottom-bar';
 import SvgSquareLogo from '../generated/svg/square-logo';
 import { Image } from './image';
 import works from '../works.json';
 import { Text } from './text'
 import { Link } from 'react-router-dom'
-import SvgArrow from '../generated/svg/arrow'
-import SvgDownwardArrow from '../generated/svg/downward-arrow'
 import { LabelledArrow } from './labelled-arrow'
 import { useIsTop } from '../hooks/use-is-top'
 import { fadeIn } from './mobile-menu'
-import { BaseProps } from '../types/base-props';
 import classNames from 'classnames'
 
 const Outer = styled.div`

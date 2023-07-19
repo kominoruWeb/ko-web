@@ -1,8 +1,6 @@
 import React, { useState, FunctionComponent, useContext, ReactNode,  createContext, ReactElement } from 'react'
 import { FilteredKeys } from '../utils/filtered-keys'
 import { isNullish } from '../utils/is-nullish'
-import { BaseProps } from '../types/base-props';
-
 
 export const createForm = <T, >() => {
   

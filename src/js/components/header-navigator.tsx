@@ -1,4 +1,3 @@
-import { parsePath } from 'history';
 import React, { ReactNode } from 'react';
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
@@ -97,9 +96,4 @@ type HeaderNavigatorItemProps = {
 }
 export const HeaderNavigatorItem: FunctionComponent<HeaderNavigatorItemProps> = ({onClick, to, children}) => {
   return <Item to={to} onClick={onClick}>{children}</Item>
-}
-
-const createKey = () => {
-  const source = 'abcdefghijklmnopqrstuvwxyz0123456789'
-  return Array.from(Array(12), () => source[Math.floor(Math.random() * source.length)]).join('')
 }

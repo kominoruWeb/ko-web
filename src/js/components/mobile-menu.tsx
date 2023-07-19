@@ -6,7 +6,6 @@ import { HumbergerIcon } from './hamburger-icon'
 import { HamburgerOuter } from './header'
 import { HeaderNavigator } from './header-navigator'
 import { LanguageSelector } from './language-selector'
-import { BaseProps } from '../types/base-props';
 
 export const fadeIn = keyframes`
   from {

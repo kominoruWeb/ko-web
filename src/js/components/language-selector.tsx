@@ -1,9 +1,7 @@
 import React, { Fragment } from 'react';
 import { FunctionComponent } from 'react';
 import styled, { css } from 'styled-components';
-import SvgLanguageSelectorDivider from '../generated/svg/language-selector-divider';
 import { Language, languages, useLanguage } from '../hooks/use-language';
-import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
 `
