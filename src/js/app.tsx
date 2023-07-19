@@ -56,7 +56,6 @@ export const App: FunctionComponent<BaseProps> = () => {
         </HeaderOuter>
         <ContentOuter>
           <Routes>
-
             <Route path="/" element={<TopPage />} />
             <Route path="/concept" element={<ConceptPage />} />
             <Route path="/works" element={<WorksPage />} />

@@ -132,24 +132,28 @@ const Item: FunctionComponent<ItemProps> = ({work}) => {
       const outer = outerRef.current
       if(outer){
         const rect = outer.getBoundingClientRect()
-        console.log(rect)
+        setPosition(Math.max(0, Math.min(1, (rect.top - (window.innerHeight / 2)) / (window.innerHeight / 2))))
       }
-    } 
-    window.addEventListener('sccroll', listener)
+    }
+    listener()
+    window.addEventListener('scroll', listener)
     window.addEventListener('resize', listener)
     return () => {
       window.removeEventListener('sccroll', listener)
       window.removeEventListener('resize', listener)
     }
   }, [])
-  return <ItemOuter to={`/works/${work.id}`} key={work.id} ref={outerRef}>
+  return <ItemOuter to={`/works/${work.id}`} key={work.id} ref={outerRef} style={{opacity: 1 - position}}>
     <ItemInner>
       <ItemLabel>
         <Text {...work.name} />
       </ItemLabel>
-      <ItemBackgroundOuter style={{opacity: position}}>
-        <Image name={work.thumbnail?.filename ?? ''
-        } width={work.thumbnail?.width ?? ''} height={work.thumbnail?.height ?? ''} />
+      <ItemBackgroundOuter style={{transform: `scale(${1.1 + -0.1 * position})`}}>
+        <Image
+          name={work.thumbnail?.filename ?? ''}
+          width={work.thumbnail?.width ?? ''}
+          height={work.thumbnail?.height ?? ''}
+        />
       </ItemBackgroundOuter>
     </ItemInner>
   </ItemOuter>

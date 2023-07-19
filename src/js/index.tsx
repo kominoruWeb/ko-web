@@ -1,11 +1,12 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { App } from './app'
 
 const init = () => {
   const rootElement = document.getElementById('root')
   if(rootElement){
-    render(<App />, rootElement)
+    const root = createRoot(rootElement)
+    root.render(<App />)
   }
 }
 
