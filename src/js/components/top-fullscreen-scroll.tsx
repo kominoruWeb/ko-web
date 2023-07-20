@@ -11,6 +11,8 @@ import { LabelledArrow } from './labelled-arrow'
 import { useIsTop } from '../hooks/use-is-top'
 import { fadeIn } from './mobile-menu'
 import classNames from 'classnames'
+import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
+import {EffectFade} from 'swiper/modules';
 
 const Outer = styled.div`
   position: relative;
@@ -67,6 +69,9 @@ const ArrowOuter = styled.div`
 
 const ItemContainer = styled.div`
   clip-path: inset(0 0 0 0);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 `
 
 const ItemOuter = styled(Link)`
@@ -113,6 +118,10 @@ const ItemBackgroundOuter = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
+  transition: transform 1000ms;
+  .swiper-slide-prev & {
+    transform: scale(1.1);
+  }
   img {
     width: 100vw;
     height: 100vh;
@@ -121,40 +130,34 @@ const ItemBackgroundOuter = styled.div`
   }
 `
 
+const ScrollContainer = styled.div`
+  pointer-events: none;
+`
+
+const ScrollItemOuter = styled.div`
+  width: 100vw;
+  height: 100vh;
+`
+
 type ItemProps = {
   work: (typeof works)[number]
 }
 const Item: FunctionComponent<ItemProps> = ({work}) => {
-  const [position, setPosition] = useState(0)
-  const outerRef = useRef<HTMLAnchorElement>(null)
-  useEffect(() => {
-    const listener = () => {
-      const outer = outerRef.current
-      if(outer){
-        const rect = outer.getBoundingClientRect()
-        setPosition(Math.max(0, Math.min(1, (rect.top - (window.innerHeight / 2)) / (window.innerHeight / 2))))
-      }
-    }
-    listener()
-    window.addEventListener('scroll', listener)
-    window.addEventListener('resize', listener)
-    return () => {
-      window.removeEventListener('sccroll', listener)
-      window.removeEventListener('resize', listener)
-    }
-  }, [])
-  return <ItemOuter to={`/works/${work.id}`} key={work.id} ref={outerRef} style={{opacity: 1 - position}}>
+  return <ItemOuter to={`/works/${work.id}`} key={work.id}>
     <ItemInner>
-      <ItemLabel>
-        <Text {...work.name} />
-      </ItemLabel>
-      <ItemBackgroundOuter style={{transform: `scale(${1.1 + -0.1 * position})`}}>
+      <ItemBackgroundOuter>
         <Image
           name={work.thumbnail?.filename ?? ''}
           width={work.thumbnail?.width ?? ''}
           height={work.thumbnail?.height ?? ''}
         />
       </ItemBackgroundOuter>
+      <LogoOuter style={{color: work.pickupTextColor ?? 'var(--inverted-text-color)'}}>
+        <SvgSquareLogo />
+      </LogoOuter>
+      <ItemLabel style={{color: work.pickupTextColor ?? 'var(--inverted-text-color)'}}>
+        <Text {...work.name} />
+      </ItemLabel>
     </ItemInner>
   </ItemOuter>
 }
@@ -166,15 +169,62 @@ type TopFullscreenScrollProps = {
 }
 export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = ({works}) => {
   const isTop = useIsTop()
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [swiper, setSwiper] = useState<SwiperClass>()
+  useEffect(() => {
+    const listener = () => {
+      const scrollContainer = scrollContainerRef.current
+      if(scrollContainer){
+        Array.from(scrollContainer.children).forEach((el, i) => {
+          const rect = el.getBoundingClientRect()
+          if(rect.top - (window.innerHeight / 2) < window.innerHeight / 2){
+            setCurrentIndex(i)
+          }
+        })
+      }
+    }
+    listener()
+    window.addEventListener('scroll', listener)
+    window.addEventListener('resize', listener)
+    return () => {
+      window.removeEventListener('sccroll', listener)
+      window.removeEventListener('resize', listener)
+    }
+  }, [])
+  useEffect(() => {
+    if(swiper){
+      swiper.slideTo(currentIndex, 1000)
+    }
+  }, [currentIndex, swiper])
+  
   return <Outer id="top-fullscreen-scroll">
     <ItemContainer>
-      {
-        works.map(work => <Item key={work.id} work={work} />)
-      }
+      <Swiper
+        modules={[
+          EffectFade
+        ]}
+        effect="fade"
+        fadeEffect={{
+        }}
+        onSwiper={setSwiper}
+      >
+        {
+          works.map(work => {
+            return <SwiperSlide key={work.id}>
+              <Item work={work} />
+            </SwiperSlide>
+          })
+        }
+      </Swiper>
     </ItemContainer>
-    <LogoOuter>
-      <SvgSquareLogo />
-    </LogoOuter>
+    <ScrollContainer ref={scrollContainerRef}>
+     {
+        works.map(work => {
+          return <ScrollItemOuter key={work.id} />
+        })
+      }
+    </ScrollContainer>
     <ArrowOuter className={classNames({hide: !isTop})}>
       <LabelledArrow />
     </ArrowOuter>

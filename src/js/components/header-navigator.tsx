@@ -2,6 +2,7 @@ import React, { ReactNode } from 'react';
 import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { css, keyframes } from 'styled-components';
+import SvgInstagramIcon from '../generated/svg/instagram-icon';
 
 export const scrollUp = keyframes`
   from {
@@ -17,6 +18,7 @@ export const scrollUp = keyframes`
 const Outer = styled.div`
   margin: 0 -0.8rem;
   display: flex;
+  align-items: center;
   @media (max-width: 50rem) {
     flex-direction: column;
     margin: -1.25rem 0;
@@ -40,6 +42,7 @@ const itemCSS = css`
     padding: 1.25rem 0;
     animation: ${scrollUp} 0.4s ease-out forwards;
     opacity: 0;
+    display: flex;
     &:nth-child(1){
       animation-delay: 0.0s;
     }
@@ -67,6 +70,18 @@ const Item = styled(Link)`
 
 const ExternalItem = styled.a`
   ${itemCSS}
+  svg {
+    height: 1rem;
+    width: auto;
+  }
+`
+
+const MobileOnly = styled.span`
+  display: none;
+  @media (max-width: 50rem){
+    margin-left: 0.5rem;
+    display: inline;
+  }
 `
 
 type HeaderNavigatorProps = {
@@ -86,6 +101,7 @@ export const HeaderNavigator: FunctionComponent<HeaderNavigatorProps> = ({onClic
     <HeaderNavigatorItem to='/profile' onClick={handleClick}>PROFILE</HeaderNavigatorItem>
     <HeaderNavigatorItem to='/contact' onClick={handleClick}>CONTACT</HeaderNavigatorItem>
     <ExternalItem href='http://blog.kominoru.com/' target="_blank" onClick={handleClick}>BLOG</ExternalItem>
+    <ExternalItem href='https://www.instagram.com/kominoru/' target="_blank" onClick={handleClick}><SvgInstagramIcon /><MobileOnly> INSTAGRAM</MobileOnly></ExternalItem>
   </Outer>
 }
 

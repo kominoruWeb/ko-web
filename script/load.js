@@ -38,6 +38,7 @@ require('dotenv').config()
       },
       pickup: Boolean(Number(work.pickup)),
       pickupOrder: Number(work.pickupOrder),
+      pickupTextColor: work.pickupTextColor || null,
       order: i,
       thumbnail: workImages.find(workImage => workImage.id === work.pickupImageId.toString()) ?? images[0],
       images: images
@@ -50,7 +51,6 @@ require('dotenv').config()
 async function getData(sheet){
   await sheet.loadHeaderRow()
   const rows = await (await sheet.getRows()).map(row => {
-    console.log(row)
     return Object.fromEntries(sheet.headerValues.map(key => [key, row.get(key)]))
   })
   return rows
