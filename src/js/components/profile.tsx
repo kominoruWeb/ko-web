@@ -3,6 +3,7 @@ import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Image } from './image'
 import { Text } from './text';
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   display: flex;
@@ -86,7 +87,7 @@ const ProfileImageOuter = styled.div`
 `
 
 
-export const Profile: FunctionComponent = () => {
+export const Profile: FunctionComponent<BaseProps> = () => {
   return <Outer>
     <ProfileOuter>
       <Name>

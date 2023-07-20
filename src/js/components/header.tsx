@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { FunctionComponent } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import styled, { css, keyframes } from 'styled-components';
-import SvgHamburger from '../generated/svg/hamburger'
+import styled, { keyframes } from 'styled-components';
 import SvgLogo from '../generated/svg/logo';
 import { useIsMobile } from '../hooks/use-is-mobile'
-import { useIsTop } from '../hooks/use-is-top'
 import { HumbergerIcon } from './hamburger-icon'
 import { HeaderNavigator } from './header-navigator';
 import { LanguageSelector } from './language-selector';
 import { MobileMenu } from './mobile-menu'
+import { BaseProps } from '../types/base-props';
+import classNames from 'classnames'
 
 export const fadeIn = keyframes`
   from {
@@ -20,7 +20,7 @@ export const fadeIn = keyframes`
   }
 `
 
-const Outer = styled.div<{hide?: boolean, top: boolean}>`
+const Outer = styled.div`
   padding: 0.25rem 1.75rem;
   display: flex;
   align-items: center;
@@ -31,25 +31,25 @@ const Outer = styled.div<{hide?: boolean, top: boolean}>`
   position: relative;
   background-color: rgba(255, 255, 255, 0.75);
   /* backdrop-filter: blur(0.5rem); */
-  ${({hide}) => hide ? css`
-    background-color: transparent;
-    backdrop-filter: none;
-  ` : ''}
   opacity: 0;
   animation: ${fadeIn} 1s 2.6s forwards;
-  ${({top}) => !top ? css`
+  &.hide {
+    background-color: transparent;
+    backdrop-filter: none;
+  }
+  &.top {
     opacity: 1 !important;
-  ` : ''}
+  }
   @media (max-width: 50rem) {
     padding: 0.25rem 1rem;
   }
 `
 
-const LogoOuter = styled(Link)<{hide?: boolean}>`
+const LogoOuter = styled(Link)`
   transition: opacity 0.4s, color 0.4s;
-  ${({hide}) => hide ? css`
+  &.hide {
     opacity: 0;
-  ` : ''}
+  }
   &:hover {
     color: var(--hover-text-color);
   }
@@ -63,7 +63,7 @@ const LanguageSelectorOuter = styled.div`
   margin-left: 4rem;
 `
 
-export const HamburgerOuter = styled.div<{hide?: boolean}>`
+export const HamburgerOuter = styled.div`
   margin-left: auto;
   cursor: pointer;
   align-self: stretch;
@@ -71,18 +71,17 @@ export const HamburgerOuter = styled.div<{hide?: boolean}>`
   margin-right: -0.5rem;
   display: flex;
   align-items: center;
-  transition: all 0.4s;
-  ${({hide}) => hide ? css`
-    color: var(--inverted-text-color);
-  ` : ''}
   transition: color 0.4s;
+  &.hide {
+    color: var(--inverted-text-color);
+  }
   &:hover {
     color: var(--hover-text-color);
   }
 `
 
 
-export const Header: FunctionComponent = () => {
+export const Header: FunctionComponent<BaseProps> = () => {
   const isMobile = useIsMobile(50)
   const [isOpen, setIsOpen] = useState(false)
   const {pathname} = useLocation()
@@ -111,13 +110,13 @@ export const Header: FunctionComponent = () => {
       setHide(false)
     }
   }, [pathname, isMobile])
-  return <Outer hide={hide} top={pathname === '/'}>
-    <LogoOuter to='/' hide={hide}>
+  return <Outer className={classNames({hide, top: pathname === '/'})} >
+    <LogoOuter to='/' className={classNames({hide})}>
       <SvgLogo />
     </LogoOuter>
     {
       isMobile ? <>
-        <HamburgerOuter hide={hide} onClick={() => setIsOpen(isOpen => !isOpen)}>
+        <HamburgerOuter className={classNames({hide})} onClick={() => setIsOpen(isOpen => !isOpen)}>
           <HumbergerIcon cross={isOpen}/>
         </HamburgerOuter>
         {

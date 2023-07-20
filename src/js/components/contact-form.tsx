@@ -7,6 +7,7 @@ import { Text } from './text'
 import { ContactBody, prefectures } from '../../../form-function/src/contact-body'
 import { useLanguage } from '../hooks/use-language'
 import { validate } from 'class-validator'
+import { BaseProps } from '../types/base-props';
 
 const {
   Form,
@@ -70,7 +71,7 @@ const HeadText = styled.div`
 `
 
 
-export const ContactForm: FunctionComponent = () => {
+export const ContactForm: FunctionComponent<BaseProps> = () => {
   const {language} = useLanguage()
   const [values, formProps] = useForm({
     name: '',
@@ -103,8 +104,6 @@ export const ContactForm: FunctionComponent = () => {
       },
       body: JSON.stringify(values)
     })
-
-    const resBody = await res.json()
 
     if(res.status === 200){
       setSent(true)

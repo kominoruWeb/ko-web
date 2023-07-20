@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
     "target": "ES2019",
-    "lib": ["ES2019", "DOM"],
+    "lib": ["ES2022", "DOM"],
     "module": "ESNext",
     "moduleResolution": "Node",
-    "resolveJsonModule": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
@@ -13,6 +12,7 @@
     "strict": true,
     "strictPropertyInitialization": false,
     "jsx": "react",
+    "resolveJsonModule": true,
     "plugins": [
       {
         "name": "typescript-styled-plugin"
@@ -22,4 +22,9 @@
   "include": [
     "src/js"
   ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
 }

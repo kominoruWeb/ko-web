@@ -1,12 +1,9 @@
 import React from 'react';
 import { FunctionComponent } from 'react';
-import { useLocation } from 'react-router-dom';
 import styled, { css } from 'styled-components';
-import SvgAboutImage0001 from '../generated/svg/about-image-0001';
-import SvgAboutImage0002 from '../generated/svg/about-image-0002';
-import SvgAboutImage0003 from '../generated/svg/about-image-0003';
 import { Language, useLanguage } from '../hooks/use-language'
 import { Text } from './text';
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   display: flex;
@@ -72,40 +69,7 @@ export const ConceptText = styled.div<{language: Language}>`
   }
 `
 
-const ConceptImageOuter = styled.div`
-  color: rgb(196, 196, 196);
-  margin-top: 3rem;
-  align-self: center;
-  padding: 0 2rem;
-  svg {
-    max-width: 100%;
-    width: 100%;
-  }
-`
-
-const ConceptImageOuter2 = styled(ConceptImageOuter)`
-  padding: 0;
-`
-
-const ConceptLayoutImageOuter = styled.div`
-  position: absolute;
-  opacity: 0.25;
-  bottom: 0;
-  color: var(--inverted-text-color);
-  align-self: center;
-  
-  transform: scale(1.25) translateX(8rem);
-  transform-origin: center bottom;
-  margin-bottom: 4rem;
-  svg {
-    max-width: 100%;
-    width: 100%;
-  }
-`
-const ConceptLayoutImageOuterRight = styled(ConceptLayoutImageOuter)`
-`
-
-export const Concept: FunctionComponent = () => {
+export const Concept: FunctionComponent<BaseProps> = () => {
   const {language} = useLanguage()
   return <Outer>
     <ConceptItem>

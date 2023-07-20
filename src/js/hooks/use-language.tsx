@@ -1,4 +1,5 @@
 import React, { createContext, FunctionComponent, useContext, useState } from 'react'
+import { BaseProps } from '../types/base-props';
 
 export const languages = [
   'ja',
@@ -18,7 +19,7 @@ const LanguageContext = createContext<LanguageContextType>({
   setLanguage: null
 })
 
-export const LanguageProvider: FunctionComponent = ({children}) => {
+export const LanguageProvider: FunctionComponent<BaseProps> = ({children}) => {
   const [language, setLanguage] = useState<Language>('ja')
   return <LanguageContext.Provider value={{language, setLanguage}}>
     {children}

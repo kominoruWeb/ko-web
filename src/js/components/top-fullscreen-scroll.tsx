@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FunctionComponent } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { bottomBar } from '../css-mixins/bottom-bar';
 import SvgSquareLogo from '../generated/svg/square-logo';
 import { Image } from './image';
 import works from '../works.json';
 import { Text } from './text'
 import { Link } from 'react-router-dom'
-import SvgArrow from '../generated/svg/arrow'
-import SvgDownwardArrow from '../generated/svg/downward-arrow'
 import { LabelledArrow } from './labelled-arrow'
 import { useIsTop } from '../hooks/use-is-top'
 import { fadeIn } from './mobile-menu'
+import classNames from 'classnames'
+import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
+import {EffectFade} from 'swiper/modules';
 
 const Outer = styled.div`
   position: relative;
@@ -44,7 +45,7 @@ const LogoOuter = styled.div`
   }
 `
 
-const ArrowOuter = styled.div<{hide: boolean}>`
+const ArrowOuter = styled.div`
   color: var(--inverted-text-color);
   position: fixed;
   width: 100vw;
@@ -61,13 +62,16 @@ const ArrowOuter = styled.div<{hide: boolean}>`
   transition: opacity 0.4s;
   opacity: 0;
   animation: ${fadeIn} 1s 2.6s forwards;
-  ${({hide}) => hide ? css`
+  &.hide {
     opacity: 0 !important;
-  ` : ''}
+  }
 `
 
 const ItemContainer = styled.div`
   clip-path: inset(0 0 0 0);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 `
 
 const ItemOuter = styled(Link)`
@@ -75,12 +79,11 @@ const ItemOuter = styled(Link)`
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  clip-path: inset(0 0 0 0);
   display: block;
 `
 
 
-const Item = styled.div`
+const ItemInner = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -115,6 +118,10 @@ const ItemBackgroundOuter = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
+  transition: transform 1000ms;
+  .swiper-slide-prev & {
+    transform: scale(1.1);
+  }
   img {
     width: 100vw;
     height: 100vh;
@@ -123,6 +130,38 @@ const ItemBackgroundOuter = styled.div`
   }
 `
 
+const ScrollContainer = styled.div`
+  pointer-events: none;
+`
+
+const ScrollItemOuter = styled.div`
+  width: 100vw;
+  height: 100vh;
+`
+
+type ItemProps = {
+  work: (typeof works)[number]
+}
+const Item: FunctionComponent<ItemProps> = ({work}) => {
+  return <ItemOuter to={`/works/${work.id}`} key={work.id}>
+    <ItemInner>
+      <ItemBackgroundOuter>
+        <Image
+          name={work.thumbnail?.filename ?? ''}
+          width={work.thumbnail?.width ?? ''}
+          height={work.thumbnail?.height ?? ''}
+        />
+      </ItemBackgroundOuter>
+      <LogoOuter style={{color: work.pickupTextColor ?? 'var(--inverted-text-color)'}}>
+        <SvgSquareLogo />
+      </LogoOuter>
+      <ItemLabel style={{color: work.pickupTextColor ?? 'var(--inverted-text-color)'}}>
+        <Text {...work.name} />
+      </ItemLabel>
+    </ItemInner>
+  </ItemOuter>
+}
+
 
 
 type TopFullscreenScrollProps = {
@@ -130,30 +169,65 @@ type TopFullscreenScrollProps = {
 }
 export const TopFullscreenScroll: FunctionComponent<TopFullscreenScrollProps> = ({works}) => {
   const isTop = useIsTop()
-  return <Outer id="top-fullscreen-scroll">
-    <ItemContainer>
-      {
-        works.map(work => {
-          return <ItemOuter to={`/works/${work.id}`} key={work.id}>
-            <Item>
-              <ItemLabel>
-                <Text {...work.name} />
-              </ItemLabel>
-              <ItemBackgroundOuter>
-                <Image name={work.thumbnail?.filename ?? ''
-                } width={work.thumbnail?.width ?? ''} height={work.thumbnail?.height ?? ''} />
-              </ItemBackgroundOuter>
-            </Item>
-          </ItemOuter>
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [swiper, setSwiper] = useState<SwiperClass>()
+  useEffect(() => {
+    const listener = () => {
+      const scrollContainer = scrollContainerRef.current
+      if(scrollContainer){
+        Array.from(scrollContainer.children).forEach((el, i) => {
+          const rect = el.getBoundingClientRect()
+          if(rect.top - (window.innerHeight / 2) < window.innerHeight / 2){
+            setCurrentIndex(i)
+          }
         })
       }
+    }
+    listener()
+    window.addEventListener('scroll', listener)
+    window.addEventListener('resize', listener)
+    return () => {
+      window.removeEventListener('sccroll', listener)
+      window.removeEventListener('resize', listener)
+    }
+  }, [])
+  useEffect(() => {
+    if(swiper){
+      swiper.slideTo(currentIndex, 1000)
+    }
+  }, [currentIndex, swiper])
+  
+  return <Outer id="top-fullscreen-scroll">
+    <ItemContainer>
+      <Swiper
+        modules={[
+          EffectFade
+        ]}
+        effect="fade"
+        fadeEffect={{
+        }}
+        onSwiper={setSwiper}
+      >
+        {
+          works.map(work => {
+            return <SwiperSlide key={work.id}>
+              <Item work={work} />
+            </SwiperSlide>
+          })
+        }
+      </Swiper>
     </ItemContainer>
-    <LogoOuter>
-      <SvgSquareLogo />
-    </LogoOuter>
-    <ArrowOuter hide={!isTop}>
+    <ScrollContainer ref={scrollContainerRef}>
+     {
+        works.map(work => {
+          return <ScrollItemOuter key={work.id} />
+        })
+      }
+    </ScrollContainer>
+    <ArrowOuter className={classNames({hide: !isTop})}>
       <LabelledArrow />
     </ArrowOuter>
-
   </Outer>
 }
+

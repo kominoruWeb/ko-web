@@ -2,8 +2,7 @@ import React from 'react';
 import { FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Concept } from '../components/concept';
-import { LabelledArrow } from '../components/labelled-arrow'
-import { Profile } from '../components/profile';
+import { BaseProps } from '../types/base-props';
 
 const Outer = styled.div`
   padding-top: var(--header-height);
@@ -16,15 +15,10 @@ export const ProfileOuter = styled.div`
   padding: 0 1rem;
 `
 
-const ArrowOuter = styled.div`
-  color: var(--inverted-text-color);
-  margin: 4rem 0;
-`
-
 const ConceptOuter = styled.div`
 `
 
-export const ConceptPage: FunctionComponent = () => {
+export const ConceptPage: FunctionComponent<BaseProps> = () => {
   return <Outer>
     <ConceptOuter>
       <Concept />

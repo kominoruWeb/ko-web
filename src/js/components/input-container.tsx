@@ -83,7 +83,8 @@ export const Required = styled.span`
 
 type InputContainerProps = {
   label: ReactNode,
-  required?: boolean
+  required?: boolean,
+  children?: ReactNode
 }
 export const InputContainer: FunctionComponent<InputContainerProps> = ({children, label, required}) => {
   return <Outer>

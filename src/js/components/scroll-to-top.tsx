@@ -1,22 +1,26 @@
-import { FunctionComponent, useEffect } from 'react';
-import { useHistory } from 'react-router';
+import { FunctionComponent, useEffect } from 'react'
+import { useLocation, useNavigationType } from 'react-router-dom'
 
-export const ScrollToTop: FunctionComponent = () => {
-  const history = useHistory()
+type ScrollToTopProps = {
+
+}
+export const ScrollToTop: FunctionComponent<ScrollToTopProps> = () => {
+  const navigationType = useNavigationType()
+  const location = useLocation()
   useEffect(() => {
-    history.listen((location, action) => {
-      console.log(action, location)
-      if(action === 'PUSH'){
+    if(navigationType === 'PUSH' || navigationType === 'REPLACE'){
+      if(location.hash){
+        setTimeout(() => {
+          const target = document.getElementById(location.hash.replace(/^#/, ''))
+          console.log(target)
+          if(target){
+              target.scrollIntoView({behavior: 'smooth'})
+          }
+        }, 50)
+      } else {
         window.scrollTo(0, 0)
-
-        if(location.hash){
-          window.requestAnimationFrame(() => {
-            document.getElementById(location.hash.replace(/^#/, ''))?.scrollIntoView()
-          })
-        }
       }
-    })
-  }, [])
-
+    }
+  }, [navigationType, location.hash, location.pathname, location.key])
   return null
 }
