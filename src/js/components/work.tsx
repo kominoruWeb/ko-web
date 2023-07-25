@@ -60,7 +60,6 @@ const Description = styled.div<{language: Language}>`
   @media (max-width: 40rem) {
     margin: -0.25rem 0;
     line-height: 1.75;
-    white-space: normal;
     text-align: justify;
   }
 `

@@ -17,7 +17,8 @@ require('dotenv').config()
   const works = await getData(doc.sheetsByTitle['works'])
   const workImages = await getData(doc.sheetsByTitle['workImages'])
 
-  const res = works.reverse().filter(work => !Number(work.hidden) || work.id).map((work, i) => {
+  const res = works.reverse().filter(work => !Number(work.hidden) && work.id).map((work, i) => {
+    console.log(work.name_ja, work.hidden, !Number(work.hidden))
     const images = workImages.filter(image => image.workId === work.id).map(image => ({
       id: image.id,
       filename: image.filename,
