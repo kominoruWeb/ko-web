@@ -96,6 +96,8 @@ export const Profile: FunctionComponent<BaseProps> = () => {
       <Role>
         <Text ja="代表 / 一級建築士" en="CEO / Architect" />
       </Role>
+      
+        <BiographyItem>
           <BiographyYear>
             2006
           </BiographyYear>
