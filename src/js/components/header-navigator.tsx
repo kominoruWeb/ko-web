@@ -101,7 +101,7 @@ export const HeaderNavigator: FunctionComponent<HeaderNavigatorProps> = ({onClic
     <HeaderNavigatorItem to='/profile' onClick={handleClick}>PROFILE</HeaderNavigatorItem>
     <HeaderNavigatorItem to='/contact' onClick={handleClick}>CONTACT</HeaderNavigatorItem>
     <ExternalItem href='http://blog.kominoru.com/' target="_blank" onClick={handleClick}>BLOG</ExternalItem>
-    <ExternalItem href='https://www.instagram.com/kominoru/' target="_blank" onClick={handleClick}><SvgInstagramIcon /><MobileOnly> INSTAGRAM</MobileOnly></ExternalItem>
+    <ExternalItem href='https://www.instagram.com/kominorudesign/' target="_blank" onClick={handleClick}><SvgInstagramIcon /><MobileOnly> INSTAGRAM</MobileOnly></ExternalItem>
   </Outer>
 }
 
