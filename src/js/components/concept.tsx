@@ -113,14 +113,14 @@ export const Concept: FunctionComponent<BaseProps> = () => {
         <ConceptTitle>
           <Text
             ja="“奥行き”のある空間"
-            en={`Space with "depth"`}
+            en={`A space with “depth”`}
             zh="具有“深度”的空间" 
           />
         </ConceptTitle>
         <ConceptText language={language}>
           <Text
-            ja={`素材は、基本的に自然素材を使用します。\nいくら本物の木に似せて作られたプリントのシートでも、\n拡大するとただの凹凸のないまっ平な面です。 \nしかし自然素材は、細胞を内包しており、細胞はさらに構成要素を持っていて\nいくらでも、拡大、縮小可能です。\nその奥行きが、ひとに落ち着きを与え、さらに、\nひとのまわりに必要不可欠な様々な微生物にも\n自然に近い居場所を与えているといえます。\n見た目のクリーンさよりも、調和の取れた空間が、心身の健康につながります。`}
-            en={`The material is basically a natural material.\nNo matter how much the printed sheet is made to resemble a real tree,\nwhen enlarged, it is just a flat surface with no irregularities.\nBut natural materials contain cells, which have more components.\nIt keep the same density as you zoom in and out.\nThe depth gives people a sense of calm, and also for formicroorganisms that are indispensable around people.\nIt can be said that it gives a place close to nature.\nA harmonious space, rather than a clean appearance, leads to physical and mental health.`}
+            ja={`空間と素材がシームレスにつながることを常に意識して設計をしています。\n素材は、基本的に自然素材を使用します。いくら本物の木に似せて作られたプリントのシートでも、拡大するとただの凹凸のない平な面です。しかし自然素材は、細胞を内包しており、細胞はさらに構成要素を持っていていくらでも、拡大、縮小可能です。その奥行きが、ひとに落ち着きを与え、さらに、ひとのまわりに必要不可欠な様々な微生物にも自然に近い居場所を与えているといえます。\nいわば、素材も、小さな空間であり、小さな空間の繰り返しが大きな空間を形成しています。\n建築デザインは、小さな空間と大きな空間の橋渡しとしての役割ととらえています。\nあらゆるスケールにおいて調和の取れた空間が、安らぎと心地よさをもたらします。`}
+            en={`When designing, we always keep in mind that space and materials are seamlessly connected.\nWe basically use natural materials. No matter how much a printed sheet is made to resemble real wood, when you enlarge it, it's just a flat surface with no irregularities. However, natural materials contain cells, and cells have further constituent elements, so they can be expanded or contracted to any extent. Its depth gives people a sense of calm, and it can also be said to provide a natural habitat for the various microorganisms that are essential to our surroundings.\nIn other words, materials are also small spaces, and the repetition of small spaces forms large spaces.\nWe view architectural design as a bridge between small and large spaces.\nA harmonious space at every scale brings peace and comfort.`}
             zh={`素材基本上是天然材料。\n不管印刷的塑料仿木板多么像真正的木材，\n放大时，它只是一个没有凹凸的平坦表面。\n但是天然材料包含细胞，而细胞具有更小的内部构造。\n随意放大和缩小，它都是有深度的。\n可以说，这种深度给人一种安心舒适的感觉，也给人们提供了一个接近自然的地方，对人有益无害的各种微生物也有了藏身之处。\n真正的身心健康，不是整洁的外面，而是和谐的内面带来的。`}
           />
         </ConceptText>

@@ -47,7 +47,7 @@ export const LanguageSelector: FunctionComponent<LanguageSelectorProps> = ({onCh
   const {language: currentLanguage, setLanguage} = useLanguage()
   return <Outer>
     <LanguageItemContainer>
-      {languages.map((language, i) => {
+      {languages.filter(language => language !== 'zh').map((language, i) => {
         return <Fragment key={i}>
           {
             i > 0 &&

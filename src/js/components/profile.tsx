@@ -36,6 +36,8 @@ const Name = styled.div`
 `
 
 const Role = styled.div`
+  white-space: pre-wrap;
+  line-height: 1.5;
 `
 
 const BiographyTable = styled.div`
@@ -56,6 +58,7 @@ const BiographyYear = styled.div`
 const BiographyLabel = styled.div`
   line-height: 1.25;
   margin: -0.175rem 0;
+  white-space: pre-wrap;
 `
 
 const Detail = styled.div`
@@ -94,7 +97,7 @@ export const Profile: FunctionComponent<BaseProps> = () => {
         <Text ja="胡　実　KO MINORU" />
       </Name>
       <Role>
-        <Text ja="代表 / 一級建築士" en="CEO / Architect" />
+        <Text ja={`代表 / 一級建築士\n1982生まれ`} en={`CEO / Architect\n1982 Born`} />
       </Role>
       <BiographyTable>
         <BiographyItem>
@@ -110,7 +113,7 @@ export const Profile: FunctionComponent<BaseProps> = () => {
             2007
           </BiographyYear>
           <BiographyLabel>
-            <Text ja="ドイツミュンヘン工科大学 交換留学" en="Technische Universität München, Germany Exchange Study Abroad" />
+            <Text ja="ドイツミュンヘン工科大学 留学" en="Technische Universität München, Germany Exchange Study Abroad" />
           </BiographyLabel>
         </BiographyItem>
         <BiographyItem>
@@ -126,7 +129,7 @@ export const Profile: FunctionComponent<BaseProps> = () => {
             2008-2016
           </BiographyYear>
           <BiographyLabel>
-            <Text ja="隈研吾建筑都市設計事務所" en="Kengo Kuma &amp; Associates" />
+            <Text ja={`隈研吾建筑都市設計事務所\n美術館、マンション、リゾートホテル、個人邸など多数担当`} en={`Kengo Kuma &amp; Associates\nResponsible for many museums, condominiums, resort hotels, private residences, etc.`} />
           </BiographyLabel>
         </BiographyItem>
         <BiographyItem>
@@ -134,12 +137,12 @@ export const Profile: FunctionComponent<BaseProps> = () => {
             2017
           </BiographyYear>
           <BiographyLabel>
-            <Text ja="胡実建築設計事務所 設立" en="Established KOMINORU DESIGN" />
+            <Text ja="胡実建築設計事務所 設立" en="Established KOMINORU design" />
           </BiographyLabel>
         </BiographyItem>
       </BiographyTable>
       <Detail>
-        <Text ja={`胡実建築設計事務所\n一級建築士事務所\n東京都知事登録第63040号`} en={`KOMINORU DESIGN\nThe offices of registered architects\n東京都知事登録第63040号`} />
+        <Text ja={`株式会社胡実建築設計事務所一級建築士事務所\n東京都知事登録第63040号`} en={`KOMINORU design\nThe offices of registered architects\n東京都知事登録第63040号`} />
       </Detail>
     </ProfileOuter>
     <ProfileImageOuter>
