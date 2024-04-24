@@ -10,6 +10,7 @@ import { LanguageSelector } from './language-selector';
 import { MobileMenu } from './mobile-menu'
 import { BaseProps } from '../types/base-props';
 import classNames from 'classnames'
+import SvgLogoJa from '../generated/svg/logo-ja'
 
 export const fadeIn = keyframes`
   from {
@@ -52,6 +53,9 @@ const LogoOuter = styled(Link)`
   }
   &:hover {
     color: var(--hover-text-color);
+  }
+  svg {
+    height: 1.25rem;
   }
 `
 
@@ -112,7 +116,7 @@ export const Header: FunctionComponent<BaseProps> = () => {
   }, [pathname, isMobile])
   return <Outer className={classNames({hide, top: pathname === '/'})} >
     <LogoOuter to='/' className={classNames({hide})}>
-      <SvgLogo />
+      <SvgLogoJa />
     </LogoOuter>
     {
       isMobile ? <>

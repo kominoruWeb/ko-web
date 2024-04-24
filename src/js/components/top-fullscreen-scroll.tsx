@@ -13,6 +13,8 @@ import { fadeIn } from './mobile-menu'
 import classNames from 'classnames'
 import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import {EffectFade} from 'swiper/modules';
+import SvgLogoJa from '../generated/svg/logo-ja'
+import SvgLogoEn from '../generated/svg/logo-en'
 
 const Outer = styled.div`
   position: relative;
@@ -38,7 +40,17 @@ const LogoOuter = styled.div`
   animation: ${fadeIn} 1s 1.2s forwards;
   svg {
     display: block;
+  }
+  svg:nth-child(1) {
     margin-top: -2.5rem;
+    height: 1.25rem;
+    width: auto;
+  }
+  svg:nth-child(2) {
+    margin-top: 0.75rem;
+    height: 0.8rem;
+    width: auto;
+    margin-bottom: 0.75rem;
   }
   @media (max-width: 50rem) {
     transform: none;
@@ -153,7 +165,8 @@ const Item: FunctionComponent<ItemProps> = ({work}) => {
         />
       </ItemBackgroundOuter>
       <LogoOuter style={{color: work.pickupTextColor ?? 'var(--inverted-text-color)'}}>
-        <SvgSquareLogo />
+        <SvgLogoJa />
+        <SvgLogoEn />
       </LogoOuter>
       <ItemLabel style={{color: work.pickupTextColor ?? 'var(--inverted-text-color)'}}>
         <Text {...work.name} />
