@@ -7,7 +7,7 @@ import { useExternalCss } from '../hooks/use-external-css';
 
 const CSS = createGlobalStyle<{language: Language}>`
   :root {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Hiragino Mincho ProN", YuMincho, 'Noto Serif JP', serif;
     font-weight: 100;
     --gray: #e6e6e6;
     --brown: #413d3a;
@@ -44,7 +44,7 @@ export const RootCSS: FunctionComponent<BaseProps> = () => {
       window.removeEventListener('resize', setViewHeight)
     }
   })
-  useExternalCss('https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Sans+JP:wght@100;500&display=swap')
+  useExternalCss('https://fonts.googleapis.com/css2?family=Cabin:wght@400&family=Noto+Serif+JP:wght@100;500&display=swap')
   useExternalCss('https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css')
   return <CSS language={language}/>
 }

@@ -125,11 +125,13 @@ export const ContactForm: FunctionComponent<BaseProps> = () => {
     <HeadText>
       <Text
         ja={<>
-          胡実建築設計事務所へのご質問やご相談は、下記フォームによりご連絡ください。<br />
+          胡実建築設計事務所へのご質問やご相談は、メールまたは下記フォームによりご連絡ください。<br />
+          <a href="mailto:info@kominoru.com">info@kominoru.com</a><br />
           必要事項をご記入の上、［送信］をクリックしてください。
         </>}
         en={<>
-          If you have any questions or inquiries to KOMINORUdesign, please use the form below.<br />
+          If you have any questions or inquiries to KOMINORUdesign, please use the email or form below.<br />
+          <a href="mailto:info@kominoru.com">info@kominoru.com</a><br />
           Please fill in the required items and click [Send].
         </>}
         zh={<>
